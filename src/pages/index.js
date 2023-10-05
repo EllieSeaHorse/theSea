@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Portfolio from "@/pages/Portfolio/portfolio";
+
 import Link from "next/link";
 import Layout from "@/pages/layout";
 
