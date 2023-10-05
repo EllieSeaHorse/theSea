@@ -5,22 +5,23 @@ import Cover from "@/components/BookPages/Cover";
 
 export default function Book() {
     return (
-        <div className="bg-slate-900 flex justify-center p-4 items-center h-screen"
-        style={
-            {backgroundImage: 'url(/portfolioImages/sea.jpg)',
-            backgroundSize: 'cover'
-            } // You can adjust this based on your design
-
-        }>
+        <div className="flex  p-4 items-end justify-center top-8 right-8s h-[80%] rounded-2xl"
+        // style={
+        //     {backgroundImage: 'url(/portfolioImages/sea.jpg)',
+        //     backgroundSize: 'cover'
+        //     } // You can adjust this based on your design
+        //
+        // }
+        >
             <HTMLFlipBook
-                width={500}
-                height={707}
+                width={400}
+                height={566}
                 startPage={0}
                 showCover={true}
                 maxShadowOpacity={0.5}
                 drawShadow={true}
                 size={"stretch"}
-                maxHeight={707}
+                maxHeight={600}
                 maxWidth={500}
                 minHeight={350.35}
                 minWidth={250}
@@ -28,14 +29,16 @@ export default function Book() {
                 // mobileScrollSupport={true}
 
             >
-                <div className="bg-black shadow-gray-800 shadow-md aspect-A4">
+                <div className="bg-black shadow-black shadow-lg aspect-A4 rounded-2xl">
                     <Cover/>
                 </div>
                 <div className="bg-black shadow-gray-800 shadow-md">
                     <img src={'/portfolioImages/A4 - 2.jpg'} className={'absolute'}/>
-                    <div className={
-                        'left-page'
-                    }></div>
+                    <div
+                    //     className={
+                    //     'left-page'
+                    // }
+                    ></div>
                 </div>
                 <div className="demoPage bg-slate-600">
                     <img src={'/portfolioImages/A4 - 3.jpg'} className={'absolute'}/>
