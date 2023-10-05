@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+  }
+}
+
+body {
+  font-family:     'Montserrat', sans-serif ;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.left-page {
+  @apply bg-gradient-to-l w-full h-full to-5% from-slate-900
+  bg-opacity-20 to-transparent absolute z-30 mix-blend-lighten
+
+}
+.right-page {
+  @apply bg-gradient-to-r w-full h-full to-5% from-gray-900
+  to-transparent absolute z-30 bg-opacity-5
+}
