@@ -4,13 +4,14 @@ export default function Cover() {
     return (
         <div className="flex flex-col justify-between aspect-A4">
             <div className="">
-                <video
-                    src="/portfolioImages/hey.mov"
-                    muted={true}
-                    loop={true}
-                    autoPlay={true}
-                    className="aspect-square"
-                ></video>
+
+                <img
+                    src="/portfolioImages/heyyy.gif"
+                    // muted={true}
+                    // loop={true}
+                    // autoPlay={true}
+                    className="aspect-square object-cover filter grayscale w-full object-left"
+                ></img>
             </div>
             <div>
                     <p className="text-left px-4 text-zinc text-lg

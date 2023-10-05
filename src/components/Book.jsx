@@ -5,7 +5,7 @@ import Cover from "@/components/BookPages/Cover";
 
 export default function Book() {
     return (
-        <div className=" bg-slate-900 flex justify-center items-center h-screen"
+        <div className="bg-slate-900 flex justify-center p-4 items-center h-screen"
         style={
             {backgroundImage: 'url(/portfolioImages/sea.jpg)',
             backgroundSize: 'cover'
@@ -19,8 +19,16 @@ export default function Book() {
                 showCover={true}
                 maxShadowOpacity={0.5}
                 drawShadow={true}
+                size={"stretch"}
+                maxHeight={707}
+                maxWidth={500}
+                minHeight={350.35}
+                minWidth={250}
+                usePortrait={true}
+                // mobileScrollSupport={true}
+
             >
-                <div className="bg-black shadow-gray-800 shadow-md">
+                <div className="bg-black shadow-gray-800 shadow-md aspect-A4">
                     <Cover/>
                 </div>
                 <div className="bg-black shadow-gray-800 shadow-md">
@@ -61,7 +69,6 @@ export default function Book() {
                         controls={true}
                         width="530px"
                     >
-
                     </ReactPlayer>
                     {/*< video src={'/portfolioImages/Last Part.mp4'} autoPlay={true} className={'object-cover'} controls={true}/>*/}
 
