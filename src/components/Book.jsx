@@ -5,7 +5,7 @@ import Cover from "@/components/BookPages/Cover";
 
 export default function Book() {
     return (
-        <div className="flex  p-4 items-end justify-center top-8 right-8s h-[80%] rounded-2xl"
+        <div className="flex  p-4 items-center justify-center top-8 right-8s h-[80%] rounded-2xl"
         // style={
         //     {backgroundImage: 'url(/portfolioImages/sea.jpg)',
         //     backgroundSize: 'cover'
