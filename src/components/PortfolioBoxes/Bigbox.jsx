@@ -7,7 +7,7 @@ export default function Bigbox({
 }) {
     return(
         <div
-                className={`${className} relative w-full border border-gray-500 h-full p-4`}
+                className={`${className} relative w-full h-full p-4`}
         >
             <h1 className={"text-2xl font-bold pb-5"}>{heading}</h1>
             {children}

@@ -1,18 +1,13 @@
 import Layout from "@/pages/layout";
 import {SubBox, Competence, LanguageItem} from "@/components/PortfolioBoxes/elements";
 import Bigbox from "@/components/PortfolioBoxes/Bigbox";
-import {honorsData, workExperienceData, educationData, competenceData } from "@/data/resumeData";
+import {honorsData, workExperienceData, educationData, competenceData, languageData } from "@/data/resumeData";
 import {projectsData} from "@/data/projectsData";
+import Link from 'next/link';
+
 
 
 import React, {useState} from 'react';
-import Link from "next/link";
-
-
-
-
-
-
 
 
 export default function Portfolio() {
@@ -38,7 +33,7 @@ export default function Portfolio() {
     };
 
 
-    const [viewingResume, setViewingResume] = useState(false);
+    const [viewingResume, setViewingResume] = useState(true);
 
 
     const softSkillsData = ['UI/UX', 'Responsive Design', 'Team Collaboration', 'Problem Solving'];
@@ -66,26 +61,30 @@ export default function Portfolio() {
                     <div className="md: flex-grow"></div> {/* Add this div to push content to the top */}
 
 
-                    <div className={""}>
-                        <h1 className={"w-full"}>
-                            <span className={"text-accent pr-12 w-2/5"}>Phone</span>
-                            +98 939 707 57 50
+                    <div className="flex flex-col space-y-2 ">
+                        <h1 className="flex items-center">
+                            <span className="text-accent pr-4">Phone</span>
+                            <Link href="tel:+989397075750">+98 939 707 57 50</Link>
                         </h1>
-                        <h1>
-                            <span className={"text-accent pr-12 w-1/6"}>Mail</span>
-                            SamaMoayeri99@Gmail.com
+                        <h1 className="flex items-center">
+                            <span className="text-accent pr-4">Mail</span>
+                            <Link href="mailto:SamaMoayeri99@Gmail.com">SamaMoayeri99@Gmail.com</Link>
                         </h1>
-                        <h1>
-                            <span className={"text-accent pr-12"}>Website</span>
-                            www.SamaMoayeri.com
+                        <h1 className="flex items-center">
+                            <span className="text-accent pr-4">Website</span>
+                            <Link href="http://www.SamaMoayeri.com" passHref>
+                                <p target="_blank">www.SamaMoayeri.com</p>
+                            </Link>
                         </h1>
-                        <h1>
-                            <span className={"text-accent pr-12"}>LinkedIn</span>
-                            linkedin.com/in/samamoayeri
+                        <h1 className="flex items-center">
+                            <span className="text-accent pr-4">LinkedIn</span>
+                            <Link href="https://linkedin.com/in/samamoayeri" passHref>
+                                <p target="_blank">linkedin.com/in/samamoayeri</p>
+                            </Link>
                         </h1>
-
-
                     </div>
+
+
                 </Bigbox>
 
 
@@ -111,7 +110,7 @@ export default function Portfolio() {
 
                 <Bigbox
                     heading={"Profile"}
-                    className={"sizeLargeHor border border-white p-12"}
+                    className={"col-span-3 row-span-3 md:col-span-6 md:row-span-6 lg:col-span-9 lg:row-span-9  border border-white p-12"}
                 >
                     <p>
                         Experienced senior graphic designer with a passion
@@ -147,7 +146,7 @@ export default function Portfolio() {
 
 
 
-                    <Bigbox heading={"Work Experience"}
+                    <Bigbox heading={"Id Experience"}
                             className={"border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-2 lg:col-span-6 lg:row-span-2"}>
                         {workExperienceData.map((experience, index) => (
                             <SubBox
@@ -175,17 +174,17 @@ export default function Portfolio() {
                     </Bigbox>
 
 
-                    {/*<Bigbox heading={"Languages"}*/}
-                    {/*        className={'col-span-3 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-3 lg:row-span-1'}>*/}
-                    {/*    {languageData.map((data, index) => (*/}
-                    {/*        <LanguageItem*/}
-                    {/*            key={index}*/}
-                    {/*            language={data.language}*/}
-                    {/*            proficiency={data.proficiency}*/}
-                    {/*            additionalInfo={data.additionalInfo}*/}
-                    {/*        />*/}
-                    {/*    ))}*/}
-                    {/*</Bigbox>*/}
+                    <Bigbox heading={"Languages"}
+                            className={'col-span-3 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-3 lg:row-span-1'}>
+                        {languageData.map((data, index) => (
+                            <LanguageItem
+                                key={index}
+                                language={data.language}
+                                proficiency={data.proficiency}
+                                additionalInfo={data.additionalInfo}
+                            />
+                        ))}
+                    </Bigbox>
 
 
                     <Bigbox heading={"Competences"} className={"row-span-2"} className={'col-span-3 row-span-1 md:col-span-2 md:row-span-3 lg:col-span-3 lg:row-span-3'}>
@@ -195,7 +194,7 @@ export default function Portfolio() {
                     </Bigbox>
 
 
-                    <Bigbox heading={"Soft Skills"}
+                    <Bigbox heading={"Skills"}
                             className={'border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-1 lg:col-span-6 lg:row-span-1'}
 
 
@@ -213,7 +212,7 @@ export default function Portfolio() {
                     </Bigbox>
 
 
-                    <Bigbox heading={"Honors"}
+                    <Bigbox heading={"Honors and Certificates"}
                             className={"col-span-3 row-span-1 md:col-span-4 md:row-span-2 lg:col-span-6 lg:row-span-2"}>
 
                         {honorsData.map((honors, index) => (

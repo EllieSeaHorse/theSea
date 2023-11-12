@@ -13,6 +13,12 @@ export const educationData = [
     },
 ];
 
+export const languageData = [
+    { language: 'Farsi', proficiency: 'Native', additionalInfo: '' ,  link: ''},
+    { language: 'English', proficiency: 'Fluent', additionalInfo: 'Ielts 7.5' ,  link: ''},
+    { language: 'Italian', proficiency: 'Proficient', additionalInfo: 'Cils b2' , link: 'https://online.unistrasi.it/qr_cils.asp?ID=29620201314306' },
+    { language: 'German', proficiency: 'Proficient', additionalInfo: 'TestDaf c1', link: 'https://online.unistrasi.it/qr_cils.asp?ID=29620201314306' },
+];
 
 export const workExperienceData = [
     {
@@ -56,6 +62,11 @@ export const workExperienceData = [
 ];
 export const honorsData = [
     {
+        title: "Certificate of Css, Html, GitHub and Web Design",
+        year: "2023",
+        description: "Codecademy",
+    },
+    {
         title: "Winner of Jan Michalski Foundation's Literary Grant",
         year: "2020",
         description: "La Fondation Jan Michalski, Switzerland",
@@ -75,6 +86,19 @@ export const honorsData = [
         year: "2010",
         description: "National Organization for Development of Exceptional Talents, Iran",
     },
+
+
+    {
+        title: "Certificate of Participation in Iran Open RoboCup for 3D Simulation",
+        year: "2016",
+        description: "Codecademy",
+    },
+    {
+        title: "Certificate of Adobe Photoshop and Adobe Illustrator",
+        year: "2014",
+        description: "Tehran Institute of Technology",
+    },
+
 ];
 
 export const competenceData = [

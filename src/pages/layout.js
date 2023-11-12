@@ -6,7 +6,9 @@ export default function Layout({ children }) {
     return (
         <div >
             <Nav/>
-            <main>{children}</main>
+            <main
+                className={"m-8"}
+            >{children}</main>
         </div>
     );
 }
