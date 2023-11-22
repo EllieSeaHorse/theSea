@@ -128,7 +128,7 @@ export default function Portfolio() {
 
             <Link
                 href={'#resume'}
-                className={"bg-dark-teal hover:bg-accent w-screen p-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
+                className={"bg-opacity-10 bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
                 onClick={scrollToNextDiv}
             >
                 {viewingResume ? 'Hide Resume' : 'View Resume'}
@@ -146,7 +146,7 @@ export default function Portfolio() {
 
 
 
-                    <Bigbox heading={"Id Experience"}
+                    <Bigbox heading={"Work Experience"}
                             className={"border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-2 lg:col-span-6 lg:row-span-2"}>
                         {workExperienceData.map((experience, index) => (
                             <SubBox
