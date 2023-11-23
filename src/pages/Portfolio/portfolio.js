@@ -50,7 +50,7 @@ export default function Portfolio() {
 
             >
                 <Bigbox className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 h-full flex flex-col animated slide-up"}>
-                    <h1 className={"text-6xl lg:text-8xl text-justify"}>PORTFOLIO</h1>
+                    <h1 className={"text-5xl bg-black p-2 text-white lg:text-7xl"}>PORTFOLIO</h1>
                     <h1 className={"text-xl uppercase"}>Sama Moayeri</h1>
                     <h1 className={"text-sm text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
 

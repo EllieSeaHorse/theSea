@@ -26,10 +26,12 @@ const Id = ({ work }) => {
 
     return (
         <Layout>
-            <h1 className="text-6xl px-4 ">{title}</h1>
-            <p className="text-gray-600 mb-4 px-4 ">{year}</p>
+            <div className={"border-l-2 p-4  px-8 "}>
+                <h1 className="text-5xl font-medium uppercase ">{title}</h1>
+            <p className="text-gray-500 pl-2 ">{year}</p>
+            </div>
             <p className="text-justify mt-2 text-sm p-16">{description}</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 bg-white p-2 md:grid-cols-3 gap-4 mt-4">
                 {images.map((image, index) => (
                     <img
                         key={index}

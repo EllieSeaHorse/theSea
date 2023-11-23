@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Nav({ children }) {
+export default function Nav({ children, classname }) {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
+            const currentScrollPos = window.scrollY;
             setVisible(
-                (prevScrollPos > currentScrollPos &&
-                    prevScrollPos - currentScrollPos > 70) ||
-                currentScrollPos < 10
+                (prevScrollPos > currentScrollPos)
             );
             setPrevScrollPos(currentScrollPos);
         };
@@ -30,10 +28,10 @@ export default function Nav({ children }) {
 
     return (
         <header
-            className="sticky top-0 w-full h-20 flex justify-start items-center bg-gray-50 backdrop-blur-lg bg-opacity-80 z-50"
+            className="${classname} fixed top-0 w-full h-20 flex justify-start items-center backdrop-blur-lg bg-opacity-80 z-50"
             style={navStyles}
         >
-            <div className="flex items-center w-full justify-between px-6">
+            <div className="sticky items-center w-full justify-between px-6">
                 <Link href="/">
                     <div className="">
                         <p className="font-semibold font-montserrat uppercase">

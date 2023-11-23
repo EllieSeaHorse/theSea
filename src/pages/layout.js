@@ -7,8 +7,9 @@ export default function Layout({ children }) {
     return (
         <div >
             <Nav/>
+
             <main
-                className={"m-8"}
+                className={"m-8 mt-24"}
             >{children}</main>
             <Footer/>
         </div>
