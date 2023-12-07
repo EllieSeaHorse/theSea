@@ -26,6 +26,7 @@ export const worksData = [
             '/projectImages/25.jpg',
             // Add more images as needed
         ],
+        color: "red"
     },
     {
         id: 'work2',
@@ -64,6 +65,7 @@ export const worksData = [
             '/projectImages/52.jpg',
             // Add more images as needed
         ],
+
     },
     // Add more Works as needed
 ];

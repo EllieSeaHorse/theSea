@@ -28,10 +28,10 @@ export default function Nav({ children, classname }) {
 
     return (
         <header
-            className="${classname} fixed top-0 w-full h-20 flex justify-start items-center backdrop-blur-lg bg-opacity-80 z-50"
+            className="${classname} fixed top-0 w-full h-20 flex justify-start items-center backdrop-blur-lg to-transparent z-50"
             style={navStyles}
         >
-            <div className="sticky items-center w-full justify-between px-6">
+            <div className="sticky flex items-center w-full justify-between px-6">
                 <Link href="/">
                     <div className="">
                         <p className="font-semibold font-montserrat uppercase">

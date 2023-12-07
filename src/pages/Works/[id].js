@@ -26,7 +26,7 @@ const Id = ({ work }) => {
 
     return (
         <Layout>
-            <div className={"border-l-2 p-4  px-8 "}>
+            <div className={"border-l-2 p-4 px-8 "}>
                 <h1 className="text-5xl font-medium uppercase ">{title}</h1>
             <p className="text-gray-500 pl-2 ">{year}</p>
             </div>
@@ -114,9 +114,18 @@ const Id = ({ work }) => {
     );
 };
 
+
 export default Id;
 
-// getStaticPaths and getStaticProps remain the same
+// export async function getServerSideProps({ params }) {
+//     const work = worksData.find((w) => w.id === params.id);
+//
+//     return {
+//         props: {
+//             work,
+//         },
+//     };
+// }
 
 
 export async function getStaticPaths() {

@@ -1,6 +1,7 @@
 
 
 export const educationData = [
+
     {
         title: "BA Visual Communication",
         year: "2022",

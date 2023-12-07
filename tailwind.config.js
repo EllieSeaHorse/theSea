@@ -18,7 +18,7 @@ module.exports = {
       },
       colors: {
         'zinc': '#EFEFEF',
-        'accent' : '#2DCCD7',
+        'accent' : '#FBD50F',
         'dark-teal': '#001112'
       },
 

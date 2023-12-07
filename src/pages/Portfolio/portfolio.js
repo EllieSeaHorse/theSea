@@ -1,26 +1,18 @@
 import Layout from "@/pages/layout";
-import {SubBox, Competence, LanguageItem} from "@/components/PortfolioBoxes/elements";
 import Bigbox from "@/components/PortfolioBoxes/Bigbox";
-import {honorsData, workExperienceData, educationData, competenceData, languageData } from "@/data/resumeData";
 import {projectsData} from "@/data/projectsData";
 import Link from 'next/link';
 
 
-
 import React, {useState} from 'react';
+import Resume from "@/components/PortfolioBoxes/Resume";
+import PortfolioSection from "@/components/portfolioSection";
 
 
 export default function Portfolio() {
 
-
     let project = projectsData
-
-
     let currentDiv = 0;
-
-
-
-
     // Function to scroll to the next div
     const scrollToNextDiv = () => {
         setViewingResume(!viewingResume);
@@ -35,23 +27,16 @@ export default function Portfolio() {
 
     const [viewingResume, setViewingResume] = useState(true);
 
-
-    const softSkillsData = ['UI/UX', 'Responsive Design', 'Team Collaboration', 'Problem Solving'];
-    const Qualities = ['Creative Design', 'Fast Learning', 'Time Management', 'Flexibility', 'Adaptability'];
     return (
         <Layout>
-
-
-
 
             <div
                 className={"m-6 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6"}
 
-
             >
                 <Bigbox className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 h-full flex flex-col animated slide-up"}>
-                    <h1 className={"text-5xl bg-black p-2 text-white lg:text-7xl"}>PORTFOLIO</h1>
-                    <h1 className={"text-xl uppercase"}>Sama Moayeri</h1>
+                    <h1 className={"text-5xl bg-black py-2 text-white lg:text-7xl"}>PORTFOLIO</h1>
+                    <h1 className={"text-xl pl-1 uppercase"}>Sama Moayeri</h1>
                     <h1 className={"text-sm text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
 
 
@@ -125,146 +110,32 @@ export default function Portfolio() {
                 </Bigbox>
             </div>
 
-
             <Link
                 href={'#resume'}
-                className={"bg-opacity-10 bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
+                className={" bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
                 onClick={scrollToNextDiv}
             >
                 {viewingResume ? 'Hide Resume' : 'View Resume'}
             </Link>
             {viewingResume && (
-                <div
-                    id={"resume"}
-                    className={"pt-6 m-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 scroll-smooth"}
-                >
-
-
-
-
-
-
-
-
-                    <Bigbox heading={"Work Experience"}
-                            className={"border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-2 lg:col-span-6 lg:row-span-2"}>
-                        {workExperienceData.map((experience, index) => (
-                            <SubBox
-                                key={index}
-                                title={experience.title}
-                                year={experience.year}
-                                description={experience.description}
-                                list={experience.list}
-                            />
-                        ))}
-                    </Bigbox>
-
-
-                    <Bigbox heading={"Education"}
-                            className={'col-span-3 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-3 lg:row-span-1'}
-                    >
-                        {educationData.map((education, index) => (
-                            <SubBox
-                                key={index}
-                                title={education.title}
-                                year={education.year}
-                                description={education.description}
-                            />
-                        ))}
-                    </Bigbox>
-
-
-                    <Bigbox heading={"Languages"}
-                            className={'col-span-3 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-3 lg:row-span-1'}>
-                        {languageData.map((data, index) => (
-                            <LanguageItem
-                                key={index}
-                                language={data.language}
-                                proficiency={data.proficiency}
-                                additionalInfo={data.additionalInfo}
-                            />
-                        ))}
-                    </Bigbox>
-
-
-                    <Bigbox heading={"Competences"} className={"row-span-2"} className={'col-span-3 row-span-1 md:col-span-2 md:row-span-3 lg:col-span-3 lg:row-span-3'}>
-                        {competenceData.map((data, index) => (
-                            <Competence key={index} title={data.title} items={data.items} />
-                        ))}
-                    </Bigbox>
-
-
-                    <Bigbox heading={"Skills"}
-                            className={'border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-1 lg:col-span-6 lg:row-span-1'}
-
-
-                    >
-                        <div className={"w-full flex flex-wrap"}>
-                            {softSkillsData.map((skill, index) => (
-                                <h1 className={"p-2 m-1 rounded-full border text-xs"} key={skill}>{skill}</h1>
-                            ))}
-                            {Qualities.map((skill, index) => (
-                                <h1 className={"p-2 m-1 rounded-full border text-xs"} key={skill}>{skill}</h1>
-                            ))}
-                        </div>
-
-
-                    </Bigbox>
-
-
-                    <Bigbox heading={"Honors and Certificates"}
-                            className={"col-span-3 row-span-1 md:col-span-4 md:row-span-2 lg:col-span-6 lg:row-span-2"}>
-
-                        {honorsData.map((honors, index) => (
-                            <SubBox
-                                key={index}
-                                title={honors.title}
-                                year={honors.year}
-                                description={honors.description}
-                            />
-                        ))}
-                    </Bigbox>
-
-
-                </div>
-
-
+                <Resume/>
             )}
-
-
-            {/*<PortfolioSection*/}
-            {/*    title={project[0].title}*/}
-            {/*    subheading={project[0].subheading}*/}
-            {/*    year={project[0].year}*/}
-            {/*    services={project[0].services}*/}
-            {/*    description={project[0].description}*/}
-            {/*>*/}
-            {/*   <div className={"col-span-2 row-span-1 h-full aspect-square py-10"}>*/}
-            {/*       <img src={'/Projects/Verite/lili.png'} className={"w-full h-full object-contain"}/>*/}
-            {/*   </div>*/}
-            {/*    <div className={"col-span-2 row-span-1 h-full aspect-square py-10"}>*/}
-            {/*        <img src={'/Projects/Verite/lili.png'} className={"w-full h-full object-contain"}/>*/}
-            {/*    </div>*/}
-            {/*    <div className={"col-span-2 row-span-1 h-full aspect-square py-10"}>*/}
-            {/*        <img src={'/Projects/Verite/lili.png'} className={"w-full h-full object-contain"}/>*/}
-            {/*    </div>*/}
-
-
-            {/*    /!*<div className={"col-span-2 row-span-1  w-screen"}>*!/*/}
-            {/*    /!*    <img src={'/Projects/Verite/lili.png'} className={"w-full h-full object-contain"}/>*!/*/}
-            {/*    /!*</div>*!/*/}
-            {/*    /!*<div className={"col-span-2 row-span-1"}>*!/*/}
-            {/*    /!*    <img src={'/Projects/Verite/lili.png'} className={"w-full h-full object-contain"}/>*!/*/}
-            {/*    /!*</div>*!/*/}
-
-
-            {/*</PortfolioSection>*/}
-
-
-
-
-
-
+            <div>
+                {projectsData.map((project, index) => (
+                    <PortfolioSection
+                        key={index}
+                        title={project.title}
+                        subheading={project.subheading}
+                        year={project.year}
+                        services={project.services}
+                        description={project.description}
+                        coverImageUrl={project.coverImageUrl}
+                        images={project.images}
+                        color={project.color}
+                    >
+                    </PortfolioSection>
+                ))}
+            </div>
 
 
         </Layout>

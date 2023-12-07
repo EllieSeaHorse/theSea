@@ -4,8 +4,8 @@ function PercentageBar({ percentage }) {
     return (
         <div className="bg-gray-900 rounded-full flex h-3 items-center">
             <div
-                className="h-2 rounded-full"
-                style={{ width: `${percentage}%`, background: '#2DCCD7' , opacity: `${percentage}%` }}
+                className="h-2 rounded-full bg-accent"
+                style={{ width: `${percentage}%` , opacity: `${percentage}%` }}
             ></div>
         </div>
     );
@@ -47,7 +47,7 @@ function SubBox({year, title, description, list}) {
             <h1 className={"text-gray-400 text-xs w-1/6"}>{year}</h1>
             <div className={"pl-3 pb-2.5 w-5/6"}>
                 <h1 className={"pb-1 text-base font-semibold font-['Montserrat']"}>{title}</h1>
-                <h1 className={"pb-2.5 text-justify text-cyan-500 text-sm font-normal font-['Montserrat'] leading-1 italic" }>{description}</h1>
+                <h1 className={"pb-2.5  text-accent text-sm font-normal font-['Montserrat'] leading-1 italic" }>{description}</h1>
                 {list != null && list.map((item, index) => (
                     <h1 key={index} className={"pb-1 text-gray-400 text-xs font-normal font-['Montserrat'] leading-1"}>
                         - {item}
