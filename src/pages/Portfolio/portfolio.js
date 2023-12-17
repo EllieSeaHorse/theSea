@@ -2,12 +2,8 @@ import Layout from "@/pages/layout";
 import Bigbox from "@/components/PortfolioBoxes/Bigbox";
 import {projectsData} from "@/data/projectsData";
 import Link from 'next/link';
-
-
 import React, {useState} from 'react';
 import Resume from "@/components/PortfolioBoxes/Resume";
-import PortfolioSection from "@/components/portfolioSection";
-
 
 export default function Portfolio() {
 
@@ -24,28 +20,20 @@ export default function Portfolio() {
         }
     };
 
-
     const [viewingResume, setViewingResume] = useState(true);
 
     return (
         <Layout>
-
             <div
                 className={"m-6 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6"}
-
             >
                 <Bigbox className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 h-full flex flex-col animated slide-up"}>
                     <h1 className={"text-5xl bg-black py-2 text-white lg:text-7xl"}>PORTFOLIO</h1>
                     <h1 className={"text-xl pl-1 uppercase"}>Sama Moayeri</h1>
                     <h1 className={"text-sm text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
-
-
                     <h1 className={"text-sm text-accent uppercase text-right pb-16"}>2018-2023</h1>
 
-
                     <div className="md: flex-grow"></div> {/* Add this div to push content to the top */}
-
-
                     <div className="flex flex-col space-y-2 ">
                         <h1 className="flex items-center">
                             <span className="text-accent pr-4">Phone</span>
@@ -72,9 +60,6 @@ export default function Portfolio() {
 
                 </Bigbox>
 
-
-
-
                 <Bigbox
                     heading={""}
                     className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
@@ -85,13 +70,7 @@ export default function Portfolio() {
                     </div>
                     <h1 className={"text-[9px] text-gray-600"}>Photo © Tonatiuh Ambrosetti</h1>
 
-
-
-
                 </Bigbox>
-
-
-
 
                 <Bigbox
                     heading={"Profile"}
@@ -106,7 +85,6 @@ export default function Portfolio() {
                         and a wide range of design software.
                     </p>
 
-
                 </Bigbox>
             </div>
 
@@ -120,22 +98,22 @@ export default function Portfolio() {
             {viewingResume && (
                 <Resume/>
             )}
-            <div>
-                {projectsData.map((project, index) => (
-                    <PortfolioSection
-                        key={index}
-                        title={project.title}
-                        subheading={project.subheading}
-                        year={project.year}
-                        services={project.services}
-                        description={project.description}
-                        coverImageUrl={project.coverImageUrl}
-                        images={project.images}
-                        color={project.color}
-                    >
-                    </PortfolioSection>
-                ))}
-            </div>
+            {/*<div>*/}
+            {/*    {projectsData.map((project, index) => (*/}
+            {/*        <PortfolioSection*/}
+            {/*            key={index}*/}
+            {/*            title={project.title}*/}
+            {/*            subheading={project.subheading}*/}
+            {/*            year={project.year}*/}
+            {/*            services={project.services}*/}
+            {/*            description={project.description}*/}
+            {/*            coverImageUrl={project.coverImageUrl}*/}
+            {/*            images={project.images}*/}
+            {/*            color={project.color}*/}
+            {/*        >*/}
+            {/*        </PortfolioSection>*/}
+            {/*    ))}*/}
+            {/*</div>*/}
 
 
         </Layout>

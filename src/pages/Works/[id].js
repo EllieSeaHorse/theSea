@@ -46,10 +46,10 @@ const Id = ({ work }) => {
 
             {/* Modal for the slideshow */}
             {modalIsOpen && (
-                <div className="fixed top-0 left-0 w-full h-screen bg-white backdrop-blur-lg flex items-center justify-center z-10 bg-opacity-80">
+                <div className="fixed top-0 left-0 w-full h-screen bg-neutral-900 backdrop-blur-lg flex items-center justify-center z-10 bg-opacity-80">
                     {/* ... Slideshow code here ... */}
                     <div className="relative w-11/12 h-screen">
-                        <div className="relative m-20 rounded-lg h-screen">
+                        <div className="relative rounded-lg h-screen flex items-center justify-center">
                             {images.map((image, index) => (
                                 <div
                                     key={index}
@@ -57,17 +57,18 @@ const Id = ({ work }) => {
                                         index === currentSlide ? 'block' : 'hidden'
                                     }`}
                                 >
-
+                                    <div className="absolute inset-0 flex items-center justify-center">
                                         <img
                                             src={image}
-                                            className="z-20 mx-auto "
+                                            className="z-20 max-w-full max-h-full p-2"
                                             alt={`Slide ${index + 1}`}
                                         />
-
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                        <div className="absolute h-screen z-50 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 ">
+
+                    <div className="absolute h-screen z-50 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 ">
                             {images.map((_, index) => (
                                 <button
                                     key={index}
@@ -100,10 +101,10 @@ const Id = ({ work }) => {
                         </button>
                         <button
                             type="button"
-                            className="absolute top-0 right-0 z-30 flex items-start justify-end px-4 cursor-pointer group focus:outline-none"
+                            className="absolute top-20 right-0 z-30 flex items-start justify-end px-4 cursor-pointer group focus:outline-none"
                             onClick={closeModal}
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
                                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </button>

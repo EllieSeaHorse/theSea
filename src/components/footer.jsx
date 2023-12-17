@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
     const contactInfo = {
@@ -10,16 +11,29 @@ const Footer = () => {
 
     return (
         <footer className=" m-8 mt-16 text-xs">
-            <div className="container space-x-4 opacity-60">
-                <div className="flex grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 flex-wrap">
-                    {Object.keys(contactInfo).map((key) => (
-                        <div key={key}>
-                            <p className="font-semibold">{key}</p>
-                            <p>{contactInfo[key]}</p>
-                        </div>
-                    ))}
-                </div>
+            <div className="grid flex-col space-y-2 grid-cols-2 lg:grid-cols-4">
+                <h1 className="flex items-center">
+                    <span className="text-accent pr-4">Phone</span>
+                    <Link href="tel:+989397075750">+98 939 707 57 50</Link>
+                </h1>
+                <h1 className="flex items-center">
+                    <span className="text-accent pr-4">Mail</span>
+                    <Link href="mailto:SamaMoayeri99@Gmail.com">SamaMoayeri99@Gmail.com</Link>
+                </h1>
+                <h1 className="flex items-center">
+                    <span className="text-accent pr-4">Website</span>
+                    <Link href="http://www.SamaMoayeri.com" passHref>
+                        <p target="_blank">www.SamaMoayeri.com</p>
+                    </Link>
+                </h1>
+                <h1 className="flex items-center">
+                    <span className="text-accent pr-4">LinkedIn</span>
+                    <Link href="https://linkedin.com/in/samamoayeri" passHref>
+                        <p target="_blank">linkedin.com/in/samamoayeri</p>
+                    </Link>
+                </h1>
             </div>
+
         </footer>
     );
 };
