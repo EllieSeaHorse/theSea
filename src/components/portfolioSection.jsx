@@ -1,63 +1,40 @@
 import React from 'react';
+import Book from "@/components/Book";
+import {projectsData} from "@/data/projectsData";
 
 
-const PortfolioSection = ({ title, subheading, year, services, description, coverImageUrl, images, color, children }) => {
-
+const PortfolioSection = ({
+                              title,
+                              subheading,
+                              year,
+                              services,
+                              description,
+                              coverImageUrl,
+                              images,
+                              color,
+                              children,
+                          }) => {
     const sectionStyle = {
-        backgroundColor: color // Set the background color dynamically
+        backgroundColor: color,
     };
 
     return (
-        <div className=" min-h-screen py-2"
-        >
-            <div className="grid p-4 w-full">
-                <div className={" grid grid-cols-1 md:grid-cols-3 gap-1 leading-3"}>
-                    <div className={" px-8 " }
-                         style={
-                             {borderLeft: `1px solid ${color}`}
-                    }
-                    >
-                        <h2 className="text-6xl font-semibold uppercase pb-2.5 ">{title}</h2>
-                        <h2 className="text-lg">{subheading}</h2>
-                        <p className="pb-2.5">{year}</p>
-                        <ul className="pb-6 text-xs font-thin ">
-                            {services.map((service, serviceIndex) => (
-                                <li className="list-item" key={serviceIndex}> - {service}</li>
-                            ))}
-                        </ul>
-                    </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 m-8 text-left snap-y my-2 p-2 items-center  min-h-screen">
 
-                    <div className={"w-full md:col-span-2 h-full"}>
-                        <img src={coverImageUrl} className={"pb-6 w-full h-full object-cover"}/>
-
-                    </div>
-
-                </div>
-                <p className=" bg-opacity-10 text-xs p-6 mb-4 col-span-1 md:col-span-2 text-white text-justify "
-                   style={
-                       {borderRight: `1px dashed ${color}`,
-                           borderTop: `1px dashed ${color}`}
-                   }
-                >{description}</p>
-
+            <div className=" gap-2 col-span-1 md:col-span-4 p-2 rounded-2xl items-center align-middle self-center">
+                <Book                                 title={title}
+                                                      subheading={subheading}
+                                                      year={year}
+                                                      services={services}
+                                                      description={description}
+                                                      coverImageUrl={coverImageUrl}
+                                                      images={images}
+                                                      color={color}
+                />
+                {children}
             </div>
-
-                <div className="grid grid-cols-2 py-1 gap-2 m-2 p-2"
-                     style={sectionStyle}
-                >
-                    {children}
-                    {images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`${title} Image ${index + 1}`}
-                            className="cursor-pointer mx-auto object-cover w-full "
-                        />
-                    ))}
-                </div>
         </div>
     );
 };
-
 
 export default PortfolioSection;

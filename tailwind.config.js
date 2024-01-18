@@ -9,7 +9,7 @@ module.exports = {
 
     extend: {
       aspectRatio: {
-        'A4': '21 / 29.7',
+        'A4': '500 / 600',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         'zinc': '#EFEFEF',
         'accent' : '#FBD50F',
-        'dark-teal': '#001112'
+        'dark-teal': '#001112',
+        'paper': '#D8D1C9'
       },
 
 

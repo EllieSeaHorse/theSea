@@ -6,13 +6,13 @@ import ThreeScene from "@/components/3D/ThreeD";
 export default function Layout({ children }) {
 
     return (
-        <div >
+        <div className={"min-h-screen "} >
             <Nav/>
-
-
             <main
-                className={"m-8 mt-24"}
-            >{children}</main>
+                className={"min-h-screen"}
+            >
+                {children}
+            </main>
             <Footer/>
         </div>
     );

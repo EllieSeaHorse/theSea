@@ -10,7 +10,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className=" m-8 mt-16 text-xs">
+        <footer className=" m-8 mt-16 text-xs  bottom-0 pb-4">
             <div className="grid flex-col space-y-2 grid-cols-2 lg:grid-cols-4">
                 <h1 className="flex items-center">
                     <span className="text-accent pr-4">Phone</span>
@@ -28,12 +28,11 @@ const Footer = () => {
                 </h1>
                 <h1 className="flex items-center">
                     <span className="text-accent pr-4">LinkedIn</span>
-                    <Link href="https://linkedin.com/in/samamoayeri" passHref>
-                        <p target="_blank">linkedin.com/in/samamoayeri</p>
+                    <Link href="https://linkedin.com/in/sama-moayeri" passHref>
+                        <p target="_blank">/Sama-Moayeri</p>
                     </Link>
                 </h1>
             </div>
-
         </footer>
     );
 };
