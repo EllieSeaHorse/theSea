@@ -8,35 +8,31 @@ import PortfolioSection from "@/components/portfolioSection";
 export default function Home() {
     return (
         <Layout>
-            {/*<div className="grid grid-cols-1 gap-4 items-center self-center w-full md:w-1/2 mx-auto "*/}
-            {/*>*/}
-            {/*<Link href={'Portfolio/portfolio'} className={"m-2 hover:rounded-none text-left p-8 pb-2 pl-4 bg-neutral-950 text-white scale-95 hover:scale-105 transition-all duration-500 "}> PORTFOLIO</Link>*/}
-            {/*</div>*/}
-
             <div className="text-center">
 
-                <div className="grid grid-cols-1 gap-2  self-center w-full md:w-full mx-auto">
-                    <div className={"px-8 py-24 fixed min-h-screen text-sm text-left self-baseline"}>
+                <div className="grid grid-cols-1 gap-2  self-center w-full md:w-full bottom-0">
+                    <div className={"px-4 md:px-8 py-20 fixed min-h-screen text-sm text-left self-baseline bottom-0"}>
                         {projectsData.map((project, index) => (
                             <Link key={index} href={`#${project.title.toLowerCase().replace(/\s/g, '-')}`}>
                                 <p className="block py-3 leading-4 hover:text-accent cursor-pointer">
-                                    0{index + 1} <br /> {project.title}
+                                    <span className={"font-thin"}>0{index + 1}</span> <br /> {project.title}
                                 </p>
                             </Link>
                         ))}
                     </div>
 
                     <div
-                        className={"bg-teal-950 w-full h-screen -z-50"}
+                        className={" w-full h-screen stop -z-50 bg-gradient-to-t from-accent to-white "}
                     >
+                        <img src={'/16.jpg'} className={"w-full h-full object-cover mix-blend-multiply grayscale"}/>
                     </div>
 
-                    <div className={"min-h-screen m-5"}>
+                    <div className={"min-h-screen m-5 "}>
                         {projectsData.map((project, index) => (
                             <div
                                 key={index}
                                 id={project.title.toLowerCase().replace(/\s/g, '-')}
-                                className="min-h-screen"
+                                className="min-h-screen stop"
                             >
                                 <PortfolioSection
                                     title={project.title}

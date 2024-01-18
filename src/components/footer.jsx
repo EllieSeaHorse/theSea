@@ -10,24 +10,24 @@ const Footer = () => {
     };
 
     return (
-        <footer className=" m-8 mt-16 text-xs  bottom-0 pb-4">
-            <div className="grid flex-col space-y-2 grid-cols-2 lg:grid-cols-4">
+        <footer className=" m-8 mt-16 text-xs  bottom-0 ">
+            <div className="flex flex-wrap space-y-2 ">
                 <h1 className="flex items-center">
-                    <span className="text-accent pr-4">Phone</span>
+                    <span className="text-accent p-2">Phone</span>
                     <Link href="tel:+989397075750">+98 939 707 57 50</Link>
                 </h1>
                 <h1 className="flex items-center">
-                    <span className="text-accent pr-4">Mail</span>
+                    <span className="text-accent p-2">Mail</span>
                     <Link href="mailto:SamaMoayeri99@Gmail.com">SamaMoayeri99@Gmail.com</Link>
                 </h1>
                 <h1 className="flex items-center">
-                    <span className="text-accent pr-4">Website</span>
+                    <span className="text-accent p-2">Website</span>
                     <Link href="http://www.SamaMoayeri.com" passHref>
                         <p target="_blank">www.SamaMoayeri.com</p>
                     </Link>
                 </h1>
                 <h1 className="flex items-center">
-                    <span className="text-accent pr-4">LinkedIn</span>
+                    <span className="text-accent p-2">LinkedIn</span>
                     <Link href="https://linkedin.com/in/sama-moayeri" passHref>
                         <p target="_blank">/Sama-Moayeri</p>
                     </Link>

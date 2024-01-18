@@ -6,6 +6,7 @@
 @tailwind utilities;
 *, html {
   scroll-behavior: smooth !important;
+  @apply snap-mandatory snap-y
 }
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -38,5 +39,10 @@ body {
 .right-page {
   @apply bg-gradient-to-r w-full h-full to-5% from-gray-900
   to-transparent absolute z-30 bg-opacity-5
+}
+.stop {
+  scroll-snap-align: start;
+  scroll-snap-stop:normal;
+
 }
 

@@ -28,10 +28,10 @@ export default function Nav({ children, classname }) {
 
     return (
         <header
-            className="${classname} fixed top-0 w-full h-12 flex justify-start items-center backdrop-blur-lg to-transparent z-50"
+            className="${classname} fixed top-0 w-full h-14 md:h-16 flex justify-start items-center backdrop-blur-lg to-transparent z-50"
             style={navStyles}
         >
-            <div className="sticky flex items-center w-full justify-between px-6">
+            <div className="sticky flex items-center w-full justify-between px-4 md:px-8 my-4">
                 <Link href="/">
                     <div className="">
                         <p className="font-semibold text-sm hover:text-accent transition-all duration-500">
@@ -42,7 +42,7 @@ export default function Nav({ children, classname }) {
                         </p>
                     </div>
                 </Link>
-                <div className="text-xs py-2 font-normal font-montserrat space-x-3">
+                <div className="text-xs font-normal font-montserrat space-x-3">
                     <Link href={'Portfolio/portfolio'} className={"hover:text-accent transition-all duration-500"}> PORTFOLIO</Link>
                     <Link href={'Portfolio/portfolio'} className={"uppercase hover:text-accent transition-all duration-500"}>Contact</Link>
                 </div>

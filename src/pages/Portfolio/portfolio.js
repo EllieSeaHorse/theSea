@@ -25,15 +25,24 @@ export default function Portfolio() {
     return (
         <Layout>
             <div
-                className={"m-6 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6"}
+                className={"mx-6 md:mx-14 pt-8 md:pt-12 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
             >
-                <Bigbox className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 h-full flex flex-col animated slide-up"}>
-                    <h1 className={"text-5xl bg-black py-2 text-white lg:text-7xl"}>PORTFOLIO</h1>
-                    <h1 className={"text-xl pl-1 uppercase"}>Sama Moayeri</h1>
-                    <h1 className={"text-sm text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
-                    <h1 className={"text-sm text-accent uppercase text-right pb-16"}>2018-2023</h1>
+                <Bigbox className={"col-span-3 md:py-14 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 text-xs md:text-sm h-full flex flex-col animated slide-up"}>
+                    <h1 className={"text-4xl mt-4 text-white lg:text-7xl"}>PORTFOLIO</h1>
+                    <h1 className={"text-lg pl-1 uppercase"}>Sama Moayeri</h1>
+                    <h1 className={"text-xs text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
+                    <h1 className={"text-xs text-accent uppercase text-right pb-16"}>2018-2023</h1>
 
-                    <div className="md: flex-grow"></div> {/* Add this div to push content to the top */}
+                    <p className={"p-4 my-4 border"}>
+                        Experienced senior graphic designer with a passion
+                        for UI/UX and web development. Proven track record in
+                        teaching, translating, and creative arts. Recognized
+                        for academic excellence and active participation in
+                        international events. Proficient in HTML, CSS, JavaScript,
+                        and a wide range of design software.
+                    </p>
+
+                    <div className="md: flex-grow "></div> {/* Add this div to push content to the top */}
                     <div className="flex flex-col space-y-2 ">
                         <h1 className="flex items-center">
                             <span className="text-accent pr-4">Phone</span>
@@ -62,7 +71,7 @@ export default function Portfolio() {
 
                 <Bigbox
                     heading={""}
-                    className={"col-span-3 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
+                    className={"col-span-3 p-6 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
                         <img src="/portfolioImages/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
@@ -72,25 +81,28 @@ export default function Portfolio() {
 
                 </Bigbox>
 
-                <Bigbox
-                    heading={"Profile"}
-                    className={"col-span-3 row-span-3 md:col-span-6 md:row-span-6 lg:col-span-9 lg:row-span-9  border border-white p-12"}
-                >
-                    <p>
-                        Experienced senior graphic designer with a passion
-                        for UI/UX and web development. Proven track record in
-                        teaching, translating, and creative arts. Recognized
-                        for academic excellence and active participation in
-                        international events. Proficient in HTML, CSS, JavaScript,
-                        and a wide range of design software.
-                    </p>
+                {/*<Bigbox*/}
+                {/*    heading={"Profile"}*/}
+                {/*    className={"col-span-3 row-span-3 md:col-span-6 md:row-span-6 lg:col-span-9 lg:row-span-9  border border-white p-12"}*/}
+                {/*>*/}
+                {/*    <p>*/}
+                {/*        Experienced senior graphic designer with a passion*/}
+                {/*        for UI/UX and web development. Proven track record in*/}
+                {/*        teaching, translating, and creative arts. Recognized*/}
+                {/*        for academic excellence and active participation in*/}
+                {/*        international events. Proficient in HTML, CSS, JavaScript,*/}
+                {/*        and a wide range of design software.*/}
+                {/*    </p>*/}
 
-                </Bigbox>
+                {/*</Bigbox>*/}
             </div>
+            {/*<div*/}
+            {/*    className={" bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}*/}
 
+            {/*></div>*/}
             <Link
                 href={'#resume'}
-                className={" bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
+                className={" bg-neutral-950 border border-neutral-800 mx-auto rounded-md hover:border-neutral-700 w-10/12 p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
                 onClick={scrollToNextDiv}
             >
                 {viewingResume ? 'Hide Resume' : 'View Resume'}
