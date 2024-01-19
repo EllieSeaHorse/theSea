@@ -10,7 +10,7 @@ const Footer = ({className}) => {
     };
 
     return (
-        <footer className={`m-8 mt-16 flex items-center  text-xs bottom-0 justify-center z-50 ${className}`}>
+        <footer className={`m-8 mt-16  text-xs bottom-0 z-50 ${className}`}>
             <div className="flex align-middle justify-center items-center space-x-3 text-neutral-200  z-50">
                 <h1 className="flex items-center group hover:text-accent">
                     <Link href="tel:+989397075750" target="_blank" className={"hover:text-accent"}>

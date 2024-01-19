@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Cover({title, subheading, year, services, image, description, color}) {
     return (
-        <div className="flex flex-col justify-center p-10">
-            <div className="w-full h-full ">
+        <div className="flex flex-col justify-center items-end">
+            <div className="md:w-10/12 w-8/12 h-full ">
                 {/*<img src={image} className={"absolute w-full h-full  object-cover -z-10 "}/>*/}
                 {/*<div className="gap-2 leading-3">*/}
                 {/*    <div className={"p-4 aspect-square w-2/3 mx-auto place-self-end bg-paper absolute self-center"}>*/}

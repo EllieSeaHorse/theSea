@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { projectsData } from '@/data/projectsData';
 import Layout from '@/pages/layout';
 import Link from "next/link";
@@ -19,11 +19,39 @@ const id = ({ project }) => {
         return projectsData[previousIndex]?.id;
     };
 
+
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const handleWheel = (event) => {
+            const container = containerRef.current;
+            const delta = event.deltaY || event.detail || event.wheelDelta;
+
+            if (container) {
+                // Adjust the factor based on the desired scrolling speed
+                const scrollFactor = 5;
+                // Scroll horizontally by translating the scroll position
+                container.scrollLeft += delta * scrollFactor;
+            }
+
+            // Prevent the default vertical scrolling behavior
+            event.preventDefault();
+        };
+
+        // Attach the wheel event listener
+        window.addEventListener('wheel', handleWheel, { passive: false });
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('wheel', handleWheel);
+        };
+    }, []);
+
     return (
         <Layout>
             <div className={"h-screen grid grid-cols-4"}>
 
-            <div className={"p-8 pt-16 flex flex-col justify-between col-span-1 text-white"}>
+            <div className={"p-8 hidden pt-16 md:flex flex-col justify-between col-span-1 text-white"}>
                 {/*<div>*/}
                 {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
                 {/*    <p>{subheading}</p>*/}
@@ -57,12 +85,48 @@ const id = ({ project }) => {
 
 
             </div>
-            <div style={{ overflowX: 'auto' } } className={"flex col-span-3"}>
+            <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={" flex col-span-4 md:col-span-3"}>
+                <div className={"p-8 md:hidden pt-16 flex flex-col justify-between h-screen aspect-14 text-white"}>
+                    {/*<div>*/}
+                    {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
+                    {/*    <p>{subheading}</p>*/}
+                    {/*    <p>{year}</p>*/}
+                    {/*    <p className={"text-xs text-justify p-2 border-l"}>{description}</p>*/}
+                    {/*</div>*/}
+                    <div className={"border-l p-4 px-4 "}>
+                        <h1 className="text-3xl font-medium uppercase min-w-96">{title}</h1>
+                        <p className="text-gray-500 text-sm pl-2 ">{year}</p>
+
+                    </div>
+                    <div className={"text-xs"} style={{color:color}}>
+                        {services.map((service, index) => (
+                            <p key={index}>
+                                - {service}
+                            </p>
+                        ))}
+                    </div>
+
+
+                    <div className={"flex justify-between text-xs text-neutral-400"}>
+                        <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
+                            <i className="bi bi-arrow-left-square"></i>
+                        </Link>
+                        <Link href={`/PortfolioPage/${getNextProjectId()}`} >
+                            Next
+                            <i className="p-2 bi bi-arrow-right-square"></i>
+
+                        </Link>
+                    </div>
+
+
+                </div>
+
+                <img  src={coverImageUrl} alt={`${description}`}  className="h-full object-contain rounded-lg" />
 
                 {images.map((image, index) => (
-                        <img key={index} src={image} alt={`${title} Image ${index + 1}`} className="h-full object-contain rounded-lg" />
+                        <img key={index} src={image} alt={`${description} Image ${index + 1}`} className="pl-1 snap-x snap-start h-screen object-contain rounded-lg" />
                 ))}
-                <p className=" h-80 aspect-A4 text-xs p-6 self-center">{description}</p>
+                <div className=" h-screen aspect-14 my-auto text-xs p-6 flex items-center"><p>{description}</p></div>
 
             </div>
 

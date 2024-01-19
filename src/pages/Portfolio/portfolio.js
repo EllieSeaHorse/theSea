@@ -26,7 +26,7 @@ export default function Portfolio() {
     return (
         <Layout>
             <div
-                className={"mx-6 md:mx-14 pt-8 md:pt-12 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
+                className={"pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
             >
                 <Bigbox className={"col-span-3 md:py-14 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 text-xs md:text-sm h-full flex flex-col animated slide-up"}>
                     <h1 className={"text-4xl mt-4 text-white lg:text-7xl"}>PORTFOLIO</h1>
@@ -72,7 +72,7 @@ export default function Portfolio() {
 
                 <Bigbox
                     heading={""}
-                    className={"col-span-3 p-6 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
+                    className={"col-span-3 p-4 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
                         <img src="/portfolioImages/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
@@ -103,7 +103,7 @@ export default function Portfolio() {
             {/*></div>*/}
             <Link
                 href={'#resume'}
-                className={" bg-neutral-950 border border-neutral-800 mx-auto rounded-md hover:border-neutral-700 w-10/12 p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
+                className={" bg-neutral-950 border border-neutral-800 mx-auto rounded-sm hover:border-neutral-400 w-3/12 p-2 text-xs mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
                 onClick={scrollToNextDiv}
             >
                 {viewingResume ? 'Hide Resume' : 'View Resume'}

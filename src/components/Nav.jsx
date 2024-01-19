@@ -42,8 +42,8 @@ export default function Nav({ children, classname }) {
                     </div>
                 </Link>
                 <div className="text-xs font-normal font-montserrat space-x-3">
-                    <Link href={'PortfolioPage/portfolio'} className={"hover:text-accent transition-all duration-500"}> PORTFOLIO</Link>
-                    <Link href={'PortfolioPage/portfolio'} className={"uppercase hover:text-accent transition-all duration-500"}>Contact</Link>
+                    <Link href={'/Portfolio/portfolio'} className={"hover:text-accent transition-all duration-500"}> PORTFOLIO</Link>
+                    <Link href={'/Portfolio/portfolio'} className={"uppercase hover:text-accent transition-all duration-500"}>Contact</Link>
                 </div>
                 {children}
             </div>

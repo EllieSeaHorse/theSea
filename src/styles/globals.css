@@ -42,7 +42,7 @@ body {
   to-transparent absolute z-30 bg-opacity-5
 }
 .stop {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-snap-stop: initial;
 
 }

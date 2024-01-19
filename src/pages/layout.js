@@ -9,7 +9,7 @@ export default function Layout({ children }) {
         <div className={"min-h-screen "} >
             <Nav/>
             <main
-                className={"min-h-screen"}
+                className={"min-h-screen px-6 md:px-8"}
             >
                 {children}
             </main>

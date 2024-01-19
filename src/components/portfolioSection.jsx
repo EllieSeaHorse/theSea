@@ -24,7 +24,7 @@ const PortfolioSection = ({
     };
 
     return (
-        <div className=" grid grid-cols-1 md:grid-cols-4 text-left snap-y my-2 items-center min-h-screen -z-30 "
+        <div className="grid grid-cols-1  text-left snap-y items-center min-h-screen -z-30 "
         >
             {/*<img src={coverImageUrl}*/}
             {/*     className="absolute -z-10 blur-3xl  opacity-30 cursor-pointer object-fill w-full h-full shadow-lg  "*/}
@@ -43,11 +43,26 @@ const PortfolioSection = ({
 
             >
             </div>
-            <div className="col-span-1 md:col-span-4 rounded-2xl items-center justify-center align-middle self-center ">
-                <Link  href={`/PortfolioPage/${id}`} className=" grid grid-cols-2 p-32 w-full items-center justify-center rounded-2xl ">
-                    <p>{description}</p>
+            <div className="col-span-1  items-center justify-center align-middle flex self-center ">
+                <Link  href={`/PortfolioPage/${id}`} className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
+                    <div className={"md:pl-6 border-l items-end"}>
+                        <h1 className="text-2xl font-medium uppercase">{title}</h1>
+                        <p className="text-gray-500 text-sm ">{year}</p>
+
+                    <div className={"text-xs py-4"} style={{color:color}}>
+                        {services.map((service, index) => (
+                            <span key={index}>
+                                 {(index > 0 && " / ")}{service}
+                            </span>
+                        ))}
+                    </div>
+                        <p className="text-xs ">{description}</p>
+
+                    </div>
+
+
                     <Cover title={title} year={year} services={services} subheading={subheading} description={description} image={coverImageUrl} color={color}
-                           className={"my-10 bg-black shadow-gray-800 aspect-A4 shadow-inner"}>
+                           className={"bg-black shadow-gray-800 aspect-A4 shadow-inner"}>
                     </Cover>
                 </Link>
 

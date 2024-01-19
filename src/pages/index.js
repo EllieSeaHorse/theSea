@@ -12,7 +12,7 @@ export default function Home() {
             <div className="text-center">
 
                 <div className="grid grid-cols-1  self-center w-full md:w-full bottom-0">
-                    <div className={"px-4 md:px-8 py-20 fixed min-h-screen text-xs text-left self-baseline bottom-0 z-50"}>
+                    <div className={" hidden py-20 md:block fixed min-h-screen text-xs text-left self-baseline bottom-0 z-50"}>
                         {projectsData.map((project, index) => (
                             <Link key={index} href={`#${project.title.toLowerCase().replace(/\s/g, '-')}`}>
                                 <p className="block py-2 leading-4 hover:text-accent cursor-pointer">
@@ -25,7 +25,7 @@ export default function Home() {
                     <div
                         className={" w-full flex h-screen stop -z-40 bg-black "}
                     >
-                        <img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-4/5 h-screen md:w-full md:object-cover object-contain object-bottom  grayscale"}/>
+                        <img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>
                     </div>
 
                     {/*<div*/}
@@ -57,7 +57,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer className={"fixed scale-90"}/>
+            <Footer className={"fixed flex justify-end w-11/12 scale-90"}/>
         </Layout>
     );
 }
