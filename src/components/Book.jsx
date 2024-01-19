@@ -14,7 +14,7 @@ export default function Book({
                                  children
 }) {
     return (
-        <div className="flex p-1 items-center justify-center py-1 my-2 rounded-2xl">
+        <div className="ml-12 md:ml-16 flex p-1 items-center justify-center py-1 my-2 rounded-2xl">
             <HTMLFlipBook
                 width={500}
                 height={600}
@@ -30,14 +30,17 @@ export default function Book({
                 usePortrait={true}
                 mobileScrollSupport={true}
                 showPageCorners={true}
-            >
-                <div className={` bg-paper items-center  shadow-lg aspect-square`}>
 
-                <Cover title={title} year={year} services={services} subheading={subheading} image={coverImageUrl} className={"bg-black shadow-gray-800"}>
+            >
+                <div className={` bg-paper items-center shadow-black shadow-lg`}>
+
+
+                    <Cover title={title} year={year} services={services} subheading={subheading} description={description} image={coverImageUrl} color={color}
+                       className={"bg-black shadow-gray-800 shadow-inner"}>
                 </Cover>
                 </div>
                 {images.map((page, index) => (
-                    <div key={index} className={` bg-white items-center  shadow-lg aspect-square`}>
+                    <div key={index} className={`bg-white items-center shadow-lg aspect-A4`}>
                         {/*{page}*/}
                         { index>=0 &&
                         <p className={"fixed w-full bottom-0 text-xs text-center text-gray-500 p-2 "}>{index}</p>
@@ -45,7 +48,7 @@ export default function Book({
                             <img
                                 key={index}
                                 src={page}
-                                className="cursor-pointer mx-auto object-cover w-full p-4 "
+                                className="cursor-pointer mx-auto object-cover w-full"
                             />
                     </div>
                 ))}

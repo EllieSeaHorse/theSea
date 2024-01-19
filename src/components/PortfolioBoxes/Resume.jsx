@@ -62,7 +62,7 @@ const Resume = () => {
 
 
                 <Bigbox heading={"Skills"}
-                        className={'border border-accent col-span-3 row-span-1 md:col-span-4 md:row-span-1 lg:col-span-6 lg:row-span-1'}
+                        className={'border border-neutral-800 col-span-3 row-span-1 md:col-span-4 md:row-span-1 lg:col-span-6 lg:row-span-1'}
 
 
                 >

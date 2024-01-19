@@ -4,6 +4,7 @@ import {projectsData} from "@/data/projectsData";
 import Link from 'next/link';
 import React, {useState} from 'react';
 import Resume from "@/components/PortfolioBoxes/Resume";
+import Footer from "@/components/footer";
 
 export default function Portfolio() {
 
@@ -43,7 +44,7 @@ export default function Portfolio() {
                     </p>
 
                     <div className="md: flex-grow "></div> {/* Add this div to push content to the top */}
-                    <div className="flex flex-col space-y-2 ">
+                    <div className="flex flex-col space-y-2 cursor-pointer text-xs">
                         <h1 className="flex items-center">
                             <span className="text-accent pr-4">Phone</span>
                             <Link href="tel:+989397075750">+98 939 707 57 50</Link>
@@ -60,7 +61,7 @@ export default function Portfolio() {
                         </h1>
                         <h1 className="flex items-center">
                             <span className="text-accent pr-4">LinkedIn</span>
-                            <Link href="https://linkedin.com/in/samamoayeri" passHref>
+                            <Link href="https://linkedin.com/in/sama-moayeri" passHref>
                                 <p target="_blank">linkedin.com/in/samamoayeri</p>
                             </Link>
                         </h1>
@@ -127,6 +128,7 @@ export default function Portfolio() {
             {/*    ))}*/}
             {/*</div>*/}
 
+            <Footer className={"relative"}/>
 
         </Layout>
     )

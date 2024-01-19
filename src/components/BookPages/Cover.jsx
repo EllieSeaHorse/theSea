@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Cover({title, subheading, year, services, image, description}) {
+export default function Cover({title, subheading, year, services, image, description, color}) {
     return (
-        <div className="flex flex-col justify-center text-black">
+        <div className="flex flex-col justify-center p-10">
             <div className="w-full h-full ">
                 {/*<img src={image} className={"absolute w-full h-full  object-cover -z-10 "}/>*/}
                 {/*<div className="gap-2 leading-3">*/}
@@ -20,16 +20,22 @@ export default function Cover({title, subheading, year, services, image, descrip
                 {/*</div>*/}
 
 
-                <div className="flex flex-col justify-between text-black">
-                    <div className=" aspect-A4 relative flex items-center justify-center">
+                <div className="flex flex-col justify-between text-black"
+>
+                    <div className="aspect-A4 relative flex items-end justify-end"
+                         style={
+                             {backgroundColor: color}
+                         }>
                             <img src={image}
-                                 className="cursor-pointer mx-auto object-cover aspect-A4 w-full shadow-lg "
+                                 className="cursor-pointer mx-auto object-cover aspect-A4 w-full shadow-lg  "
                             />
-                        <div className="p-2 w-3/5 uppercase aspect-video shadow-lg  bg-opacity-10 backdrop-blur-2xl absolute bg-paper text-left">
-                            <h2 className="text-xl font-semibold pb-4">{title}</h2>
-                            <h2 className="text-xs">{subheading}</h2>
-                            <p className="pb-2.5 text-xs">{year}</p>
-                        </div>
+
+                        {/*<div className="p-4 w-2/3 uppercase rounded-sm shadow-lg m-4 bg-opacity-50 backdrop-blur-lg bg-black text-white absolute text-left">*/}
+                        {/*    <h2 className="text-xl font-semibold pb-4">{title}</h2>*/}
+                        {/*    <h2 className="text-xs">{subheading}</h2>*/}
+                        {/*    <p className="pb-2.5 text-xs">{year}</p>*/}
+
+                        {/*</div>*/}
                     </div>
                 </div>
 
