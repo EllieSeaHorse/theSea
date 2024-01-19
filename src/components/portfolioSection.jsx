@@ -45,7 +45,7 @@ const PortfolioSection = ({
             </div>
             <div className="col-span-1  items-center justify-center align-middle flex self-center ">
                 <Link  href={`/PortfolioPage/${id}`} className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
-                    <div className={"md:pl-6 border-l items-end"}>
+                    <div className={"pl-6 mb-5 border-l items-end"}>
                         <h1 className="text-2xl font-medium uppercase">{title}</h1>
                         <p className="text-gray-500 text-sm ">{year}</p>
 

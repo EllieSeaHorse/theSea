@@ -51,7 +51,7 @@ const id = ({ project }) => {
         <Layout>
             <div className={"h-screen grid grid-cols-4"}>
 
-            <div className={"p-8 hidden pt-16 md:flex flex-col justify-between col-span-1 text-white"}>
+            <div className={"hidden py-20 md:flex flex-col justify-between col-span-1 text-white"}>
                 {/*<div>*/}
                 {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
                 {/*    <p>{subheading}</p>*/}
@@ -72,7 +72,7 @@ const id = ({ project }) => {
                 </div>
 
 
-                <div className={"flex justify-between text-xs text-neutral-400"}>
+                <div className={"flex justify-between text-xs text-neutral-400 pr-6"}>
                     <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
                         <i className="bi bi-arrow-left-square"></i>
                     </Link>
@@ -85,15 +85,15 @@ const id = ({ project }) => {
 
 
             </div>
-            <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={" flex col-span-4 md:col-span-3"}>
-                <div className={"p-8 md:hidden pt-16 flex flex-col justify-between h-screen aspect-14 text-white"}>
+            <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={"snap-x snap-proximity flex col-span-4 md:col-span-3"}>
+                <div className={"md:hidden py-16 flex flex-col justify-between h-screen aspect-14 text-white"}>
                     {/*<div>*/}
                     {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
                     {/*    <p>{subheading}</p>*/}
                     {/*    <p>{year}</p>*/}
                     {/*    <p className={"text-xs text-justify p-2 border-l"}>{description}</p>*/}
                     {/*</div>*/}
-                    <div className={"border-l p-4 px-4 "}>
+                    <div className={"border-l p-4 "}>
                         <h1 className="text-3xl font-medium uppercase min-w-96">{title}</h1>
                         <p className="text-gray-500 text-sm pl-2 ">{year}</p>
 
@@ -107,7 +107,7 @@ const id = ({ project }) => {
                     </div>
 
 
-                    <div className={"flex justify-between text-xs text-neutral-400"}>
+                    <div className={"md:flex hidden justify-between text-xs text-neutral-400"}>
                         <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
                             <i className="bi bi-arrow-left-square"></i>
                         </Link>
@@ -126,7 +126,7 @@ const id = ({ project }) => {
                 {images.map((image, index) => (
                         <img key={index} src={image} alt={`${description} Image ${index + 1}`} className="pl-1 snap-x snap-start h-screen object-contain rounded-lg" />
                 ))}
-                <div className=" h-screen aspect-14 my-auto text-xs p-6 flex items-center"><p>{description}</p></div>
+                <div className=" h-screen aspect-14 my-auto text-xs p-6 flex items-center snap-end"><p>{description}</p></div>
 
             </div>
 
