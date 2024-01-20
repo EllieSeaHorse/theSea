@@ -7,13 +7,14 @@ import Link from "next/link";
 
 
 const PortfolioSection = ({
-    id,
+                                id,
                               title,
                               subheading,
                               year,
                               services,
                               description,
                               coverImageUrl,
+                                alt,
                               images,
                               color,
                               children,
@@ -61,7 +62,7 @@ const PortfolioSection = ({
                     </div>
 
 
-                    <Cover title={title} year={year} services={services} subheading={subheading} description={description} image={coverImageUrl} color={color}
+                    <Cover title={title} year={year} services={services} subheading={subheading} description={description} alt={alt} image={coverImageUrl} color={color}
                            className={"bg-black shadow-gray-800 aspect-A4 shadow-inner"}>
                     </Cover>
                 </Link>

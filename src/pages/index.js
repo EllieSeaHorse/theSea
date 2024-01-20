@@ -4,6 +4,7 @@ import { worksData } from "@/data/worksData";
 import {projectsData} from "@/data/projectsData";
 import PortfolioSection from "@/components/portfolioSection";
 import Footer from "@/components/footer";
+import SmoothLink from "@/components/Transition/SmoothLink";
 
 
 export default function Home() {
@@ -28,12 +29,6 @@ export default function Home() {
                         <img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>
                     </div>
 
-                    {/*<div*/}
-                    {/*    className={" w-full h-screen fixed blur-sm -z-50 "}*/}
-                    {/*>*/}
-                    {/*    <img src={'/16.jpg'} className={"w-full h-full object-cover object-right mix-blend-multiply grayscale"}/>*/}
-                    {/*</div>*/}
-
                     <div className={"min-h-screen"}>
                         {projectsData.map((project, index) => (
                             <div
@@ -49,6 +44,7 @@ export default function Home() {
                                     services={project.services}
                                     description={project.description}
                                     coverImageUrl={project.coverImageUrl}
+                                    alt={project.alt}
                                     images={project.images}
                                     color={project.color}
                                 />
@@ -57,7 +53,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer className={"fixed flex justify-end w-11/12 scale-90"}/>
+            <Footer className={"fixed"}/>
         </Layout>
     );
 }

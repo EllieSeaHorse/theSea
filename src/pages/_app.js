@@ -1,5 +1,13 @@
-import '@/styles/globals.css'
+// pages/_app.js
+import { motion } from 'framer-motion';
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+      <motion.div>
+        <Component {...pageProps} />
+      </motion.div>
+  );
 }
+
+export default MyApp;

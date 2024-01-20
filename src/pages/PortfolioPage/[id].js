@@ -2,10 +2,11 @@ import React, { useRef, useEffect } from 'react';
 import { projectsData } from '@/data/projectsData';
 import Layout from '@/pages/layout';
 import Link from "next/link";
+import SmoothLink from "@/components/Transition/SmoothLink";
 
 
 const id = ({ project }) => {
-    const { title, year, subheading,services, description, coverImageUrl, images, color } = project;
+    const { title, year, subheading,services, description, coverImageUrl, alt, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
     console.log(`current ${currentIndex}`)
     const length = projectsData.length;
@@ -121,10 +122,10 @@ const id = ({ project }) => {
 
                 </div>
 
-                <img  src={coverImageUrl} alt={`${description}`}  className="h-full object-contain rounded-lg" />
+                <img  src={coverImageUrl} alt={`${alt}`}  className="h-full object-contain rounded-lg" />
 
                 {images.map((image, index) => (
-                        <img key={index} src={image} alt={`${description} Image ${index + 1}`} className="pl-1 snap-x snap-start h-screen object-contain rounded-lg" />
+                        <img key={index} src={image.src} alt={`${image.alt} Image ${index + 1}`} className="pl-1 snap-x snap-start h-screen object-contain rounded-lg" />
                 ))}
                 <div className=" h-screen aspect-14 my-auto text-xs p-6 flex items-center snap-end"><p>{description}</p></div>
 
