@@ -6,7 +6,7 @@ import SmoothLink from "@/components/Transition/SmoothLink";
 
 
 const id = ({ project }) => {
-    const { title, year, subheading,services, description, coverImageUrl, alt, images, color } = project;
+    const { title, year, subheading,services, description, coverImageUrl, statement, alt, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
     console.log(`current ${currentIndex}`)
     const length = projectsData.length;
@@ -19,8 +19,6 @@ const id = ({ project }) => {
         const previousIndex = (currentIndex - 1 + projectsData.length) % projectsData.length;
         return projectsData[previousIndex]?.id;
     };
-
-
     const containerRef = useRef(null);
 
     useEffect(() => {
@@ -72,7 +70,6 @@ const id = ({ project }) => {
                 ))}
                 </div>
 
-
                 <div className={"flex justify-between text-xs text-neutral-400 pr-6"}>
                     <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
                         <i className="bi bi-arrow-left-square"></i>
@@ -84,9 +81,8 @@ const id = ({ project }) => {
                     </Link>
                 </div>
 
-
             </div>
-            <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={"snap-x snap-proximity flex col-span-4 md:col-span-3"}>
+            <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={" flex col-span-4 md:col-span-3"}>
                 <div className={"md:hidden py-16 flex flex-col justify-between h-screen aspect-14 text-white"}>
                     {/*<div>*/}
                     {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
@@ -107,7 +103,6 @@ const id = ({ project }) => {
                         ))}
                     </div>
 
-
                     <div className={"md:flex hidden justify-between text-xs text-neutral-400"}>
                         <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
                             <i className="bi bi-arrow-left-square"></i>
@@ -119,15 +114,14 @@ const id = ({ project }) => {
                         </Link>
                     </div>
 
-
                 </div>
 
                 <img  src={coverImageUrl} alt={`${alt}`}  className="h-full object-contain rounded-lg" />
 
                 {images.map((image, index) => (
-                        <img key={index} src={image.src} alt={`${image.alt} Image ${index + 1}`} className="pl-1 snap-x snap-start h-screen object-contain rounded-lg" />
+                        <img key={index} src={image.src} alt={`${image.alt} Image ${index + 1}`} className="pl-1 h-screen object-contain rounded-lg" />
                 ))}
-                <div className=" h-screen aspect-14 my-auto text-xs p-6 flex items-center snap-end"><p>{description}</p></div>
+                <div className=" h-screen hidden md:aspect-square my-auto p-10 text-sm text-justify leading-5 md:flex items-center "><p>{statement}</p></div>
 
             </div>
 
@@ -159,39 +153,4 @@ export async function getStaticProps({ params }) {
         },
     };
 }
-
-// export async function getStaticPaths() {
-//     const paths = projectsData.map((project) => ({
-//         params: { id: project.id },
-//
-//     }));
-//
-//     return { paths, fallback: true };
-// }
-//
-// export async function getStaticProps({ params }) {
-//     const project = projectsData.find((p) => p.id === params.id);
-//
-//     return {
-//         props: {
-//             project,
-//         },
-//     };
-// }
-// export async function getServerSideProps({ params }) {
-//     const projectId = params.id;
-//     console.log('Current Project ID:', projectId);
-//
-//     const project = projectsData.find((p) => p.id === projectId);
-//     console.log('Current Project:', project);
-//
-//     const currentIndex = projectsData.findIndex((p) => p.id === projectId);
-//     console.log('Current Index:', currentIndex);
-//
-//     return {
-//         props: {
-//             project,
-//         },
-//     };
-// }
 

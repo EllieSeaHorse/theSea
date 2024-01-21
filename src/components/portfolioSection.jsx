@@ -25,7 +25,7 @@ const PortfolioSection = ({
     };
 
     return (
-        <div className="grid grid-cols-1  text-left snap-y items-center min-h-screen -z-30 "
+        <div className=" overflow-x-hidden grid grid-cols-1 text-left items-center h-fit md:h-screen -z-30 "
         >
             {/*<img src={coverImageUrl}*/}
             {/*     className="absolute -z-10 blur-3xl  opacity-30 cursor-pointer object-fill w-full h-full shadow-lg  "*/}
@@ -38,14 +38,9 @@ const PortfolioSection = ({
             {/*</svg>*/}
 
 
-            <div
-                className="absolute blur-3xl mix-blend-multiply cursor-pointer mx-auto object-fill w-full h-full shadow-lg  "
-                // style={sectionStyle}
-
-            >
-            </div>
-            <div className="col-span-1  items-center justify-center align-middle flex self-center ">
-                <Link  href={`/PortfolioPage/${id}`} className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
+            <div className="col-span-1 px-4 md:px-6 items-center justify-center align-middle flex self-center ">
+                <Link  href={`/PortfolioPage/${id}`} >
+                    <div className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
                     <div className={"pl-6 mb-5 border-l items-end"}>
                         <h1 className="text-2xl font-medium uppercase">{title}</h1>
                         <p className="text-gray-500 text-sm ">{year}</p>
@@ -61,10 +56,10 @@ const PortfolioSection = ({
 
                     </div>
 
-
                     <Cover title={title} year={year} services={services} subheading={subheading} description={description} alt={alt} image={coverImageUrl} color={color}
-                           className={"bg-black shadow-gray-800 aspect-A4 shadow-inner"}>
+                           className={"bg-black shadow-gray-800  shadow-inner"}>
                     </Cover>
+                        </div>
                 </Link>
 
             </div>

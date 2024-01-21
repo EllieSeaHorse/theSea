@@ -42,8 +42,9 @@ body {
   to-transparent absolute z-30 bg-opacity-5
 }
 .stop {
-  scroll-snap-align: start;
-  scroll-snap-stop: initial;
+  /*scroll-snap-align: start;*/
+  @apply snap-none md:snap-start
+  /*scroll-snap-stop: initial;*/
 
 }
 .transition-transform {

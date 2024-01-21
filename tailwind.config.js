@@ -11,6 +11,8 @@ module.exports = {
       aspectRatio: {
         'A4': '500 / 600',
         '14': '100 / 250',
+        '43': '4 / 3',
+
 
       },
       backgroundImage: {

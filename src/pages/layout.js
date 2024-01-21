@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 export default function Layout({ children }) {
 
     return (
-        <div className={"min-h-screen "} >
+        <div className={" min-h-screen "} >
             <Nav/>
             <motion.div
-                className={"min-h-screen px-6 md:px-8"}
+                className={""}
 
-                initial={{  x: 10 }}
+                initial={{  x: 20 }}
                 animate={{  x: 0 }}
-                exit={{ x: 0 }}
+                exit={{ x: 20 }}
                 transition={{
                     type: "spring",
                     stiffness: 50,

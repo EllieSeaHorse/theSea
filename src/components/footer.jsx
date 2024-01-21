@@ -10,8 +10,8 @@ const Footer = ({className}) => {
     };
 
     return (
-        <footer className={`text-xs bottom-0 z-50 w-full flex flex-col items-center p-2 scale-80 opacity-80 ${className}`}>
-            <div className="flex align-middle justify-center items-center space-x-3 text-neutral-200  z-50">
+        <footer className={`text-xs bottom-0 z-50 w-full flex flex-col items-center p-2 scale-75 opacity-80 ${className}`}>
+            <div className="flex align-middle justify-center items-center space-x-2 text-neutral-200  z-50">
                 <h1 className="flex items-center group hover:text-accent">
                     <Link href="tel:+989397075750" target="_blank" className={"hover:text-accent"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-phone-fill" viewBox="0 0 16 16">
