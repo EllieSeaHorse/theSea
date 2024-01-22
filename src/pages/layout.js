@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 import ThreeScene from "@/components/3D/ThreeD";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Layout({ children }) {
 
@@ -14,6 +16,7 @@ export default function Layout({ children }) {
             <div
             >
                 {children}
+                <Analytics/>
             </div>
         </div>
     );

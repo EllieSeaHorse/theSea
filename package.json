@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.6",
     "autoprefixer": "10.4.15",
     "bootstrap-icons": "^1.11.3",
     "framer-motion": "^10.18.0",
