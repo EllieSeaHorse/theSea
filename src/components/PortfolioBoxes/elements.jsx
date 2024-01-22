@@ -43,13 +43,13 @@ function Competence({ title, items }) {
 
 function SubBox({year, title, description, list}) {
     return (
-        <div className={"flex py-2 transition w-full"}>
+        <div className={"flex py-1 transition w-full"}>
             <h1 className={"text-gray-400 text-xs w-1/6"}>{year}</h1>
             <div className={"pl-3 pb-2.5 w-5/6"}>
                 <h1 className={"pb-1 text-sm font-semibold font-['Montserrat']"}>{title}</h1>
                 <h1 className={"pb-2.5  text-accent text-xs font-normal font-['Montserrat'] leading-1 italic" }>{description}</h1>
                 {list != null && list.map((item, index) => (
-                    <h1 key={index} className={"pb-1 text-gray-400 text-xs font-normal font-['Montserrat'] leading-1"}>
+                    <h1 key={index} className={"pb-1 text-neutral-300 text-xs font-normal font-['Montserrat'] leading-1"}>
                         - {item}
                     </h1>
                 ))}

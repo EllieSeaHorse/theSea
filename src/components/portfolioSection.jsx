@@ -38,12 +38,14 @@ const PortfolioSection = ({
             {/*</svg>*/}
 
 
-            <div className="col-span-1 px-4 md:px-6 items-center justify-center align-middle flex self-center ">
+            <div className="col-span-1 px-4 md:px-8 items-center justify-center align-middle flex self-center ">
                 <Link  href={`/PortfolioPage/${id}`} >
                     <div className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
                     <div className={"pl-6 mb-5 border-l items-end"}>
-                        <h1 className="text-2xl font-medium uppercase">{title}</h1>
-                        <p className="text-gray-500 text-sm ">{year}</p>
+                        <h1 className="text-3xl font-medium uppercase">{title}</h1>
+                        <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
+
+                        <p className="opacity-60 text-xs ">{year}</p>
 
                     <div className={"text-xs py-4"} style={{color:color}}>
                         {services.map((service, index) => (
@@ -58,6 +60,7 @@ const PortfolioSection = ({
 
                     <Cover title={title} year={year} services={services} subheading={subheading} description={description} alt={alt} image={coverImageUrl} color={color}
                            className={"bg-black shadow-gray-800  shadow-inner"}>
+                        {children}
                     </Cover>
                         </div>
                 </Link>

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import React, {useState} from 'react';
 import Resume from "@/components/PortfolioBoxes/Resume";
 import Footer from "@/components/footer";
+import {motion} from "framer-motion";
 
 export default function Portfolio() {
 
@@ -25,8 +26,17 @@ export default function Portfolio() {
 
     return (
         <Layout>
-            <div
-                className={"pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
+            <motion.div
+
+                initial={{  y: 100 }}
+                animate={{  y: 0 }}
+                exit={{ y: 20 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 50,
+                }}
+                className={"px-6 pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
             >
                 <Bigbox className={"col-span-3 md:py-14 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 text-xs md:text-sm h-full flex flex-col animated slide-up"}>
                     <h1 className={"text-4xl mt-4 text-white lg:text-7xl"}>PORTFOLIO</h1>
@@ -34,7 +44,7 @@ export default function Portfolio() {
                     <h1 className={"text-xs text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
                     <h1 className={"text-xs text-accent uppercase text-right pb-16"}>2018-2023</h1>
 
-                    <p className={"p-4 my-4 border"}>
+                    <p className={"p-4 leading-5 my-4 border"}>
                         Experienced senior graphic designer with a passion
                         for UI/UX and web development. Proven track record in
                         teaching, translating, and creative arts. Recognized
@@ -96,7 +106,7 @@ export default function Portfolio() {
                 {/*    </p>*/}
 
                 {/*</Bigbox>*/}
-            </div>
+            </motion.div>
             {/*<div*/}
             {/*    className={" bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}*/}
 

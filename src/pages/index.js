@@ -5,15 +5,33 @@ import {projectsData} from "@/data/projectsData";
 import PortfolioSection from "@/components/portfolioSection";
 import Footer from "@/components/footer";
 import SmoothLink from "@/components/Transition/SmoothLink";
+import {motion} from "framer-motion";
 
 
 export default function Home() {
     return (
+
+
+
+
+
         <Layout>
             <div className="text-center">
 
                 <div className="grid grid-cols-1  self-center  bottom-0">
-                    <div className={"pl-6 hidden py-20 md:block fixed min-h-screen text-xs text-left self-baseline bottom-0 z-50"}>
+                    <motion.div
+
+                        initial={{  y: 20 }}
+                        animate={{  y: 0 }}
+                        exit={{ y: 20 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 200,
+                            damping: 50,
+                        }}
+
+
+                        className={"pl-6 hidden py-20 md:block fixed min-h-screen text-xs text-left self-baseline bottom-0 z-50"}>
                         {projectsData.map((project, index) => (
                             <Link key={index} href={`#${project.title.toLowerCase().replace(/\s/g, '-')}`}>
                                 <p className="block py-2 leading-4 hover:text-accent cursor-pointer">
@@ -21,13 +39,13 @@ export default function Home() {
                                 </p>
                             </Link>
                         ))}
-                    </div>
+                    </motion.div>
 
                     <div
-                        className={"  flex h-screen stop -z-40 bg-black "}
+                        className={"w-full flex items-end justify-end h-screen stop -z-40 bg-black "}
                     >
-                        {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>*/}
-                        <img src={'/portfolioImages/untitled.png'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
+                        <img src={'/portfolioImages/death0040-03002.gif'} className={"absolute aspect-square grayscale"}/>
+                        {/*<img src={'/portfolioImages/untitled.png'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
                     </div>
 
                     <div className={"min-h-screen "}>
@@ -37,6 +55,7 @@ export default function Home() {
                                 id={project.title.toLowerCase().replace(/\s/g, '-')}
                                 className="stop"
                             >
+
                                 <PortfolioSection
                                     id={project.id}
                                     title={project.title}
@@ -45,11 +64,19 @@ export default function Home() {
                                     services={project.services}
                                     description={project.description}
                                     coverImageUrl={project.coverImageUrl}
-                                    alt={project.alt}
+                                    keyWords={project.keyWords}
                                     statement={project.statement}
                                     images={project.images}
                                     color={project.color}
-                                />
+                                >
+                                    <div
+                                        className={"flex"}
+                                    >
+                                        {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>*/}
+                                        <img src={project.logo} className={"w-40 z-50  object-cover object-center "}/>
+                                    </div>
+                                </PortfolioSection>
+
                             </div>
                         ))}
                     </div>

@@ -23,7 +23,8 @@ module.exports = {
       colors: {
         'zinc': '#EFEFEF',
         // 'accent' : '#8DBDAC',
-        'accent' : '#67AEA6',
+        // 'accent' : '#67AEA6',
+        'accent' : '#93A6D9',
         'dark-teal': '#001112',
         'paper': '#D8D1C9'
       },

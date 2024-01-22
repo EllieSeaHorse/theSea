@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Cover({title, subheading, year, services, image, description, color}) {
+export default function Cover({title, subheading, year, services, image, description, color, children}) {
     return (
-        <div className="flex flex-col justify-center items-end">
+        <div className="flex flex-col justify-center items-end ">
             <div className="md:w-11/12 w-full h-full ">
                 {/*<img src={image} className={"absolute w-full h-full  object-cover -z-10 "}/>*/}
                 {/*<div className="gap-2 leading-3">*/}
@@ -20,22 +20,23 @@ export default function Cover({title, subheading, year, services, image, descrip
                 {/*</div>*/}
 
 
-                <div className="flex flex-col justify-between text-black"
+                <div className=" flex flex-col justify-between text-black"
 >
-                    <div className="relative flex items-end justify-end"
+                    <div className="hover:scale-[99%] transition-transform duration-500 relative flex items-end justify-end group "
                          style={
                              {backgroundColor: color}
                          }>
                             <img src={image}
-                                 className="cursor-pointer mx-auto object-cover aspect-43 md:aspect-square w-full shadow-lg  "
+                                 className="rounded cursor-pointer mx-auto object-cover aspect-43 md:aspect-square w-full shadow-lg  "
                             />
 
-                        {/*<div className="p-4 w-2/3 uppercase rounded-sm shadow-lg m-4 bg-opacity-50 backdrop-blur-lg bg-black text-white absolute text-left">*/}
+                        <div className="rounded flex w-full h-full items-center opacity-0 group-hover:opacity-100 transition-all ease-in duration-200 justify-center uppercase  bg-opacity-50 backdrop-blur-sm bg-slate-800 text-white absolute text-left">
                         {/*    <h2 className="text-xl font-semibold pb-4">{title}</h2>*/}
                         {/*    <h2 className="text-xs">{subheading}</h2>*/}
                         {/*    <p className="pb-2.5 text-xs">{year}</p>*/}
+                            {children}
 
-                        {/*</div>*/}
+                        </div>
                     </div>
                 </div>
 
