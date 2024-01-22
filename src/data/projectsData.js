@@ -112,8 +112,6 @@ export const projectsData = [
             { src: '/Portfolio/Film Posters/NeonDemon3.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
             { src: '/Portfolio/Film Posters/NeonDemon4.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
 
-
-
         ],
         logo: '',
 
