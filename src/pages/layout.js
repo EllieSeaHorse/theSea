@@ -16,8 +16,9 @@ export default function Layout({ children }) {
             <div
             >
                 {children}
-                <Analytics/>
                 <SpeedInsights/>
+
+                <Analytics/>
             </div>
         </div>
     );
