@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { projectsData } from '@/data/projectsData';
 import Layout from '@/pages/layout';
 import Link from "next/link";
@@ -7,11 +7,14 @@ import {motion} from "framer-motion";
 import Head from 'next/head';
 import useLoadingState from '@/components/Hooks/useLoadingState';
 import LoadingSpinner from "@/components/Transition/Loading";
+import { useRouter } from 'next/router';
+
 
 
 
 
 const id = ({ project }) => {
+    const router = useRouter(); // Initialize the useRouter hook
 
     const { title, year, subheading,services, description, logo, coverImageUrl, statement, keyWords, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
@@ -44,6 +47,8 @@ const id = ({ project }) => {
             event.preventDefault();
         };
 
+
+
         // Attach the wheel event listener
         window.addEventListener('wheel', handleWheel, { passive: false });
 
@@ -53,6 +58,38 @@ const id = ({ project }) => {
         };
     }, []);
 
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    useEffect(() => {
+        // Scroll to the top of the page when the router changes
+        const handleRouteChange = () => {
+            setIsTransitioning(true);
+
+            if (containerRef.current) {
+                containerRef.current.scrollLeft = 0;
+            }
+
+            // Simulate a loading delay
+            setTimeout(() => {
+                setIsTransitioning(false);
+            }, 500); // Adjust the delay as needed
+        };
+
+
+        router.events.on('routeChangeComplete', handleRouteChange);
+
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange);
+        };
+    }, [router.events]);
+
+    const handleNavigation = (id) => {
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+
+        // Navigate to the next/previous project
+        router.push(`/PortfolioPage/${id}`);
+    };
 
     const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
 
@@ -67,6 +104,7 @@ const id = ({ project }) => {
 
     return (
         <Layout>
+            {isTransitioning && <LoadingSpinner />}
             <Head>
                 {/* Meta tags for SEO */}
                 <title>{title} {subheading} Design Project</title>
@@ -105,24 +143,17 @@ const id = ({ project }) => {
                 <div className={"border-l p-4 px-4 "}>
                     <h1 className="text-3xl font-medium uppercase ">{title}</h1>
                     <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
-
-
                     <p className="text-gray-500 text-sm ">{year}</p>
-
-
                 </div>
-
 
                 <div className={"text-xs"} >
                     {((logo != '') &&
-
                     <img
                         src={project.logo}
                         className={"pb-4 w-20 z-50 object-cover object-center "}
                     />
                     )}
                     <p className="text-xs py-2 opacity-60 pr-3">{description}</p>
-
                     {services.map((service, index) => (
                     <p
                         style={{color:color}}
@@ -133,14 +164,26 @@ const id = ({ project }) => {
                 </div>
 
                 <div className={"flex justify-between text-xs text-neutral-400 pr-6"}>
-                    <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
-                        <i className="bi bi-arrow-left-square"></i>
-                    </Link>
-                    <Link href={`/PortfolioPage/${getNextProjectId()}`} >
-                        Next
-                        <i className="p-2 bi bi-arrow-right-square"></i>
 
-                    </Link>
+                    {/*<Link href={`/PortfolioPage/${getPreviousProjectId()}`} passHref>*/}
+                        <a onClick={() => handleNavigation(getPreviousProjectId())}>
+                            <i className="bi bi-arrow-left-square"></i>
+                        </a>
+                    {/*</Link>*/}
+                    {/*<Link href={`/PortfolioPage/${getNextProjectId()}`} passHref>*/}
+                        <a onClick={() => handleNavigation(getNextProjectId())}>
+                            Next
+                            <i className="p-2 bi bi-arrow-right-square"></i>
+                        </a>
+                    {/*</Link>*/}
+
+                    {/*<Link href={`/PortfolioPage/${getPreviousProjectId()}`} >*/}
+                    {/*    <i className="bi bi-arrow-left-square"></i>*/}
+                    {/*</Link>*/}
+                    {/*<Link href={`/PortfolioPage/${getNextProjectId()}`} >*/}
+                    {/*    Next*/}
+                    {/*    <i className="p-2 bi bi-arrow-right-square"></i>*/}
+                    {/*</Link>*/}
                 </div>
 
             </div>

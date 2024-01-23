@@ -100,7 +100,7 @@ export default function Portfolio() {
                     className={"col-span-3 p-4 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
-                        <img src="/portfolioImages/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
+                        <img src="/Portfolio/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
                              className={"object-cover mix-blend-multiply grayscale"}/>
                     </div>
                     <h1 className={"text-[9px] text-gray-600"}>Photo © Tonatiuh Ambrosetti</h1>
