@@ -5,10 +5,14 @@ import Link from "next/link";
 import SmoothLink from "@/components/Transition/SmoothLink";
 import {motion} from "framer-motion";
 import Head from 'next/head';
+import useLoadingState from '@/components/Hooks/useLoadingState';
+import LoadingSpinner from "@/components/Transition/Loading";
+
 
 
 
 const id = ({ project }) => {
+
     const { title, year, subheading,services, description, logo, coverImageUrl, statement, keyWords, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
     console.log(`current ${currentIndex}`)
@@ -48,6 +52,18 @@ const id = ({ project }) => {
             window.removeEventListener('wheel', handleWheel);
         };
     }, []);
+
+
+    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+
+    if (isLoading) {
+        return <LoadingSpinner />;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+
 
     return (
         <Layout>
@@ -205,6 +221,10 @@ const id = ({ project }) => {
 
 export default id;
 
+const fetchProjectData = async (id) => {
+    return projectsData.find((p) => p.id === id);
+};
+
 
 export async function getStaticPaths() {
     const paths = projectsData.map((project) => ({
@@ -224,4 +244,13 @@ export async function getStaticProps({ params }) {
         },
     };
 }
+
+const fetchProjectsData = async () => {
+    // Simulate an asynchronous data fetching operation
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(projectsData);
+        }, 1000); // Simulate a 1-second delay
+    });
+};
 

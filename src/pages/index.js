@@ -6,14 +6,23 @@ import PortfolioSection from "@/components/portfolioSection";
 import Footer from "@/components/footer";
 import SmoothLink from "@/components/Transition/SmoothLink";
 import {motion} from "framer-motion";
+import useLoadingState from "@/components/Hooks/useLoadingState";
+import LoadingSpinner from "@/components/Transition/Loading";
 
 
 export default function Home() {
+
+    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+
+    if (isLoading) {
+        return <LoadingSpinner />;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+
     return (
-
-
-
-
 
         <Layout>
             <div className="text-center">
@@ -87,3 +96,14 @@ export default function Home() {
         </Layout>
     );
 }
+
+
+// Simulated function to fetch projects data
+const fetchProjectsData = async () => {
+    // Simulate an asynchronous data fetching operation
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(projectsData);
+        }, 1000); // Simulate a 1-second delay
+    });
+};

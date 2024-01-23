@@ -6,6 +6,9 @@ import React, {useState} from 'react';
 import Resume from "@/components/PortfolioBoxes/Resume";
 import Footer from "@/components/footer";
 import {motion} from "framer-motion";
+import useLoadingState from '@/components/Hooks/useLoadingState';
+import LoadingSpinner from "@/components/Transition/Loading";
+
 
 export default function Portfolio() {
 
@@ -23,6 +26,18 @@ export default function Portfolio() {
     };
 
     const [viewingResume, setViewingResume] = useState(true);
+
+
+    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+
+    if (isLoading) {
+        return <LoadingSpinner />;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+
 
     return (
         <Layout>
@@ -143,3 +158,14 @@ export default function Portfolio() {
         </Layout>
     )
 }
+
+const fetchProjectsData = async () => {
+    // Simulate an asynchronous data fetching operation
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(projectsData);
+        }, 1000); // Simulate a 1-second delay
+    });
+};
+
+
