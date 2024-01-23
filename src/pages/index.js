@@ -18,7 +18,7 @@ export default function Home() {
         <Layout>
             <div className="text-center">
 
-                <div className="grid grid-cols-1  self-center  bottom-0">
+                <div className="grid grid-cols-1 bg-black self-center  bottom-0">
                     <motion.div
 
                         initial={{  y: 20 }}
@@ -31,21 +31,22 @@ export default function Home() {
                         }}
 
 
-                        className={"pl-6 hidden py-20 md:block fixed min-h-screen text-xs text-left self-baseline bottom-0 z-50"}>
+                        className={"pl-8 pr-1 opacity-75 hidden pt-24  md:block fixed overflow-y-scroll min-h-screen text-xs scale-75 text-left self-start z-20"}>
                         {projectsData.map((project, index) => (
                             <Link key={index} href={`#${project.title.toLowerCase().replace(/\s/g, '-')}`}>
-                                <p className="block py-2 leading-4 hover:text-accent cursor-pointer">
-                                    <span className={"font-thin"}>0{index + 1}</span> <br /> {project.title}
+                                <p className="block py-1 leading-3 hover:text-accent cursor-pointer">
+                                    <span className={"font-thin text-[8px]"}>0{index + 1}</span> <br /> {project.title}
                                 </p>
                             </Link>
                         ))}
                     </motion.div>
 
                     <div
-                        className={"w-full flex items-end justify-end h-screen stop -z-40 bg-black "}
+                        className={"w-full flex items-end justify-end h-screen stop  bg-black "}
                     >
-                        <img src={'/portfolioImages/death0040-03002.gif'} className={"absolute aspect-square grayscale"}/>
+                        {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute aspect-square grayscale"}/>*/}
                         {/*<img src={'/portfolioImages/untitled.png'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
+                        <img src={'/Portfolio/Home.jpg'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
                     </div>
 
                     <div className={"min-h-screen "}>

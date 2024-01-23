@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Nav({ children, classname }) {
     return (
         <header
-            className="${classname} fixed top-0 w-full h-12 md:h-12 flex shadow-neutral-950 justify-start items-center shadow-md bg-black bg-gradient-to-b from-transparent from-15% to-transparent z-50"
+            className="${classname} fixed top-0 w-full h-12 md:h-12 flex justify-start items-center bg-black bg-gradient-to-b from-transparent from-15% to-transparent z-50"
         >
             <div className="sticky flex items-center w-full justify-between px-6 md:px-8 my-4">
                 <Link href="/">

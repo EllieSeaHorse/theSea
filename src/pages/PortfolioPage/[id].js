@@ -9,7 +9,7 @@ import Head from 'next/head';
 
 
 const id = ({ project }) => {
-    const { title, year, subheading,services, description, coverImageUrl, statement, keyWords, images, color } = project;
+    const { title, year, subheading,services, description, logo, coverImageUrl, statement, keyWords, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
     console.log(`current ${currentIndex}`)
     const length = projectsData.length;
@@ -96,13 +96,21 @@ const id = ({ project }) => {
 
                 </div>
 
-                <div className={"text-xs"} style={{color:color}}>
+
+                <div className={"text-xs"} >
+                    {((logo != '') &&
+
                     <img
                         src={project.logo}
-                        className={"pb-4 w-20 z-50  object-cover object-center "}/>
+                        className={"pb-4 w-20 z-50 object-cover object-center "}
+                    />
+                    )}
+                    <p className="text-xs py-2 opacity-60 pr-3">{description}</p>
 
                     {services.map((service, index) => (
-                    <p key={index}>
+                    <p
+                        style={{color:color}}
+                        key={index}>
                         - {service}
                     </p>
                 ))}
@@ -174,7 +182,7 @@ const id = ({ project }) => {
                             alt={`${image.alt} Image ${index + 1}`}
                             data-pin-do="embedPin"
                             data-pin-lang="en"
-                            className=" pt-14 pb-3 pl-2 h-screen object-contain"
+                            className=" pt-14 pb-3 pr-6 h-screen object-contain"
                              // style={{backgroundColor : color}}
 
                         />

@@ -38,7 +38,7 @@ const PortfolioSection = ({
             {/*</svg>*/}
 
 
-            <div className="col-span-1 px-4 md:px-8 items-center justify-center align-middle flex self-center ">
+            <div className="col-span-1 pl-4 pr-4  md:pl-20 md:pr-4  items-center justify-center align-middle flex self-center ">
                 <Link  href={`/PortfolioPage/${id}`} >
                     <div className=" grid grid-cols-1 items-center md:grid-cols-2 p-6 md:p-10 md:pl-14   w-full rounded-2xl ">
                     <div className={"pl-6 mb-5 border-l items-end"}>
