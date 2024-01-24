@@ -14,7 +14,7 @@ import { useRouter } from 'next/router';
 
 
 const id = ({ project }) => {
-    // const router = useRouter(); // Initialize the useRouter hook
+    const router = useRouter(); // Initialize the useRouter hook
 
     const { title, year, subheading,services, description, logo, coverImageUrl, statement, keyWords, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
