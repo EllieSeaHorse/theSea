@@ -6,7 +6,7 @@ import SmoothLink from "@/components/Transition/SmoothLink";
 import {motion} from "framer-motion";
 import Head from 'next/head';
 import useLoadingState from '@/components/Hooks/useLoadingState';
-import LoadingSpinner from "@/components/Transition/Loading";
+import LoadingVisual from "@/components/Transition/LoadingVisual";
 import { useRouter } from 'next/router';
 
 
@@ -14,7 +14,7 @@ import { useRouter } from 'next/router';
 
 
 const id = ({ project }) => {
-    const router = useRouter(); // Initialize the useRouter hook
+    // const router = useRouter(); // Initialize the useRouter hook
 
     const { title, year, subheading,services, description, logo, coverImageUrl, statement, keyWords, images, color } = project;
     const currentIndex = projectsData.findIndex((p) => p.id === project.id);
@@ -59,29 +59,29 @@ const id = ({ project }) => {
     }, []);
 
     const [isTransitioning, setIsTransitioning] = useState(false);
-
-    useEffect(() => {
-        // Scroll to the top of the page when the router changes
-        const handleRouteChange = () => {
-            setIsTransitioning(true);
-
-            if (containerRef.current) {
-                containerRef.current.scrollLeft = 0;
-            }
-
-            // Simulate a loading delay
-            setTimeout(() => {
-                setIsTransitioning(false);
-            }, 500); // Adjust the delay as needed
-        };
-
-
-        router.events.on('routeChangeComplete', handleRouteChange);
-
-        return () => {
-            router.events.off('routeChangeComplete', handleRouteChange);
-        };
-    }, [router.events]);
+    //
+    // useEffect(() => {
+    //     // Scroll to the top of the page when the router changes
+    //     const handleRouteChange = () => {
+    //         setIsTransitioning(true);
+    //
+    //         if (containerRef.current) {
+    //             containerRef.current.scrollLeft = 0;
+    //         }
+    //
+    //         // Simulate a loading delay
+    //         setTimeout(() => {
+    //             setIsTransitioning(false);
+    //         }, 200); // Adjust the delay as needed
+    //     };
+    //
+    //
+    //     router.events.on('routeChangeComplete', handleRouteChange);
+    //
+    //     return () => {
+    //         router.events.off('routeChangeComplete', handleRouteChange);
+    //     };
+    // }, [router.events]);
 
     const handleNavigation = (id) => {
         // Scroll to the top of the page
@@ -91,20 +91,20 @@ const id = ({ project }) => {
         router.push(`/PortfolioPage/${id}`);
     };
 
-    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
-
-    if (isLoading) {
-        return <LoadingSpinner />;
-    }
-
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    }
-
+    // const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+    //
+    // if (isLoading) {
+    //     return <LoadingVisual />;
+    // }
+    //
+    // if (error) {
+    //     return <div>Error: {error.message}</div>;
+    // }
+    //
 
     return (
         <Layout>
-            {isTransitioning && <LoadingSpinner />}
+            {/*{isTransitioning && <LoadingVisual />}*/}
             <Head>
                 {/* Meta tags for SEO */}
                 <title>{title} {subheading} Design Project</title>
@@ -163,15 +163,17 @@ const id = ({ project }) => {
                 ))}
                 </div>
 
-                <div className={"flex justify-between text-xs text-neutral-400 pr-6"}>
+                <div className={"flex justify-between text-xs pr-6"}>
 
                     {/*<Link href={`/PortfolioPage/${getPreviousProjectId()}`} passHref>*/}
                         <a onClick={() => handleNavigation(getPreviousProjectId())}>
-                            <i className="bi bi-arrow-left-square"></i>
+                            <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square"></i>
                         </a>
                     {/*</Link>*/}
                     {/*<Link href={`/PortfolioPage/${getNextProjectId()}`} passHref>*/}
-                        <a onClick={() => handleNavigation(getNextProjectId())}>
+                        <a
+                            className={"cursor-pointer opacity-75 hover:opacity-100 "}
+                            onClick={() => handleNavigation(getNextProjectId())}>
                             Next
                             <i className="p-2 bi bi-arrow-right-square"></i>
                         </a>
@@ -296,27 +298,27 @@ export async function getStaticProps({ params }) {
 //         }, 1000); // Simulate a 1-second delay
 //     });
 // };
-
-const fetchProjectsData = async () => {
-    return new Promise((resolve) => {
-        const imagesToLoad = projectsData.flatMap((project) => project.images);
-        let loadedImages = 0;
-
-        const handleImageLoad = () => {
-            loadedImages++;
-
-            if (loadedImages === imagesToLoad.length) {
-                // All images have finished loading
-                resolve(projectsData);
-            }
-        };
-
-        imagesToLoad.forEach((imageUrl) => {
-            const img = new Image();
-            img.src = imageUrl;
-            img.onload = handleImageLoad;
-            img.onerror = handleImageLoad; // Handle error case as well
-        });
-    });
-};
-
+//
+// const fetchProjectsData = async () => {
+//     return new Promise((resolve) => {
+//         const imagesToLoad = projectsData.flatMap((project) => project.images);
+//         let loadedImages = 0;
+//
+//         const handleImageLoad = () => {
+//             loadedImages++;
+//
+//             if (loadedImages === imagesToLoad.length) {
+//                 // All images have finished loading
+//                 resolve(projectsData);
+//             }
+//         };
+//
+//         imagesToLoad.forEach((imageUrl) => {
+//             const img = new Image();
+//             img.src = imageUrl;
+//             img.onload = handleImageLoad;
+//             img.onerror = handleImageLoad; // Handle error case as well
+//         });
+//     });
+// };
+//

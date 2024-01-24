@@ -7,20 +7,43 @@ import Footer from "@/components/footer";
 import SmoothLink from "@/components/Transition/SmoothLink";
 import {motion} from "framer-motion";
 import useLoadingState from "@/components/Hooks/useLoadingState";
-import LoadingSpinner from "@/components/Transition/Loading";
+import LoadingVisual from "@/components/Transition/LoadingVisual";
+import {useRouter } from "next/router";
+import {useEffect , useState } from "react";
 
 
 export default function Home() {
 
-    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
-
-    if (isLoading) {
-        return <LoadingSpinner />;
-    }
-
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    }
+    // const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+    //
+    // if (isLoading) {
+    //     return <LoadingVisual />;
+    // }
+    //
+    // if (error) {
+    //     return <div>Error: {error.message}</div>;
+    // }
+    //
+    //
+    //
+    // const router = useRouter();
+    //
+    // const [loading, setLoading] = useState(false);
+    //
+    // useEffect(() => {
+    //     const handleStart = (url) => (url !== router.asPath) && setLoading(true);
+    //     const handleComplete = (url) => (url === router.asPath) && setTimeout(() =>{setLoading(false)},2000);
+    //
+    //     router.events.on('routeChangeStart', handleStart)
+    //     router.events.on('routeChangeComplete', handleComplete)
+    //     router.events.on('routeChangeError',  handleComplete)
+    //
+    //     return () => {
+    //         router.events.off('routeChangeStart', handleStart)
+    //         router.events.off('routeChangeComplete', handleComplete)
+    //         router.events.off('routeChangeError', handleComplete)
+    //     }
+    // })
 
     return (
 
@@ -97,13 +120,14 @@ export default function Home() {
     );
 }
 
+//
+// // Simulated function to fetch projects data
+// const fetchProjectsData = async () => {
+//     // Simulate an asynchronous data fetching operation
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(projectsData);
+//         }, 1000); // Simulate a 1-second delay
+//     });
+// };
 
-// Simulated function to fetch projects data
-const fetchProjectsData = async () => {
-    // Simulate an asynchronous data fetching operation
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(projectsData);
-        }, 2000); // Simulate a 1-second delay
-    });
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { RingLoader } from 'react-spinners';
-import { ThreeDots } from 'react-loader-spinner'
+import { Triangle } from 'react-loader-spinner'
 
 const override = css`
   display: block;
@@ -9,12 +9,12 @@ const override = css`
   border-color: red;
 `;
 
-const LoadingSpinner = () => {
+const LoadingVisual = () => {
     return (
         <div className="flex items-center justify-center h-screen">
-            <ThreeDots color="#AA3949" css={override} size={100} />
+            <Triangle color="#AA3949" css={override} size={100} />
         </div>
     );
 };
 
-export default LoadingSpinner;
+export default LoadingVisual;

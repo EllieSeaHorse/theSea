@@ -6,11 +6,14 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+import LoadingF from "@/components/Transition/LoadingF";
 
 export default function Layout({ children }) {
 
     return (
         <div className={" min-h-screen "} >
+
+            <LoadingF />
 
             <Nav/>
             <div

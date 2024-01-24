@@ -7,7 +7,8 @@ import Resume from "@/components/PortfolioBoxes/Resume";
 import Footer from "@/components/footer";
 import {motion} from "framer-motion";
 import useLoadingState from '@/components/Hooks/useLoadingState';
-import LoadingSpinner from "@/components/Transition/Loading";
+import LoadingVisual from "@/components/Transition/LoadingVisual";
+
 
 
 export default function Portfolio() {
@@ -31,7 +32,7 @@ export default function Portfolio() {
     const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
 
     if (isLoading) {
-        return <LoadingSpinner />;
+        return <LoadingVisual />;
     }
 
     if (error) {
