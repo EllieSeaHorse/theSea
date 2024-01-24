@@ -104,6 +104,6 @@ const fetchProjectsData = async () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(projectsData);
-        }, 1000); // Simulate a 1-second delay
+        }, 2000); // Simulate a 1-second delay
     });
 };

@@ -288,12 +288,35 @@ export async function getStaticProps({ params }) {
     };
 }
 
+// const fetchProjectsData = async () => {
+//     // Simulate an asynchronous data fetching operation
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(projectsData);
+//         }, 1000); // Simulate a 1-second delay
+//     });
+// };
+
 const fetchProjectsData = async () => {
-    // Simulate an asynchronous data fetching operation
     return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(projectsData);
-        }, 1000); // Simulate a 1-second delay
+        const imagesToLoad = projectsData.flatMap((project) => project.images);
+        let loadedImages = 0;
+
+        const handleImageLoad = () => {
+            loadedImages++;
+
+            if (loadedImages === imagesToLoad.length) {
+                // All images have finished loading
+                resolve(projectsData);
+            }
+        };
+
+        imagesToLoad.forEach((imageUrl) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = handleImageLoad;
+            img.onerror = handleImageLoad; // Handle error case as well
+        });
     });
 };
 
