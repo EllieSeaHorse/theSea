@@ -29,15 +29,15 @@ export default function Portfolio() {
     const [viewingResume, setViewingResume] = useState(true);
 
 
-    const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
-
-    if (isLoading) {
-        return <LoadingVisual />;
-    }
-
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    }
+    // const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
+    //
+    // if (isLoading) {
+    //     return <LoadingVisual />;
+    // }
+    //
+    // if (error) {
+    //     return <div>Error: {error.message}</div>;
+    // }
 
 
     return (
@@ -160,13 +160,13 @@ export default function Portfolio() {
     )
 }
 
-const fetchProjectsData = async () => {
-    // Simulate an asynchronous data fetching operation
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(projectsData);
-        }, 1000); // Simulate a 1-second delay
-    });
-};
+// const fetchProjectsData = async () => {
+//     // Simulate an asynchronous data fetching operation
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(projectsData);
+//         }, 1000); // Simulate a 1-second delay
+//     });
+// };
 
 

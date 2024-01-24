@@ -29,8 +29,11 @@ function MyApp({ Component, pageProps }) {
     }, [router.events]);
 
     return (
-        <>{loading ? LoadingVisual : <Component {...pageProps} />}</>
+        <>
+            {loading ? <LoadingVisual /> : <Component {...pageProps} />}
+        </>
     );
+
 }
 
 export default MyApp;
