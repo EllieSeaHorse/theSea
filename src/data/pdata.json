@@ -1,0 +1,36 @@
+
+{
+  "projectsData": [
+    {
+      "id": "p3",
+      "title": "Parla",
+      "subheading": "Advertising Agency Project",
+      "year": "2023-2024",
+      "services": [
+        "Visual Branding",
+        "Event Branding",
+        "Stationery Design",
+        "Social Media Uniform Design"
+      ],
+      "description": "Embarked on a transformative journey with Parla Advertising Agency in 2022, spearheading the evolution of the visual identity for 'InnoVision Creations.' Our collaboration aimed at redefining creativity's essence through a dynamic brand narrative.",
+      "statement": "In the vibrant realm of design and advertising, the Parla Advertising Agency Project of 2022 stands as a testament to innovation and creativity. Together, we delved into the intricacies of visual branding, event branding, stationery design, and social media uniform design. The challenge was not only to create designs but to craft experiences that resonate with the audience. 'InnoVision Creations' became more than a project; it became a canvas for storytelling, where every stroke of design conveyed a unique narrative. Personally invested in every detail, my goal was to transcend conventional boundaries, leaving an indelible mark in the ever-evolving landscape of brand aesthetics. This project exemplifies the fusion of strategic thinking, artistic expression, and a commitment to pushing the limits of design innovation."
+      "coverImageUrl": "/Portfolio/Parla/Cover.jpg",
+      "keywords": "Parla Advertising Agency, Visual Branding, Event Branding, Stationery Design, Social Media Uniform Design, Creative Branding, Innovative Design, Brand Narrative, Design Innovation",
+      "images": [
+        {"src": "/Portfolio/Parla/Cover.jpg", "alt": "Visual Branding for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla-rollup.jpg", "alt": "Event Branding for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla2.jpg", "alt": "Stationery Design for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla3.jpg", "alt": "Social Media Uniform Design for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla4.jpg", "alt": "Creative Branding for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla-mug.jpg", "alt": "Innovative Design - Mug Design for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla-web5.jpg", "alt": "Web Design - Landing Page for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla-web6.jpg", "alt": "Web Design - Landing Page Variation for 'InnoVision Creations' by Parla Advertising Agency"},
+        {"src": "/Portfolio/Parla/parla-vectors.jpg", "alt": "Design Innovation - Vector Design for 'InnoVision Creations' by Parla Advertising Agency"}
+      ],
+      "logo": "/Portfolio/Parla/Parla.svg",
+      "color": "#788173"
+    }
+
+
+  ]}
+

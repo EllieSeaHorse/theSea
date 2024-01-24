@@ -1,52 +1,112 @@
 // Remove the "export default" and add a named export
 export const projectsData = [
     {
-        id: 'p4',
+        id: 'verite',
         title: 'Verite',
         subheading: 'Perfume',
-        year: 2022,
+        year: 2023,
+        date: 'December 15, 2023',
         services: ['Packaging Design', '3D Modelling'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
+        description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
         statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
             '\n' +
             'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
             '\n' +
             'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
         coverImageUrl: '/portfolioImages/1-Verite Perfume .jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
+        keywords: {
+            english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
+            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری، تصویر هنری، داستان‌های خوشبو'
+        },
         images: [
-            { src: '/portfolioImages/2-Verite Perfume .jpg', alt: 'Vector Art' },
-            { src: '/portfolioImages/4-Shirin Perfume.jpg', alt: 'Website Design' },
-            { src: '/portfolioImages/3-Leili Perfume.jpg', alt: 'Website Design' },
-            { src: '/portfolioImages/5-Vis Perfume.jpg', alt: 'Website Design' },
+            { src: '/portfolioImages/2-Verite Perfume .jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' } },
+            { src: '/portfolioImages/4-Shirin Perfume.jpg', alt: { english: 'Shirin Perfume Bottle Design', farsi: 'طراحی بطری عطر شیرین' } },
+            { src: '/portfolioImages/3-Leili Perfume.jpg', alt: { english: 'Leili Perfume Packaging', farsi: 'بسته‌بندی عطر لیلی' } },
+            { src: '/portfolioImages/5-Vis Perfume.jpg', alt: { english: 'Vis Perfume Bottle Presentation', farsi: 'ارائه بطری عطر ویس' } },
         ],
         logo: '/Portfolio/Verite/Verite.svg',
-
         color: '#AF9EBD'
-    } ,
+    }
+
+    ,
     {
-        id: 'p3',
-        title: 'Parla',
-        subheading: 'Advertising Agency',
-        year: 2022,
-        services: ['Poster Design', 'Event', 'Stationary Items', 'Social Media Uniform'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-        statement: '',
-        coverImageUrl: '/Portfolio/Parla/Cover.jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Branding Design Social Media Uniform Stationary Items Graphic Design',
-        images: [
-            { src: '/Portfolio/Parla/Cover.jpg', alt: 'Graphic Design Gift Bag and Shopping Bag for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla-rollup.jpg', alt: 'Graphic Design Gift Bag and Shopping Bag for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla2.jpg', alt: 'Graphic Design Poster for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla3.jpg', alt: 'Graphic Design Book and Notebook for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla4.jpg', alt: 'Graphic Design Gift Bag and Shopping Bag for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla-mug.jpg', alt: 'Graphic Design Gift Mug Design for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla-web5.jpg', alt: 'Graphic Design Web Design Landing Page Design for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla-web6.jpg', alt: 'Graphic Design Web Design Landing Page Design 2 for Parla Idea Advertising Agency' },
-            { src: '/Portfolio/Parla/parla-vectors.jpg', alt: 'Graphic Design Vector Design  Illustration Design for Parla Idea Advertising Agency' },
+        id: "parla",
+        title: "Parla",
+        subheading: "Advertising Agency",
+        year: 2023,
+        date: 'April 15, 2023',
+
+        services: [
+            "Visual Branding",
+            "Event Branding",
+            "Stationery Design",
+            "Social Media Uniform Design"
         ],
-        logo: '/Portfolio/Parla/Parla.svg',
-        color: '#788173'
+        description: "Contributed to the enhancement of Parla Advertising Agency's brand through collaborative efforts in 2023. Played a key role in elevating visual branding, event branding, stationery design, and social media uniform design.",
+        statement: "As a dedicated team member at Parla Advertising Agency, the 2023 project was a journey of collaborative creativity. I actively contributed to enhancing the agency's brand through focused efforts in visual branding, event branding, stationery design, and social media uniform design. The goal was not just to create designs but to craft impactful experiences, resonating with our audience. Every project was a canvas for telling a unique brand story. My commitment was to push the limits of design innovation, leaving a lasting impression in the dynamic landscape of brand aesthetics. This ongoing project exemplifies our dedication to creativity, teamwork, and continuous improvement.",
+        coverImageUrl: "/Portfolio/Parla/Cover.jpg",
+        keywords: {
+            english: "Parla Advertising Agency, Visual Branding, Event Branding, Stationery Design, Social Media Uniform Design, Creative Design, Brand Enhancement, Team Collaboration",
+            farsi: "آژانس تبلیغاتی پارلا، برندینگ تصویری، برندینگ رویداد، طراحی لوازم التحریر، طراحی یکنواختی رسانه های اجتماعی، طراحی خلاقانه، بهبود برند، همکاری تیمی"
+        },
+        images: [
+            {src: "/Portfolio/Parla/Cover.jpg",
+                alt: {
+                    english: "Visual Branding for Parla Advertising Agency",
+                    farsi: "برندینگ تصویری برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla-rollup.jpg",
+                alt: {
+                    english: "Event Branding for Parla Advertising Agency",
+                    farsi: "برندینگ رویداد برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla2.jpg",
+                alt: {
+                    english: "Stationery Design for Parla Advertising Agency",
+                    farsi: "طراحی لوازم التحریر برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla3.jpg",
+                alt: {
+                    english: "Social Media Uniform Design for Parla Advertising Agency",
+                    farsi: "طراحی یکنواختی رسانه های اجتماعی برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla4.jpg",
+                alt: {
+                    english: "Creative Branding for Parla Advertising Agency",
+                    farsi: "برندینگ خلاقانه برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla-mug.jpg",
+                alt: {
+                    english: "Innovative Design - Mug Design for Parla Advertising Agency",
+                    farsi: "طراحی نوآورانه - طراحی لیوان برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla-web5.jpg",
+                alt: {
+                    english: "Web Design - Landing Page for Parla Advertising Agency",
+                    farsi: "طراحی وب - صفحه لندینگ برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla-web6.jpg",
+                alt: {
+                    english: "Web Design - Landing Page Variation for Parla Advertising Agency",
+                    farsi: "طراحی وب - نسخه صفحه لندینگ برای آژانس تبلیغاتی پارلا"
+                }
+            },
+            {src: "/Portfolio/Parla/parla-vectors.jpg",
+                alt: {
+                    english: "Design Innovation - Vector Design for Parla Advertising Agency",
+                    farsi: "نوآوری در طراحی - طراحی وکتور برای آژانس تبلیغاتی پارلا"
+                }
+            }
+        ],
+        logo: "/Portfolio/Parla/Parla.svg",
+        color: "#788173"
     },
     // {
     //     id: 'p2',
@@ -70,63 +130,70 @@ export const projectsData = [
     //     color: '#523D57'
     // },
     {
-        id: 'p1',
+        id: 'film',
         title: 'Film Posters',
         subheading: 'Experimental',
-        year: 2022,
-        services: ['Poster Design'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-        statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
+        year: 2020,
+        date: 'December 15, 2020',
+
+        services: ['Poster Design', 'Experimental Art', 'Cinematic Expression'],
+        description: 'Embarking on a creative journey to capture the essence of cinema through experimental poster designs. This project explores visual storytelling, pushing the boundaries of traditional film poster conventions.',
+        statement: 'In the realm of experimental film poster design, each creation is a visual narrative, transcending the conventional boundaries of cinema promotion. The selected films, "Blow Up," "Wild Strawberries," "Neon Demon," and "Naked," serve as canvases for artistic expression, inviting viewers to delve into the abstract interpretations of cinematic moments.\n' +
             '\n' +
-            'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
+            'Through a fusion of experimental art and cinematic expression, each poster is a reflection of the films atmosphere, themes, and emotional resonance. The goal is not merely to promote the films but to encapsulate the unique essence of each narrative, pushing the boundaries of visual communication in the world of cinema.\n' +
             '\n' +
-            'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
+            'This project is an exploration of the synergy between art and film, where the visual language of experimental design meets the rich narratives of these cinematic masterpieces. Each poster is a deliberate attempt to evoke curiosity and engage the audience in a dialogue with the essence of the films.',
+
         coverImageUrl: '/Portfolio/Film Posters/FilmCover.jpg',
-        KeyWords: 'Experimental Film Posters by Sama Moayeri',
+        keywords: {
+            english: 'Experimental Film Posters, Poster Design, Experimental Art, Cinematic Expression, Blow Up, Wild Strawberries, Neon Demon, Naked',
+            farsi: 'پوسترهای فیلم تجربی، طراحی پوستر، هنر تجربی، بیان سینمایی، Blow Up، Wild Strawberries، Neon Demon، Naked'
+        },
         images: [
 
-            { src: '/Portfolio/Film Posters/WildStrawberries5.jpg', alt: 'Film Poster-Design Wild Strawberries Ingmar Bergman By Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/WildStrawberries1.jpg', alt: 'Film Poster-Design Wild Strawberries Ingmar Bergman By Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/WildStrawberries2.jpg', alt: 'Film Poster-Design Wild Strawberries Ingmar Bergman By Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/WildStrawberries3.jpg', alt: 'Film Poster-Design Wild Strawberries Ingmar Bergman By Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/WildStrawberries4.jpg', alt: 'Film Poster-Design Wild Strawberries Ingmar Bergman By Sama Moayeri' },
-
-
-            { src: '/Portfolio/Film Posters/NakedText-06.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Naked1.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Naked2.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Naked3.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh' },
-            { src: '/Portfolio/Film Posters/Naked4.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Art' },
-            { src: '/Portfolio/Film Posters/Naked5.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Art' },
-            { src: '/Portfolio/Film Posters/Naked7.jpg', alt: 'Film Poster Movie Poster Naked Mike Leigh Art' },
-            { src: '/Portfolio/Film Posters/Blow6.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Art Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Blow1.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Sama Moayeri Art' },
-            { src: '/Portfolio/Film Posters/Blow2.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Art Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Blow3.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Sama Moayeri Art' },
-            { src: '/Portfolio/Film Posters/Blow4.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Art Sama Moayeri' },
-            { src: '/Portfolio/Film Posters/Blow5.jpg', alt: 'Film Poster Movie Poster Blow-Up Antonioni Mike Leigh Design Art' },
-            { src: '/Portfolio/Film Posters/NeonDemon5.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-            { src: '/Portfolio/Film Posters/NeonDemon6.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-            { src: '/Portfolio/Film Posters/NeonDemon1.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-            { src: '/Portfolio/Film Posters/NeonDemon2.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-            { src: '/Portfolio/Film Posters/NeonDemon3.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-            { src: '/Portfolio/Film Posters/NeonDemon4.jpg', alt: 'Film Poster-Design Neon Demon Nicholas Winding Refn' },
-
+            // { src: '/Portfolio/Film Posters/WildStrawberries5.jpg', alt: { english: 'Wild Strawberries Experimental Film Poster', farsi: 'پوستر تجربی فیلم Wild Strawberries' } },
+            // { src: '/Portfolio/Film Posters/WildStrawberries1.jpg', alt: { english: 'Wild Strawberries Experimental Film Poster', farsi: 'پوستر تجربی فیلم Wild Strawberries'} },
+            // { src: '/Portfolio/Film Posters/WildStrawberries2.jpg', alt: { english: 'Wild Strawberries Experimental Film Poster', farsi: 'پوستر تجربی فیلم Wild Strawberries'} },
+            // { src: '/Portfolio/Film Posters/WildStrawberries3.jpg', alt: { english: 'Wild Strawberries Experimental Film Poster', farsi: 'پوستر تجربی فیلم Wild Strawberries' } },
+            // { src: '/Portfolio/Film Posters/WildStrawberries4.jpg', alt: { english: 'Wild Strawberries Experimental Film Poster', farsi: 'پوستر تجربی فیلم Wild Strawberries' } },
+            { src: '/Portfolio/Film Posters/NakedText-06.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked1.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked2.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked3.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked4.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked5.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Naked7.jpg', alt: { english: 'Naked Experimental Film Poster', farsi: 'پوستر تجربی فیلم Naked' } },
+            { src: '/Portfolio/Film Posters/Blow6.jpg', alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' } },
+            { src: '/Portfolio/Film Posters/Blow1.jpg', alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' } },
+            { src: '/Portfolio/Film Posters/Blow2.jpg', alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' }},
+            { src: '/Portfolio/Film Posters/Blow3.jpg',alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' } },
+            { src: '/Portfolio/Film Posters/Blow4.jpg', alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' } },
+            { src: '/Portfolio/Film Posters/Blow5.jpg', alt: { english: 'Blow Up Experimental Film Poster', farsi: 'پوستر تجربی فیلم Blow Up' } },
+            { src: '/Portfolio/Film Posters/NeonDemon5.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
+            { src: '/Portfolio/Film Posters/NeonDemon6.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
+            { src: '/Portfolio/Film Posters/NeonDemon1.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
+            { src: '/Portfolio/Film Posters/NeonDemon2.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
+            { src: '/Portfolio/Film Posters/NeonDemon3.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
+            { src: '/Portfolio/Film Posters/NeonDemon4.jpg', alt: { english: 'Neon Demon Experimental Film Poster', farsi: 'پوستر تجربی فیلم Neon Demon' } },
         ],
         logo: '',
-
         color: '#916E6E'
     },
     {
         id: 'trep',
         title: 'Trepidation',
-        subheading: 'Photo Series',
-        year: 2022,
-        services: ['Photography'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
+        subheading: 'A Photography Series',
+        year: 2019,
+        date: 'December 15, 2019',
+
+        services: ['Photography' , 'Visual Storytelling'],
+        description: 'In the stillness of shadows and the quiet tremors of the unseen',
         statement: '',
         coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
+        keywords: {
+            english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
+            farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
+        },
         images: [
             { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
             { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
@@ -134,13 +201,15 @@ export const projectsData = [
         ],
         logo: '',
 
-        color: '#523D57'
+        color: '#4F6D6C'
     },
     {
         id: 'whitenights',
         title: 'White Nights',
         subheading: 'Photo Series',
-        year: 2022,
+        year: 2021,
+        date: 'December 15, 2021',
+
         services: ['Photography'],
         description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
         statement: '',
@@ -184,7 +253,9 @@ export const projectsData = [
         id: 'crossed',
         title: 'Crossed',
         subheading: 'Photo Series',
-        year: 2022,
+        year: 2020,
+        date: 'December 15, 2020',
+
         services: ['Photography'],
         description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
         statement: '',
@@ -230,7 +301,9 @@ export const projectsData = [
         id: 'Wired',
         title: 'The Days',
         subheading: 'Photo Series',
-        year: 2022,
+        year: 2021,
+        date: 'December 15, 2021',
+
         services: ['Photography'],
         description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
         statement: '',
@@ -259,6 +332,8 @@ export const projectsData = [
         title: 'Studies',
         subheading: 'Photo Series',
         year: 2022,
+        date: 'December 15, 2022',
+
         services: ['Photography'],
         description: '',
         statement: '',
@@ -278,7 +353,9 @@ export const projectsData = [
         id: 'pacific',
         title: 'Pacific',
         subheading: 'Photo Series',
-        year: 2022,
+        year: 2017,
+        date: 'December 15, 2017',
+
         services: ['Photography'],
         description: '',
         statement: '',
@@ -303,6 +380,8 @@ export const projectsData = [
         title: 'Ulysses',
         subheading: 'Art Book',
         year: 2022,
+        date: 'December 15, 2022',
+
         services: ['Art Book'],
         description: '',
         statement: '',
