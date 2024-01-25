@@ -10,7 +10,7 @@ const PortfolioSection = ({
                                 id,
                               title,
                               subheading,
-                              year,
+                            date,
                               services,
                               description,
                               coverImageUrl,
@@ -46,7 +46,7 @@ const PortfolioSection = ({
                         <h1 className="text-3xl font-medium uppercase">{title}</h1>
                         <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
 
-                        <p className="opacity-60 text-xs ">{year}</p>
+                        <p className="opacity-60 text-xs ">{new Date(date).getFullYear()}</p>
 
                     <div className={"text-xs py-4"} style={{color:color}}>
                         {services.map((service, index) => (
@@ -59,7 +59,7 @@ const PortfolioSection = ({
 
                     </div>
 
-                    <Cover title={title} year={year} services={services} subheading={subheading} description={description} alt={alt} image={coverImageUrl} color={color}
+                    <Cover title={title} services={services} subheading={subheading} description={description} alt={alt} image={coverImageUrl} color={color}
                            className={"bg-black shadow-gray-800  shadow-inner"}>
                         {children}
                     </Cover>

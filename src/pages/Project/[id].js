@@ -131,7 +131,7 @@ const id = ({ project }) => {
                     <div className={"border-l p-4 px-4"}>
                         <h1 className="text-3xl font-medium uppercase ">{title}</h1>
                         <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
-                        <p className="text-gray-500 text-sm ">{year}</p>
+                        <p className="text-gray-500 text-sm">{new Date(date).getFullYear()}</p>
                     </div>
 
                     <div className={"text-xs px-2"} >
@@ -225,10 +225,7 @@ const id = ({ project }) => {
                             data-pin-lang="en"
                             width={image.width ? `${image.width} ` : `1700`}
                             height={image.height ? `${image.height} ` : `1100`}
-
-                            className=" pt-14 pb-3 pr-6 h-screen object-contain"
-                            // style={{backgroundColor : color}}
-
+                            className=" pt-14 pb-3 pr-2 h-screen object-contain"
                         />
                     ))}
                     {(statement !== '') &&

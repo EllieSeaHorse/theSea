@@ -1,11 +1,107 @@
 // Remove the "export default" and add a named export
 export const projectsData = [
     {
+        id: 'environment',
+        title: 'Echo',
+        subheading: 'Experimental',
+        year: 2023,
+        date: 'May 11, 2021',
+        services: ['Poster Design', 'Envronmental Art'],
+        description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
+        statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
+            '\n' +
+            'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
+            '\n' +
+            'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
+        coverImageUrl: '/Portfolio/Environmental Posters/cover-01.jpg',
+        keywords: {
+            english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
+            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
+        },
+        images: [
+            {
+                src: '/Portfolio/Environmental Posters/Env-05.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+            {
+                src: '/Portfolio/Environmental Posters/Env-04.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+            {
+                src: '/Portfolio/Environmental Posters/Env-01.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },            {
+                src: '/Portfolio/Environmental Posters/Env-02.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },            {
+                src: '/Portfolio/Environmental Posters/Env-06.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+
+
+            {
+                src: '/Portfolio/Environmental Posters/Env-07.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+            {
+                src: '/Portfolio/Environmental Posters/Env-08.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+            {
+                src: '/Portfolio/Environmental Posters/Env-03.png',
+                alt: {
+                    english: 'Poster Art, Environmental Design',
+                    farsi: 'پوستر محیط زیست'
+                },
+                width: "1000",
+                height: "1200",
+            },
+
+        ],
+        logo: '',
+        color: '#c69b8d'
+
+    },
+    {
         id: 'verite',
         title: 'Verite',
         subheading: 'Perfume',
-        year: 2023,
-        date: 'December 15, 2023',
+        date: 'Jan 15, 2024',
         services: ['Packaging Design', '3D Modelling'],
         description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
         statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
@@ -256,7 +352,7 @@ export const projectsData = [
         title: 'Crossed',
         subheading: 'Photo Series',
         year: 2020,
-        date: 'December 15, 2020',
+        date: 'December 15, 2021',
 
         services: ['Photography'],
         description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
@@ -304,7 +400,7 @@ export const projectsData = [
         title: 'The Days',
         subheading: 'Photo Series',
         year: 2021,
-        date: 'December 15, 2021',
+        date: 'December 15, 2020',
 
         services: ['Photography'],
         description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
@@ -334,7 +430,7 @@ export const projectsData = [
         title: 'Studies',
         subheading: 'Photo Series',
         year: 2022,
-        date: 'December 15, 2022',
+        date: 'December 15, 2021',
 
         services: ['Photography'],
         description: '',

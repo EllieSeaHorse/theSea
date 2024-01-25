@@ -6,8 +6,6 @@ import React, {useState} from 'react';
 import Resume from "@/components/PortfolioBoxes/Resume";
 import Footer from "@/components/footer";
 import {motion} from "framer-motion";
-import useLoadingState from '@/components/Hooks/useLoadingState';
-import LoadingVisual from "@/components/Transition/LoadingVisual";
 import Head from "next/head";
 
 
