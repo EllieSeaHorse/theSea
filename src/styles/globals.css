@@ -50,5 +50,9 @@ body {
 .transition-transform {
   transition: transform 0.3s ease-in-out;
 }
+img {
+  /*width: 100%; !* or max-width: 100%; *!*/
+  /*height: auto;*/
+}
 
 

@@ -10,47 +10,25 @@ import useLoadingState from "@/components/Hooks/useLoadingState";
 import LoadingVisual from "@/components/Transition/LoadingVisual";
 import {useRouter } from "next/router";
 import {useEffect , useState } from "react";
+import Head from "next/head";
 
 
 export default function Home() {
 
-    // const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
-    //
-    // if (isLoading) {
-    //     return <LoadingVisual />;
-    // }
-    //
-    // if (error) {
-    //     return <div>Error: {error.message}</div>;
-    // }
-    //
-    //
-    //
-    // const router = useRouter();
-    //
-    // const [loading, setLoading] = useState(false);
-    //
-    // useEffect(() => {
-    //     const handleStart = (url) => (url !== router.asPath) && setLoading(true);
-    //     const handleComplete = (url) => (url === router.asPath) && setTimeout(() =>{setLoading(false)},2000);
-    //
-    //     router.events.on('routeChangeStart', handleStart)
-    //     router.events.on('routeChangeComplete', handleComplete)
-    //     router.events.on('routeChangeError',  handleComplete)
-    //
-    //     return () => {
-    //         router.events.off('routeChangeStart', handleStart)
-    //         router.events.off('routeChangeComplete', handleComplete)
-    //         router.events.off('routeChangeError', handleComplete)
-    //     }
-    // })
     const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 
     return (
 
         <Layout>
-            <div className="text-center">
+            <Head>
+                <title>Sama Moayeri</title>
+                <meta name="description" content={"Sama Moayeri's Portfolio, Selection of Graphic Design and Photography Projects from 2016"} />
+                <meta name="keywords" content={'Photography, Art, Graphic Design, Artist Portfolio'} />
+                <meta name="theme-color" content="#317EFB"/>
+
+            </Head>
+            <body className="text-center">
 
                 <div className="grid grid-cols-1 bg-black self-center  bottom-0">
                     <motion.div
@@ -80,7 +58,9 @@ export default function Home() {
                     >
                         {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute aspect-square grayscale"}/>*/}
                         {/*<img src={'/portfolioImages/untitled.png'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
-                        <img src={'/Portfolio/Home.jpg'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
+                        <img src={'/Portfolio/Home.jpg'}
+                             width="640" height="360"
+                             className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
                     </div>
 
                     <div className={"min-h-screen "}>
@@ -108,7 +88,13 @@ export default function Home() {
                                         className={"flex"}
                                     >
                                         {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>*/}
-                                        <img src={project.logo} className={"w-40 z-50  object-cover object-center "}/>
+                                        <img
+                                            src={project.logo}
+                                            className={"w-40 z-50  object-cover object-center "}
+                                            width="640" height="360"
+                                            alt={project.keywords}
+
+                                        />
                                     </div>
                                 </PortfolioSection>
 
@@ -116,7 +102,7 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </body>
             <Footer className={"pb-10 md:pb-0 relative md:fixed"}/>
         </Layout>
     );

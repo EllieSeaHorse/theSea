@@ -102,7 +102,10 @@ export default function Portfolio() {
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
                         <img src="/Portfolio/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
-                             className={"object-cover mix-blend-multiply grayscale"}/>
+                             className={"object-cover mix-blend-multiply grayscale"}
+                             width="1343" height="1701"
+                             alt={"Photo of Sama Moayeri by Tonatiuh Ambrosetti"}
+                        />
                     </div>
                     <h1 className={"text-[9px] text-gray-600"}>Photo © Tonatiuh Ambrosetti</h1>
 

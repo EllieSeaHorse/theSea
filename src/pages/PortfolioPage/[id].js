@@ -138,6 +138,7 @@ const id = ({ project }) => {
                         {((logo != '') &&
                             <img
                                 src={project.logo}
+                                alt={`${project.title}'s Logo `}
                                 className={"pb-4 w-20 z-50 object-cover object-center "}
                             />
                         )}
@@ -216,11 +217,15 @@ const id = ({ project }) => {
 
                     {images.map((image, index) => (
                         <img
+                            loading="lazy"
                             key={index}
                             src={image.src}
                             alt={image.alt.english ? `${image.alt.english} ${image.alt.farsi}` : `${image.alt}`}
                             data-pin-do="embedPin"
                             data-pin-lang="en"
+                            width={image.width ? `${image.width} ` : `1700`}
+                            height={image.height ? `${image.height} ` : `1100`}
+
                             className=" pt-14 pb-3 pr-6 h-screen object-contain"
                             // style={{backgroundColor : color}}
 

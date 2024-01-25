@@ -262,11 +262,11 @@ export const projectsData = [
         coverImageUrl: '/Portfolio/Crossed/Crossed-01.jpg',
         KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
         images: [
-            { src: '/Portfolio/Crossed/Crossed-01.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Crossed/Crossed-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Crossed/Crossed-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Crossed/Crossed-04.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Crossed/Crossed-05.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Crossed/Crossed-01.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+            { src: '/Portfolio/Crossed/Crossed-02.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+            { src: '/Portfolio/Crossed/Crossed-03.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+            { src: '/Portfolio/Crossed/Crossed-04.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+            { src: '/Portfolio/Crossed/Crossed-05.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
 
         ],
         logo: '',
