@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import {motion} from "framer-motion";
 import useLoadingState from '@/components/Hooks/useLoadingState';
 import LoadingVisual from "@/components/Transition/LoadingVisual";
+import Head from "next/head";
 
 
 
@@ -29,19 +30,15 @@ export default function Portfolio() {
     const [viewingResume, setViewingResume] = useState(true);
 
 
-    // const { isLoading, data: projects, error } = useLoadingState(fetchProjectsData);
-    //
-    // if (isLoading) {
-    //     return <LoadingVisual />;
-    // }
-    //
-    // if (error) {
-    //     return <div>Error: {error.message}</div>;
-    // }
-
 
     return (
         <Layout>
+            <Head>
+                <title>Sama Moayeri</title>
+                <meta name="description" content={"Resume - Sama Moayeri -  Selection of Graphic Design and Photography Projects from 2016"} />
+                <meta name="keywords" content={'Photography, Art, Graphic Design, Artist Portfolio, Artist Resume'} />
+                <meta name="theme-color" content="#AA3949"/>
+            </Head>
             <motion.div
 
                 initial={{  y: 100 }}
@@ -101,13 +98,13 @@ export default function Portfolio() {
                     className={"col-span-3 p-4 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
-                        <img src="/Portfolio/Fondation Jan Michalski © Tonatiuh Ambrosetti.jpg"
+                        <img src="/Portfolio/Sama Moayeri © Tonatiuh Ambrosetti-01.jpg"
                              className={"object-cover mix-blend-multiply grayscale"}
-                             width="1343" height="1701"
+                             width="933" height="1181"
                              alt={"Photo of Sama Moayeri by Tonatiuh Ambrosetti"}
                         />
                     </div>
-                    <h1 className={"text-[9px] text-gray-600"}>Photo © Tonatiuh Ambrosetti</h1>
+                    <h1 className={"text-[7px] opacity-30"}>Photo © Tonatiuh Ambrosetti</h1>
 
                 </Bigbox>
 

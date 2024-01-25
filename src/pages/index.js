@@ -1,34 +1,24 @@
 import Link from "next/link";
 import Layout from "@/pages/layout";
-import { worksData } from "@/data/worksData";
 import {projectsData} from "@/data/projectsData";
 import PortfolioSection from "@/components/portfolioSection";
 import Footer from "@/components/footer";
-import SmoothLink from "@/components/Transition/SmoothLink";
 import {motion} from "framer-motion";
-import useLoadingState from "@/components/Hooks/useLoadingState";
-import LoadingVisual from "@/components/Transition/LoadingVisual";
-import {useRouter } from "next/router";
-import {useEffect , useState } from "react";
 import Head from "next/head";
-
+import React from "react";
 
 export default function Home() {
-
     const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-
     return (
-
         <Layout>
             <Head>
                 <title>Sama Moayeri</title>
                 <meta name="description" content={"Sama Moayeri's Portfolio, Selection of Graphic Design and Photography Projects from 2016"} />
                 <meta name="keywords" content={'Photography, Art, Graphic Design, Artist Portfolio'} />
-                <meta name="theme-color" content="#317EFB"/>
-
+                <meta name="theme-color" content="#232323"/>
             </Head>
-            <body className="text-center">
+            <div className="text-center">
 
                 <div className="grid grid-cols-1 bg-black self-center  bottom-0">
                     <motion.div
@@ -56,10 +46,8 @@ export default function Home() {
                     <div
                         className={"w-full flex items-end justify-end h-screen stop  bg-black "}
                     >
-                        {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute aspect-square grayscale"}/>*/}
-                        {/*<img src={'/portfolioImages/untitled.png'} className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
                         <img src={'/Portfolio/Home.jpg'}
-                             width="640" height="360"
+                             width="1200" height="800"
                              className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
                     </div>
 
@@ -87,14 +75,21 @@ export default function Home() {
                                     <div
                                         className={"flex"}
                                     >
-                                        {/*<img src={'/portfolioImages/death0040-03002.gif'} className={"absolute w-full h-screen md:w-full md:object-cover object-cover object-center  grayscale"}/>*/}
-                                        <img
-                                            src={project.logo}
-                                            className={"w-40 z-50  object-cover object-center "}
-                                            width="640" height="360"
-                                            alt={project.keywords}
-
-                                        />
+                                        {(project.logo !== '') ?
+                                            <img
+                                                src={project.logo}
+                                                alt={`${project.title}'s Logo `}
+                                                className={"w-40 z-50  object-cover object-center"}
+                                                width="400" height="400"
+                                            />
+                                         :
+                                            <p>{project.title}</p>}
+                                        {/*<img*/}
+                                        {/*    src={project.logo}*/}
+                                        {/*    className={"w-40 z-50  object-cover object-center "}*/}
+                                        {/*    width="400" height="400"*/}
+                                        {/*    alt={project.keywords}*/}
+                                        {/*/>*/}
                                     </div>
                                 </PortfolioSection>
 
@@ -102,20 +97,10 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-            </body>
+            </div>
             <Footer className={"pb-10 md:pb-0 relative md:fixed"}/>
         </Layout>
     );
 }
 
-//
-// // Simulated function to fetch projects data
-// const fetchProjectsData = async () => {
-//     // Simulate an asynchronous data fetching operation
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve(projectsData);
-//         }, 1000); // Simulate a 1-second delay
-//     });
-// };
 

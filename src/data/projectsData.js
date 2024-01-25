@@ -13,16 +13,18 @@ export const projectsData = [
             'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
             '\n' +
             'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
-        coverImageUrl: '/portfolioImages/1-Verite Perfume .jpg',
+        coverImageUrl: '/Portfolio/Verite/Verite-01.jpg',
         keywords: {
             english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
-            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری، تصویر هنری، داستان‌های خوشبو'
+            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
         },
         images: [
-            { src: '/portfolioImages/2-Verite Perfume .jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' } },
-            { src: '/portfolioImages/4-Shirin Perfume.jpg', alt: { english: 'Shirin Perfume Bottle Design', farsi: 'طراحی بطری عطر شیرین' } },
-            { src: '/portfolioImages/3-Leili Perfume.jpg', alt: { english: 'Leili Perfume Packaging', farsi: 'بسته‌بندی عطر لیلی' } },
-            { src: '/portfolioImages/5-Vis Perfume.jpg', alt: { english: 'Vis Perfume Bottle Presentation', farsi: 'ارائه بطری عطر ویس' } },
+            { src: '/Portfolio/Verite/Verite-01.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' },  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-shirin.jpg', alt: { english: 'Shirin Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر شیرین' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-leili.jpg', alt: { english: 'Leili Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر لیلی' },  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-vis.jpg', alt: { english: 'Vis Perfume Packaging Design', farsi: 'طراحی بسته‌بندی  عطر ویس' } ,  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-05.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' } ,  width: "1200" ,  height: "1200" , },
+
         ],
         logo: '/Portfolio/Verite/Verite.svg',
         color: '#AF9EBD'
@@ -106,7 +108,7 @@ export const projectsData = [
             }
         ],
         logo: "/Portfolio/Parla/Parla.svg",
-        color: "#788173"
+        color: "#8f9b87"
     },
     // {
     //     id: 'p2',
@@ -247,7 +249,7 @@ export const projectsData = [
         ],
         logo: '',
 
-        color: '#523D57'
+        color: '#B28B98'
     },
     {
         id: 'crossed',
@@ -271,7 +273,7 @@ export const projectsData = [
         ],
         logo: '',
 
-        color: '#523D57'
+        color: '#8A916D'
     },
     // {
     //     id: 'crossed2',
@@ -325,7 +327,7 @@ export const projectsData = [
         ],
         logo: '',
 
-        color: '#ff0000'
+        color: '#BA9C8C'
     },
     {
         id: 'studies',
@@ -347,7 +349,7 @@ export const projectsData = [
 
         ],
         logo: '',
-        color: '#523D57'
+        color: '#edd4b9'
     },
     {
         id: 'pacific',
@@ -373,7 +375,7 @@ export const projectsData = [
 
         ],
         logo: '',
-        color: '#523D57'
+        color: '#dee2d3'
     },
     {
         id: 'joyce',
@@ -401,6 +403,6 @@ export const projectsData = [
 
         ],
         logo: '',
-        color: '#523D57'
+        color: '#A1B28B'
     },
 ];

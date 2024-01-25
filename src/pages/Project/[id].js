@@ -89,7 +89,7 @@ const id = ({ project }) => {
         window.scrollTo(0, 0);
 
         // Navigate to the next/previous project
-        router.push(`/PortfolioPage/${id}`);
+        router.push(`/Project/${id}`);
     };
 
     return (
@@ -201,10 +201,10 @@ const id = ({ project }) => {
                         <p className="text-xs ">{description}</p>
 
                         <div className={"md:flex hidden justify-between text-xs text-neutral-400"}>
-                            <Link href={`/PortfolioPage/${getPreviousProjectId()}`} >
+                            <Link href={`/Project/${getPreviousProjectId()}`} >
                                 <i className="bi bi-arrow-left-square"></i>
                             </Link>
-                            <Link href={`/PortfolioPage/${getNextProjectId()}`} >
+                            <Link href={`/Project/${getNextProjectId()}`} >
                                 Next
                                 <i className="p-2 bi bi-arrow-right-square"></i>
 
