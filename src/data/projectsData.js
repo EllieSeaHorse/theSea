@@ -1,5 +1,43 @@
 // Remove the "export default" and add a named export
 export const projectsData = [
+
+    {
+        id: "sura",
+        title: "Sura",
+        subheading: "Architecture Group",
+        date: 'May 15, 2023',
+
+        services: [
+            "Rebranding",
+            "Brand Identity",
+            "Brand Book",
+            "Logo Design",
+            "Stationary Items Design"
+        ],
+        description: "Contributed to the enhancement of Parla Advertising Agency's brand through collaborative efforts in 2023. Played a key role in elevating visual branding, event branding, stationery design, and social media uniform design.",
+        statement: "As a dedicated team member at Parla Advertising Agency, the 2023 project was a journey of collaborative creativity. I actively contributed to enhancing the agency's brand through focused efforts in visual branding, event branding, stationery design, and social media uniform design. The goal was not just to create designs but to craft impactful experiences, resonating with our audience. Every project was a canvas for telling a unique brand story. My commitment was to push the limits of design innovation, leaving a lasting impression in the dynamic landscape of brand aesthetics. This ongoing project exemplifies our dedication to creativity, teamwork, and continuous improvement.",
+        coverImageUrl: "/Portfolio/Sura/sura1.jpg",
+        keywords: {
+            english: "Parla Advertising Agency, Visual Branding, Event Branding, Stationery Design, Social Media Uniform Design, Creative Design, Brand Enhancement, Team Collaboration",
+            farsi: "آژانس تبلیغاتی پارلا، برندینگ تصویری، برندینگ رویداد، طراحی لوازم التحریر، طراحی یکنواختی رسانه های اجتماعی، طراحی خلاقانه، بهبود برند، همکاری تیمی"
+        },
+        images: [
+            {src: "/Portfolio/Sura/sura1.jpg",
+                alt: {
+                    english: "Reranding for SURA Architecture Group",
+                    farsi: "برندینگ تصویری برای گروه معماری سورا"
+                }
+            },
+            {src: "/Portfolio/Sura/sura2.jpg",
+                alt: {
+                    english: "Reranding for SURA Architecture Group",
+                    farsi: "برندینگ تصویری برای گروه معماری سورا"
+                }
+            },
+        ],
+        logo: "/Portfolio/Sura/Sura.svg",
+        color: "#fffabd"
+    },
     {
         id: 'environment',
         title: 'Echo',
@@ -8,12 +46,9 @@ export const projectsData = [
         date: 'May 11, 2021',
         services: ['Poster Design', 'Envronmental Art'],
         description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
-        statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
-            '\n' +
-            'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
-            '\n' +
-            'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
-        coverImageUrl: '/Portfolio/Environmental Posters/cover-01.jpg',
+        statement: '',
+        coverImageUrl: "/Portfolio/Environmental Posters/cover-01.jpg",
+
         keywords: {
             english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
             farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
