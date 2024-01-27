@@ -31,6 +31,9 @@ body {
 
   @apply bg-black text-gray-100
 }
+.link {
+  @apply py-2 text-xs text-white hover:text-red-300 opacity-80 font-normal not-italic transition-all duration-300
+}
 
 .left-page {
   @apply bg-gradient-to-l w-full h-full to-5% from-slate-900

@@ -55,7 +55,7 @@ const PortfolioSection = ({
                             </span>
                         ))}
                     </div>
-                        <p className="text-xs ">{description}</p>
+                        <p className="text-xs">{description}</p>
 
                     </div>
 

@@ -53,6 +53,7 @@ export const projectsData = [
             english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
             farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
         },
+
         images: [
             {
                 src: '/Portfolio/Environmental Posters/Env-05.png',
@@ -238,7 +239,7 @@ export const projectsData = [
                 }
             }
         ],
-        logo: "/Portfolio/Parla/Parla.svg",
+        logo: '',
         color: "#8f9b87"
     },
     // {

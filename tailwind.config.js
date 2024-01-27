@@ -25,7 +25,8 @@ module.exports = {
         'zinc': '#EFEFEF',
         // 'accent' : '#8DBDAC',
         // 'accent' : '#67AEA6',
-        'accent' : '#AA3949',
+        'accent' : '#AAC4D2',
+        // 'accent' : '#AA3949',
         // 'accent' : '#93A6D9',
         'dark-teal': '#001112',
         'paper': '#D8D1C9'

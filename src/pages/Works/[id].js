@@ -30,7 +30,7 @@ const Id = ({ work }) => {
                 <h1 className="text-5xl font-medium uppercase ">{title}</h1>
             <p className="text-gray-500 pl-2 ">{year}</p>
             </div>
-            <p className="text-justify mt-2 text-sm p-16">{description}</p>
+            <p className="text-justify mt-2 pr-5 text-sm p-16">{description}</p>
             <div className="grid grid-cols-1 bg-white p-2 md:grid-cols-3 gap-4 mt-4">
                 {images.map((image, index) => (
                     <img

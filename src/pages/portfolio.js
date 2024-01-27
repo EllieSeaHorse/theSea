@@ -50,10 +50,10 @@ export default function Portfolio() {
                 className={"px-6 pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
             >
                 <Bigbox className={"col-span-3 md:py-14 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 text-xs md:text-sm h-full flex flex-col animated slide-up"}>
-                    <h1 className={"text-4xl mt-4 text-white lg:text-7xl"}>PORTFOLIO</h1>
-                    <h1 className={"text-lg pl-1 uppercase"}>Sama Moayeri</h1>
-                    <h1 className={"text-xs text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Selection of works</h1>
-                    <h1 className={"text-xs text-accent uppercase text-right pb-16"}>2018-2023</h1>
+                    <h1 className={"text-4xl mt-4 text-white uppercase lg:text-7xl"}>About Me</h1>
+                    <h1 className={" uppercase py-2"}>+ Portfolio / CV</h1>
+                    <h1 className={"text-xs text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Sama Moayeri</h1>
+                    <h1 className={"text-xs text-accent uppercase text-right pb-16"}>1999</h1>
 
                     <p className={"p-4 leading-5 my-4 border"}>
                         Experienced senior graphic designer with a passion

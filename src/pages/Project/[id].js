@@ -9,6 +9,7 @@ import Head from 'next/head';
 import useLoadingState from '@/components/Hooks/useLoadingState';
 import LoadingVisual from "@/components/Transition/LoadingVisual";
 import { useRouter } from 'next/router';
+import Footer from "@/components/footer";
 
 const id = ({ project }) => {
     const router = useRouter();
@@ -30,6 +31,8 @@ const id = ({ project }) => {
     const containerRef = useRef(null);
     const imageLoadCounter = useRef(0);
 
+    const [isSmallScreen, setIsSmallScreen] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
+
     useEffect(() => {
         const handleWheel = (event) => {
             const container = containerRef.current;
@@ -43,12 +46,38 @@ const id = ({ project }) => {
             event.preventDefault();
         };
 
-        window.addEventListener('wheel', handleWheel, { passive: false });
+        const isSmallScreen = window.innerWidth < 768; // Adjust the screen width breakpoint as needed
+
+        if (!isSmallScreen) {
+            window.addEventListener('wheel', handleWheel, { passive: false });
+        }
 
         return () => {
-            window.removeEventListener('wheel', handleWheel);
+            if (!isSmallScreen) {
+                window.removeEventListener('wheel', handleWheel);
+            }
         };
     }, []);
+
+    // useEffect(() => {
+    //     const handleWheel = (event) => {
+    //         const container = containerRef.current;
+    //         const delta = event.deltaY || event.detail || event.wheelDelta;
+    //
+    //         if (container) {
+    //             const scrollFactor = 5;
+    //             container.scrollLeft += delta * scrollFactor;
+    //         }
+    //
+    //         event.preventDefault();
+    //     };
+    //
+    //     window.addEventListener('wheel', handleWheel, { passive: false });
+    //
+    //     return () => {
+    //         window.removeEventListener('wheel', handleWheel);
+    //     };
+    // }, []);
 
     const [loading, setLoading] = useState(true);
 
@@ -117,32 +146,27 @@ const id = ({ project }) => {
             </Head>
 
             <div
+                className={"h-auto md:h-screen grid grid-cols-4 px-8"}>
+                <div className={"pb-6 pt-16 pr-0 md:pr-6 md:pt-20 md:flex flex-col justify-between col-span-4 md:col-span-1  text-white"}>
 
-                className={"h-screen grid grid-cols-4 pl-8"}>
-
-                <div className={"hidden py-20 md:flex flex-col justify-between col-span-1 text-white"}>
-                    {/*<div>*/}
-                    {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
-                    {/*    <p>{subheading}</p>*/}
-                    {/*    <p>{year}</p>*/}
-                    {/*    <p className={"text-xs text-justify p-2 border-l"}>{description}</p>*/}
-                    {/*</div>*/}
-
-                    <div className={"border-l p-4 px-4"}>
+                    <div
+                        className={" pb-4 px-4"}
+                        style={{borderLeft: `2px solid ${color}`}}
+                    >
                         <h1 className="text-3xl font-medium uppercase ">{title}</h1>
                         <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
                         <p className="text-gray-500 text-sm">{new Date(date).getFullYear()}</p>
                     </div>
 
-                    <div className={"text-xs px-2"} >
+                    <div className={"text-xs px-2 "} >
                         {((logo != '') &&
                             <img
                                 src={project.logo}
                                 alt={`${project.title}'s Logo `}
-                                className={"pb-4 w-20 z-50 object-cover object-center "}
+                                className={"pt-8 pb-4 w-20 z-50 object-cover object-center "}
                             />
                         )}
-                        <p className="text-xs ">{description}</p>
+                        <p className="text-xs py-3 ">{description}</p>
                         <div className={"text-xs py-4"} style={{color:color}}>
                             {services.map((service, index) => (
                                 <span key={index}>
@@ -152,7 +176,11 @@ const id = ({ project }) => {
                         </div>
                     </div>
 
-                    <div className={"flex justify-between text-xs pr-6"}>
+                    <div>
+
+                    <div
+                        className={"flex justify-between py-4 text-xs "}
+                    >
 
                         <a onClick={() => handleNavigation(getPreviousProjectId())}>
                             <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square"></i>
@@ -163,6 +191,9 @@ const id = ({ project }) => {
                             {sortedProjects.find((project) => project.id === getNextProjectId())?.title}
                             <i className="p-2 bi bi-arrow-right-square"></i>
                         </a>
+
+                    </div>
+                    <Footer className={"hidden md:block p-0 !opacity-50"}/>
 
                     </div>
 
@@ -178,42 +209,7 @@ const id = ({ project }) => {
                         damping: 50,
                     }}
 
-                    ref={containerRef} style={{ overflowX: 'auto', overflowY: 'hidden' } } className={"rounded flex col-span-4 md:col-span-3"}>
-                    <div className={"md:hidden py-16 flex flex-col justify-between h-screen aspect-14 text-white"}>
-                        {/*<div>*/}
-                        {/*    <h1 className="text-3xl font-bold">{title}</h1>*/}
-                        {/*    <p>{subheading}</p>*/}
-                        {/*    <p>{year}</p>*/}
-                        {/*    <p className={"text-xs text-justify p-2 border-l"}>{description}</p>*/}
-                        {/*</div>*/}
-                        <div className={"border-l p-4 "}>
-                            <h1 className="text-3xl font-medium uppercase min-w-96">{title}</h1>
-                            <p className="text-gray-500 text-sm pl-2 ">{year}</p>
-
-                        </div>
-                        <div className={"text-xs py-4"} style={{color:color}}>
-                            {services.map((service, index) => (
-                                <span key={index}>
-                                 {(index > 0 && " / ")}{service}
-                            </span>
-                            ))}
-                        </div>
-                        <p className="text-xs ">{description}</p>
-
-                        <div className={"md:flex hidden justify-between text-xs text-neutral-400"}>
-                            <Link href={`/Project/${getPreviousProjectId()}`} >
-                                <i className="bi bi-arrow-left-square"></i>
-                            </Link>
-                            <Link href={`/Project/${getNextProjectId()}`} >
-                                Next
-                                <i className="p-2 bi bi-arrow-right-square"></i>
-
-                            </Link>
-                        </div>
-
-                    </div>
-
-                    {/*<img  src={coverImageUrl} alt={`${alt}`}  className="pt-16 object-contain rounded-lg" />*/}
+                    ref={containerRef} style={{ overflowX: 'auto' } } className={"block rounded md:flex col-span-4 md:col-span-3"}>
 
                     {images.map((image, index) => (
                         <img
@@ -225,21 +221,33 @@ const id = ({ project }) => {
                             data-pin-lang="en"
                             width={image.width ? `${image.width} ` : `1700`}
                             height={image.height ? `${image.height} ` : `1100`}
-                            className=" pt-14 pb-3 pr-2 h-screen object-contain"
+                            className=" md:pt-14 pb-1 pt-1 md:pb-3  md:pr-2 h-auto md:h-screen object-contain"
                         />
                     ))}
                     {(statement !== '') &&
-                        <div className=" py-16 px-1 h-screen hidden md:aspect-12 my-auto text-sm  leading-4 md:flex items-stretch ">
-
+                        <div className=" py-2 md:py-16 px-2 md:px-1 h-auto md:h-screen md:aspect-12 my-auto text-sm leading-4 md:flex items-stretch ">
                             <div className={"px-10 text-xs leading-5 pr-12 py-20 rounded "}><p className={"text-base pb-2.5"}>{title}
                             </p> {statement}</div>
                         </div>}
+                            <div
+                                className={"flex md:hidden justify-between py-5 text-xs "}
+                            >
 
+                            <a onClick={() => handleNavigation(getPreviousProjectId())}>
+                                <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square"></i>
+                            </a>
+                            <a
+                                className={"cursor-pointer opacity-75 hover:opacity-100 "}
+                                onClick={() => handleNavigation(getNextProjectId())}>
+                                {sortedProjects.find((project) => project.id === getNextProjectId())?.title}
+                                <i className="p-2 bi bi-arrow-right-square"></i>
+                            </a>
+
+                        </div>
+                    <Footer className={"block md:hidden"}/>
                 </motion.div>
 
             </div>
-
-
         </Layout>
     );
 };
