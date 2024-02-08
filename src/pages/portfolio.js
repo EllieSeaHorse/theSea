@@ -135,22 +135,15 @@ export default function Portfolio() {
             {viewingResume && (
                 <Resume/>
             )}
-            {/*<div>*/}
-            {/*    {projectsData.map((project, index) => (*/}
-            {/*        <PortfolioSection*/}
-            {/*            key={index}*/}
-            {/*            title={project.title}*/}
-            {/*            subheading={project.subheading}*/}
-            {/*            year={project.year}*/}
-            {/*            services={project.services}*/}
-            {/*            description={project.description}*/}
-            {/*            coverImageUrl={project.coverImageUrl}*/}
-            {/*            images={project.images}*/}
-            {/*            color={project.color}*/}
-            {/*        >*/}
-            {/*        </PortfolioSection>*/}
-            {/*    ))}*/}
-            {/*</div>*/}
+            <div className={"w-full h-full"}>
+                {Array.from({length: 28}, (_, index) => (
+                    <img
+                        key={index + 1}
+                        src={`/Portfolio/Selection/selec${index + 1}.jpg`}
+                        alt={`Image ${index + 1}`}
+                    />
+                ))}
+            </div>
 
             <Footer className={"relative"}/>
 
