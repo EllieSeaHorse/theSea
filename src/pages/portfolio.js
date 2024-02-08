@@ -135,12 +135,13 @@ export default function Portfolio() {
             {viewingResume && (
                 <Resume/>
             )}
-            <div className={"w-full h-full"}>
+            <div className={"w-full bg-black px-2"}>
                 {Array.from({length: 28}, (_, index) => (
                     <img
                         key={index + 1}
                         src={`/Portfolio/Selection/selec${index + 1}.jpg`}
                         alt={`Image ${index + 1}`}
+                        className={"object-contain w-full max-h-screen"}
                     />
                 ))}
             </div>
