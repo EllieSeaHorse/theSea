@@ -14,12 +14,12 @@ export const projectsData = [
             "Logo Design",
             "Stationary Items Design"
         ],
-        description: "Contributed to the enhancement of Parla Advertising Agency's brand through collaborative efforts in 2023. Played a key role in elevating visual branding, event branding, stationery design, and social media uniform design.",
-        statement: "As a dedicated team member at Parla Advertising Agency, the 2023 project was a journey of collaborative creativity. I actively contributed to enhancing the agency's brand through focused efforts in visual branding, event branding, stationery design, and social media uniform design. The goal was not just to create designs but to craft impactful experiences, resonating with our audience. Every project was a canvas for telling a unique brand story. My commitment was to push the limits of design innovation, leaving a lasting impression in the dynamic landscape of brand aesthetics. This ongoing project exemplifies our dedication to creativity, teamwork, and continuous improvement.",
+        description: "Brand Identity and Strategy for SURA architecture group.",
+        statement: "",
         coverImageUrl: "/Portfolio/Sura/sura1.jpg",
         keywords: {
-            english: "Parla Advertising Agency, Visual Branding, Event Branding, Stationery Design, Social Media Uniform Design, Creative Design, Brand Enhancement, Team Collaboration",
-            farsi: "آژانس تبلیغاتی پارلا، برندینگ تصویری، برندینگ رویداد، طراحی لوازم التحریر، طراحی یکنواختی رسانه های اجتماعی، طراحی خلاقانه، بهبود برند، همکاری تیمی"
+            english: "SURA architecture group, Visual Branding, Architecture Branding, Stationery Design, Creative Design, Brand Enhancement, ",
+            farsi: ""
         },
         images: [
             {src: "/Portfolio/Sura/sura1.jpg",
@@ -45,13 +45,13 @@ export const projectsData = [
         year: 2023,
         date: 'May 11, 2021',
         services: ['Poster Design', 'Envronmental Art'],
-        description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
+        description: 'Crafting a Series of Poster on the Subject of Animals Extinction',
         statement: '',
         coverImageUrl: "/Portfolio/Environmental Posters/cover-01.jpg",
 
         keywords: {
-            english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
-            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
+            english: 'Poster Design\', \'Envronmental Art',
+            farsi: ' '
         },
 
         images: [
@@ -242,27 +242,50 @@ export const projectsData = [
         logo: '',
         color: "#8f9b87"
     },
-    // {
-    //     id: 'p2',
-    //     title: 'Sunlit',
-    //     subheading: 'Creative Agency',
-    //     year: 2022,
-    //     services: ['Brand Identity', 'Logo', 'Website', '3D Modelling', 'Social Media Uniform', 'Stationary Items'],
-    //     description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-    //     statement: '',
-    //     coverImageUrl: '/portfolioImages/Artboard 3.png',
-    //     KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
-    //     images: [
-    //         { src: '/portfolioImages/2-Verite Perfume .jpg', alt: 'Vector Art' },
-    //         { src: '/portfolioImages/4-Shirin Perfume.jpg', alt: 'Website Design' },
-    //         { src: '/portfolioImages/3-Leili Perfume.jpg', alt: 'Website Design' },
-    //         { src: '/portfolioImages/5-Vis Perfume.jpg', alt: 'Website Design' },
-    //
-    //     ],
-    //     logo: '/Portfolio/Sunlit/Sunlit.svg',
-    //
-    //     color: '#523D57'
-    // },
+    {
+        id: 'sunlit',
+        title: 'Sunlit',
+        subheading: 'Jewelry',
+        date: 'January 15, 2023',
+        services: ['Brand Identity', 'Logo', 'Stationary Items'],
+        description: 'Brand Identity and Strategy for SUNLIT Jewelry.',
+        statement: '',
+        coverImageUrl: '/Portfolio/Sunlit/sunlit3.jpg',
+        KeyWords: 'Brand Identity and Strategy for SUNLIT Jewelry',
+        images: [
+            // { src: '/Portfolio/Sunlit/sunlit1.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Sunlit/sunlit3.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Sunlit/sunlit2.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Sunlit/sunlit4.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Sunlit/sunlit5.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Sunlit/sunlit6.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+
+
+        ],
+        logo: '/Portfolio/Sunlit/Sunlit.svg',
+        color: '#8DD4B5'
+    },  {
+        id: 'buscafe',
+        title: 'Bus Cafe',
+        subheading: 'Jewelry',
+        date: 'February 15, 2023',
+        services: ['Brand Identity', 'Logo', 'Restaurant Items'],
+        description: 'Rebranding Project for Bus Cafe.',
+        statement: '',
+        coverImageUrl: '/Portfolio/Bus Cafe/bus2.png',
+        KeyWords: 'Rebranding Project for Bus Cafe.',
+        images: [
+            // { src: '/Portfolio/Sunlit/sunlit1.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+            { src: '/Portfolio/Bus Cafe/bus1.png', alt: 'Rebranding Project for Bus Cafe' },
+            { src: '/Portfolio/Bus Cafe/bus2.png', alt: 'Rebranding Project for Bus Cafe' },
+            { src: '/Portfolio/Bus Cafe/bus3.png', alt: 'Rebranding Project for Bus Cafe' },
+            { src: '/Portfolio/Bus Cafe/bus4.png', alt: 'Rebranding Project for Bus Cafe' },
+
+
+        ],
+        logo: '/Portfolio/Bus Cafe/busLogo.svg',
+        color: '#D5BB99'
+    },
     {
         id: 'film',
         title: 'Film Posters',
@@ -345,10 +368,10 @@ export const projectsData = [
         date: 'December 15, 2021',
 
         services: ['Photography'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-        statement: '',
+        description: 'Series of Self-Portraits',
+        statement: 'Nocturnal events, when a heavy and coercive silence blurs the boundary between reality and imagination. The night\'s light and color transform the meaning of objects, while darkness renders everything alike. The slightest movements break the potential silence and take on a performative quality. Absence opens the mind to wander, yet the closed mind doesn\'t transcend the walls of the room. Everything existing is constantly repeated; colors blend together, sounds reverberate, and yet nothing happens. Nothing, the slightest tremor, becomes the center of attention; everyone watches every move, sometimes encouraging, sometimes reprimanding, and other times, sadly listening to the cries. The intensity of every feeling becomes so overwhelming that it becomes meaningless, striking but painless, worrying about numbness, yet still seeing nothing. He recalls fragments, unsure if he owns them; the fragments flee at the same speed they arrived, so intense that their existence is denied, and they lead him to contemplate death.',
         coverImageUrl: '/Portfolio/White Nights/WhiteNights-05.jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
+        KeyWords: 'Series of Self-Portraits',
         images: [
             { src: '/Portfolio/White Nights/WhiteNights-01.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights-02.jpg', alt: 'Photography White Nights Art' },
@@ -383,30 +406,30 @@ export const projectsData = [
 
         color: '#B28B98'
     },
-    {
-        id: 'crossed',
-        title: 'Crossed',
-        subheading: 'Photo Series',
-        year: 2020,
-        date: 'December 15, 2021',
-
-        services: ['Photography'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-        statement: '',
-        coverImageUrl: '/Portfolio/Crossed/Crossed-01.jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
-        images: [
-            { src: '/Portfolio/Crossed/Crossed-01.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
-            { src: '/Portfolio/Crossed/Crossed-02.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
-            { src: '/Portfolio/Crossed/Crossed-03.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
-            { src: '/Portfolio/Crossed/Crossed-04.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
-            { src: '/Portfolio/Crossed/Crossed-05.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
-
-        ],
-        logo: '',
-
-        color: '#8A916D'
-    },
+    // {
+    //     id: 'crossed',
+    //     title: 'Crossed',
+    //     subheading: 'Photo Series',
+    //     year: 2020,
+    //     date: 'December 15, 2021',
+    //
+    //     services: ['Photography'],
+    //     description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Crossed/Crossed-01.jpg',
+    //     KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
+    //     images: [
+    //         { src: '/Portfolio/Crossed/Crossed-01.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+    //         { src: '/Portfolio/Crossed/Crossed-02.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+    //         { src: '/Portfolio/Crossed/Crossed-03.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+    //         { src: '/Portfolio/Crossed/Crossed-04.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+    //         { src: '/Portfolio/Crossed/Crossed-05.jpg', alt: 'Photography Trepidation Fear' , width:"1772", height:"1181" },
+    //
+    //     ],
+    //     logo: '',
+    //
+    //     color: '#8A916D'
+    // },
     // {
     //     id: 'crossed2',
     //     title: 'Crossed',
@@ -439,10 +462,10 @@ export const projectsData = [
         date: 'December 15, 2020',
 
         services: ['Photography'],
-        description: 'Collaborating on the development of the visual identity for "Nil Creative House," a dynamic creative agency, y.',
-        statement: '',
+        description: 'Intimate Scenes and Dancing',
+        statement: 'In the ethereal dance of light and shadow,  the essence of two worlds colliding, merging, becoming one. Film scenes intertwine with the tapestry of my home, weaving stories untold, mysteries unsolved. In this realm of double exposed dreams, truth eludes definition, and meaning is found in the spaces between.',
         coverImageUrl: '/Portfolio/Wider/Wider-02.jpg',
-        KeyWords: 'Parla Creative Agency Brand Identity Logo Website 3D Character Design Social Media Uniform Stationary Items',
+        KeyWords: '',
         images: [
             { src: '/Portfolio/Wider/Wider-01.jpg', alt: 'Photography Trepidation Fear' },
             { src: '/Portfolio/Wider/Wider-02.jpg', alt: 'Photography Trepidation Fear' },
@@ -461,28 +484,28 @@ export const projectsData = [
 
         color: '#BA9C8C'
     },
-    {
-        id: 'studies',
-        title: 'Studies',
-        subheading: 'Photo Series',
-        year: 2022,
-        date: 'December 15, 2021',
-
-        services: ['Photography'],
-        description: '',
-        statement: '',
-        coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
-        KeyWords: '',
-        images: [
-            { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
-
-        ],
-        logo: '',
-        color: '#edd4b9'
-    },
+    // {
+    //     id: 'studies',
+    //     title: 'Studies',
+    //     subheading: 'Photo Series',
+    //     year: 2022,
+    //     date: 'December 15, 2021',
+    //
+    //     services: ['Photography'],
+    //     description: '',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
+    //     KeyWords: '',
+    //     images: [
+    //         { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
+    //
+    //     ],
+    //     logo: '',
+    //     color: '#edd4b9'
+    // },
     {
         id: 'pacific',
         title: 'Pacific',
@@ -509,32 +532,32 @@ export const projectsData = [
         logo: '',
         color: '#dee2d3'
     },
-    {
-        id: 'joyce',
-        title: 'Ulysses',
-        subheading: 'Art Book',
-        year: 2022,
-        date: 'December 15, 2022',
-
-        services: ['Art Book'],
-        description: '',
-        statement: '',
-        coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
-        KeyWords: '',
-        images: [
-            { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
-
-        ],
-        logo: '',
-        color: '#A1B28B'
-    },
+    // {
+    //     id: 'joyce',
+    //     title: 'Ulysses',
+    //     subheading: 'Art Book',
+    //     year: 2022,
+    //     date: 'December 15, 2022',
+    //
+    //     services: ['Art Book'],
+    //     description: '',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
+    //     KeyWords: '',
+    //     images: [
+    //         { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
+    //
+    //     ],
+    //     logo: '',
+    //     color: '#A1B28B'
+    // },
 ];

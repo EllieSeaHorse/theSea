@@ -209,7 +209,7 @@ const id = ({ project }) => {
                         damping: 50,
                     }}
 
-                    ref={containerRef} style={{ overflowX: 'auto' } } className={"block rounded md:flex col-span-4 md:col-span-3"}>
+                    ref={containerRef} style={{ overflowX: 'auto' } } className={"block  md:flex col-span-4 md:col-span-3"}>
 
                     {images.map((image, index) => (
                         <img
@@ -221,12 +221,12 @@ const id = ({ project }) => {
                             data-pin-lang="en"
                             width={image.width ? `${image.width} ` : `1700`}
                             height={image.height ? `${image.height} ` : `1100`}
-                            className=" md:pt-14 pb-1 pt-1 md:pb-3  md:pr-2 h-auto md:h-screen object-contain"
+                            className=" md:pt-14 pb-1 pt-1 md:pb-3 md:pr-2 h-auto md:h-screen object-contain"
                         />
                     ))}
                     {(statement !== '') &&
                         <div className=" py-2 md:py-16 px-2 md:px-1 h-auto md:h-screen md:aspect-12 my-auto text-sm leading-4 md:flex items-stretch ">
-                            <div className={"px-10 text-xs leading-5 pr-12 py-20 rounded "}><p className={"text-base pb-2.5"}>{title}
+                            <div className={"px-10 text-xs leading-5 pr-12 py-20"}><p className={"text-base pb-2.5"}>{title}
                             </p> {statement}</div>
                         </div>}
                             <div
