@@ -3,6 +3,7 @@ import {projectsData} from "@/data/projectsData";
 import PortfolioSection from "@/components/portfolioSection";
 import Footer from "@/components/footer";
 import Head from "next/head";
+import ThreeScene from "@/components/3D/ThreeD";
 import React from "react";
 
 import List from "@/components/List";
@@ -29,9 +30,11 @@ export default function Home() {
                     <div
                         className={"w-full flex items-end justify-end h-screen stop  bg-black "}
                     >
-                        <img src={'/Portfolio/Home.jpg'}
-                             width="1200" height="800"
-                             className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>
+                        {/*<img src={'/Portfolio/Home.jpg'}*/}
+                        {/*     width="1200" height="800"*/}
+                        {/*     className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
+                        <ThreeScene /> {/* Render the ThreeScene component */}
+
                     </div>
 
                     <div className={"min-h-screen "}>
