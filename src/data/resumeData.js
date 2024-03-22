@@ -28,6 +28,16 @@ export const languageData = [
 ];
 
 export const workExperienceData = [
+
+    {
+        title: "Senior Graphic Designer",
+        year: "2023 - Present",
+        description: "Did Creative Strategy, Tehran, Iran",
+        list: [
+            ""
+        ],
+    },
+
     {
 
         title: "Graphic Design Artist & Photographer",
@@ -45,7 +55,7 @@ export const workExperienceData = [
     },
     {
         title: "Creative Design Manager",
-        year: "2022 - Present",
+        year: "2022 - 2023",
         description: "Parla Idea, Tehran, Iran",
         list: [
             "Lead material design for consistent branding and visual appeal.",
@@ -170,11 +180,11 @@ export const competenceData = [
     {
         title: 'Web Development',
         items: [
-            { name: 'HTML / CSS', percentage: 90 },
-            { name: 'JavaScript', percentage: 85 },
-            { name: 'React / Next.js', percentage: 80 },
+            { name: 'HTML / CSS', percentage: 70 },
+            { name: 'JavaScript', percentage: 55 },
+            { name: 'React / Next.js', percentage: 30 },
             { name: 'Swift / Swift UI', percentage: 30 },
-            { name: 'Git / Github', percentage: 75 },
+            { name: 'Git / Github', percentage: 35 },
         ],
     },
 ];
