@@ -74,7 +74,7 @@ export const photosData = [
 
     {
         id: 'Objective',
-        title: 'Trepidation',
+        title: 'Objective',
         subheading: 'A Photography Series',
         year: 2019,
         date: 'December 15, 2019',
@@ -98,7 +98,7 @@ export const photosData = [
     },
     {
         id: 'Singles',
-        title: 'Trepidation',
+        title: 'Singles',
         subheading: 'A Photography Series',
         year: 2019,
         date: 'December 15, 2019',
@@ -122,7 +122,7 @@ export const photosData = [
     },
     {
         id: 'Eclipse',
-        title: 'Trepidation',
+        title: 'Eclipse',
         subheading: 'A Photography Series',
         year: 2019,
         date: 'December 15, 2019',
