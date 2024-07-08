@@ -15,7 +15,14 @@ export default function Nav({ children, classname }) {
                     </div>
                 </Link>
                 <div className="flex text-xs font-normal font-montserrat space-x-3">
+                    <h1 className="flex items-center group hover:text-accent transition-all">
+
+                        <Link href="/photography" passHref target={`blank`} className={"px-3 hover:text-accent transition-colors duration-300 ease-in-out"}>
+                            PHOTOGRAPHY
+                        </Link>
+                    </h1>
                     <Link href={'/portfolio'} className={"hover:text-accent transition-all duration-500"}>ABOUT</Link>
+
 
                     <h1 className="flex items-center group hover:text-accent transition-all">
 

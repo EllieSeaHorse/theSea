@@ -12,10 +12,11 @@ import { useRouter } from 'next/router';
 import Footer from "@/components/footer";
 import ImageWithShare from "@/components/ImagewithShare";
 import ShareButtons from "@/components/Share";
+import {photosData} from "@/data/photosData";
 
 const id = ({ project }) => {
     const router = useRouter();
-    const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedProjects = photosData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     const { title, year, subheading, services, description, logo, coverImageUrl, date ,statement, keyWords, images, color } = project;
     const currentIndex = sortedProjects.findIndex((p) => p.id === project.id);
@@ -120,7 +121,7 @@ const id = ({ project }) => {
         window.scrollTo(0, 0);
 
         // Navigate to the next/previous project
-        router.push(`/Project/${id}`);
+        router.push(`/Photos/${id}`);
     };
 
     return (
@@ -274,12 +275,12 @@ export default id;
 // ... (your existing getStaticPaths and getStaticProps)
 
 const fetchProjectData = async (id) => {
-    return projectsData.find((p) => p.id === id);
+    return photosData.find((p) => p.id === id);
 };
 
 
 export async function getStaticPaths() {
-    const paths = projectsData.map((project) => ({
+    const paths = photosData.map((project) => ({
         params: { id: project.id.toString() }, // Convert the ID to string if it's not already
     }));
 
@@ -288,7 +289,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const projectId = params.id;
-    const project = projectsData.find((p) => p.id === projectId);
+    const project = photosData.find((p) => p.id === projectId);
 
     return {
         props: {

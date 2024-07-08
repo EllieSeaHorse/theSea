@@ -8,8 +8,9 @@ import React from "react";
 
 import List from "@/components/List";
 import ShareButtons from "@/components/Share";
-export default function Home() {
-    const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+import {photosData} from "@/data/photosData";
+export default function Photography() {
+    const sortedProjects = photosData.sort((a, b) => new Date(b.date) - new Date(a.date));
     return (
         <Layout>
             <Head>
@@ -26,17 +27,6 @@ export default function Home() {
                         sortedProjects={sortedProjects}
                         classname={"fixed hidden md:block"}
                     />
-
-
-                    <div
-                        className={"w-full flex items-end justify-end h-screen stop  bg-black "}
-                    >
-                        {/*<img src={'/Portfolio/Home.jpg'}*/}
-                        {/*     width="1200" height="800"*/}
-                        {/*     className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
-                        <ThreeScene /> {/* Render the ThreeScene component */}
-
-                    </div>
 
                     <div className={"min-h-screen "}>
                         {sortedProjects.map((project, index) => (
@@ -58,8 +48,7 @@ export default function Home() {
                                     date={project.date}
                                     images={project.images}
                                     color={project.color}
-                                    category={"Project"}
-
+                                    category={"Photos"}
                                 >
                                     <div
                                         className={"flex"}
@@ -71,7 +60,7 @@ export default function Home() {
                                                 className={"w-40 z-50  object-cover object-center"}
                                                 width="400" height="400"
                                             />
-                                         :
+                                            :
                                             <p>{project.title}</p>
                                         }
                                     </div>
