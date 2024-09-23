@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function PercentageBar({ percentage }) {
     return (
-        <div className="bg-gray-900 rounded-full flex h-3 items-center">
+        <div className="bg-neutral-200 rounded-full flex h-3 items-center">
             <div
                 className="h-2 rounded-full bg-accent"
                 style={{ width: `${percentage}%` , opacity: `${percentage}%` }}

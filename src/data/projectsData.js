@@ -164,36 +164,36 @@ export const projectsData = [
         color: '#c69b8d'
 
     },
-    // {
-    //     id: 'verite',
-    //     title: 'Verite',
-    //     subheading: 'Perfume',
-    //     date: 'Jan 15, 2024',
-    //     services: ['Packaging Design', '3D Modelling'],
-    //     description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
-    //     statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
-    //         '\n' +
-    //         'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
-    //         '\n' +
-    //         'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
-    //     coverImageUrl: '/Portfolio/Verite/Verite-01.jpg',
-    //     keywords: {
-    //         english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
-    //         farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
-    //     },
-    //     images: [
-    //         { src: '/Portfolio/Verite/Verite-01.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' },  width: "1200" ,  height: "1200" , },
-    //         { src: '/Portfolio/Verite/Verite-shirin.jpg', alt: { english: 'Shirin Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر شیرین' }, width: "1200" ,  height: "1200" , },
-    //         { src: '/Portfolio/Verite/Verite-leili.jpg', alt: { english: 'Leili Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر لیلی' },  width: "1200" ,  height: "1200" , },
-    //         { src: '/Portfolio/Verite/Verite-vis.jpg', alt: { english: 'Vis Perfume Packaging Design', farsi: 'طراحی بسته‌بندی  عطر ویس' } ,  width: "1200" ,  height: "1200" , },
-    //         { src: '/Portfolio/Verite/Verite-05.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' } ,  width: "1200" ,  height: "1200" , },
-    //
-    //     ],
-    //     logo: '/Portfolio/Verite/Verite.svg',
-    //     color: '#AF9EBD'
-    // }
-    //
-    // ,
+    {
+        id: 'verite',
+        title: 'Verite',
+        subheading: 'Perfume',
+        date: 'Jan 15, 2024',
+        services: ['Packaging Design', '3D Modelling'],
+        description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
+        statement: 'In the realm of perfumery, the essence of love and narrative intricacies are encapsulated within the poetic resonance of three distinct fragrances. As a tribute to the timeless Persian love stories, Leili, Shirin, and Vis, this meticulously designed three-piece perfume packaging embarks on a sensorial journey into the heart of these iconic tales.\n' +
+            '\n' +
+            'At the core of this design narrative lies an artful interplay of illustration and mystique. Visual poetry unfolds through a series of delicate, vague yet evocative representations. Here, a girl is unveiled in enigmatic fragments, observed from every angle, seemingly ensnared within an abstract cube. This artistic expression subtly hints at her entrapment while symbolizing the captivating essence of nature—an elusive, ever-changing force.\n' +
+            '\n' +
+            'The intentional fusion of the art of illustration and a poetic aura woven into the design invites a subjective interpretation—a deliberate ambiguity, inviting viewers to immerse themselves in a world where the boundaries between art and emotion blur. This artistic rendering serves as a visual allegory, symbolizing the entwined fate of love\'s protagonists and the intricate, ever-evolving essence of nature. Much like how each story carries its unique emotional weight, these scents intertwine to narrate their own aromatic tales. A doorway to an ethereal experience, each angle an invitation to explore the emotional layers within.\n',
+        coverImageUrl: '/Portfolio/Verite/Verite-01.jpg',
+        keywords: {
+            english: 'Verite Perfume, Packaging Design, 3D Modelling, Fragrance Packaging, Persian Love Stories, Visual Poetry, Artistic Illustration, Aromatic Tales',
+            farsi: 'عطر وریته، طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی عطر، داستان‌های عشق فارسی، شعر بصری '
+        },
+        images: [
+            { src: '/Portfolio/Verite/Verite-01.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' },  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-shirin.jpg', alt: { english: 'Shirin Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر شیرین' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-leili.jpg', alt: { english: 'Leili Perfume Packaging Design', farsi: 'طراحی بسته‌بندی عطر لیلی' },  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-vis.jpg', alt: { english: 'Vis Perfume Packaging Design', farsi: 'طراحی بسته‌بندی  عطر ویس' } ,  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Verite/Verite-05.jpg', alt: { english: 'Packaging Art - Verite Perfume Packaging', farsi: 'هنر بسته بندی - بسته‌بندی عطر وریته' } ,  width: "1200" ,  height: "1200" , },
+    
+        ],
+        logo: '/Portfolio/Verite/Verite.svg',
+        color: '#AF9EBD'
+    }
+    
+    ,
     {
         id: "parla",
         title: "Parla",
@@ -368,52 +368,52 @@ export const projectsData = [
         color: '#916E6E'
     },
 
-    // {
-    //     id: 'whitenights',
-    //     title: 'White Nights',
-    //     subheading: 'Photo Series',
-    //     year: 2021,
-    //     date: 'December 15, 2021',
-    //
-    //     services: ['Photography'],
-    //     description: 'Series of Self-Portraits',
-    //     statement: 'Nocturnal events, when a heavy and coercive silence blurs the boundary between reality and imagination. The night\'s light and color transform the meaning of objects, while darkness renders everything alike. The slightest movements break the potential silence and take on a performative quality. Absence opens the mind to wander, yet the closed mind doesn\'t transcend the walls of the room. Everything existing is constantly repeated; colors blend together, sounds reverberate, and yet nothing happens. Nothing, the slightest tremor, becomes the center of attention; everyone watches every move, sometimes encouraging, sometimes reprimanding, and other times, sadly listening to the cries. The intensity of every feeling becomes so overwhelming that it becomes meaningless, striking but painless, worrying about numbness, yet still seeing nothing. He recalls fragments, unsure if he owns them; the fragments flee at the same speed they arrived, so intense that their existence is denied, and they lead him to contemplate death.',
-    //     coverImageUrl: '/Portfolio/White Nights/WhiteNights-05.jpg',
-    //     KeyWords: 'Series of Self-Portraits',
-    //     images: [
-    //         { src: '/Portfolio/White Nights/WhiteNights-01.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-02.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-03.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-04.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-05.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-06.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-07.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-08.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-09.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights-10.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-02.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-03.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-04.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-05.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-06.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-07.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-08.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights2-09.jpg', alt: 'Photography White Nights Art' },            { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-01.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-02.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-04.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-05.jpg', alt: 'Photography White Nights Art' },
-    //         // { src: '/Portfolio/White Nights/WhiteNights3-06.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-07.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-08.jpg', alt: 'Photography White Nights Art' },
-    //         { src: '/Portfolio/White Nights/WhiteNights3-09.jpg', alt: 'Photography White Nights Art' },
-    //
-    //     ],
-    //     logo: '',
-    //
-    //     color: '#B28B98'
-    // },
+    {
+        id: 'whitenights',
+        title: 'White Nights',
+        subheading: 'Photo Series',
+        year: 2021,
+        date: 'December 15, 2021',
+    
+        services: ['Photography'],
+        description: 'Series of Self-Portraits',
+        statement: 'Nocturnal events, when a heavy and coercive silence blurs the boundary between reality and imagination. The night\'s light and color transform the meaning of objects, while darkness renders everything alike. The slightest movements break the potential silence and take on a performative quality. Absence opens the mind to wander, yet the closed mind doesn\'t transcend the walls of the room. Everything existing is constantly repeated; colors blend together, sounds reverberate, and yet nothing happens. Nothing, the slightest tremor, becomes the center of attention; everyone watches every move, sometimes encouraging, sometimes reprimanding, and other times, sadly listening to the cries. The intensity of every feeling becomes so overwhelming that it becomes meaningless, striking but painless, worrying about numbness, yet still seeing nothing. He recalls fragments, unsure if he owns them; the fragments flee at the same speed they arrived, so intense that their existence is denied, and they lead him to contemplate death.',
+        coverImageUrl: '/Portfolio/White Nights/WhiteNights-05.jpg',
+        KeyWords: 'Series of Self-Portraits',
+        images: [
+            { src: '/Portfolio/White Nights/WhiteNights-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-02.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-03.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-04.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-05.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-06.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-07.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-08.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-09.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-10.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-02.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-03.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-04.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-05.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-06.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-07.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-08.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-09.jpg', alt: 'Photography White Nights Art' },            { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-02.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-04.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-05.jpg', alt: 'Photography White Nights Art' },
+            // { src: '/Portfolio/White Nights/WhiteNights3-06.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-07.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-08.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights3-09.jpg', alt: 'Photography White Nights Art' },
+    
+        ],
+        logo: '',
+    
+        color: '#B28B98'
+    },
     {
         id: 'crossed',
         title: 'Crossed',

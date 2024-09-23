@@ -26,7 +26,7 @@ module.exports = {
         // 'accent' : '#8DBDAC',
         // 'accent' : '#67AEA6',
         // 'accent' : '#AAC4D2',
-        'accent' : '#49A182',
+        'accent' : '#9A2121',
 
         // 'accent' : '#AA3949',
         // 'accent' : '#93A6D9',

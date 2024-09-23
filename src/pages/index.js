@@ -29,16 +29,25 @@ export default function Home() {
 
 
                     <div
-                        className={"w-full flex items-end justify-end h-screen stop bg-milk "}
+                        className={"w-full h-screen flex flex-col items-center align-middle self-center justify-center bg-milk "}
                     >
-                        {/*<img src={'/Portfolio/Home.jpg'}*/}
+                        <img className={" w-1/2 items-center align-middle self-center justify-center"} 
+                        src={'/Portfolio/Home.jpg'}></img>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="20" height="20" fill="currentColor" 
+                        class="bi bi-chevron-double-down" 
+               
+                        
+                        className="align-baseline bottom-0 justify-self-end hover:translate-y-1 transition-all duration-75 m-8 " viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg>
                         {/*     width="1200" height="800"*/}
                         {/*     className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
                         {/* <ThreeScene /> Render the ThreeScene component */}
-                            <h1>scroll</h1>
                     </div>
 
-                    <div className={"min-h-screen items-center"}>
+                    <div id="items" className={"min-h-screen items-center "}>
                         {sortedProjects.map((project, index) => (
                             <div
                                 key={index}
