@@ -20,25 +20,25 @@ export default function Home() {
             </Head>
             <div className="text-center">
 
-                <div className="grid grid-cols-1 bg-black self-center  bottom-0">
+                <div className="grid grid-cols-1 self-center  bottom-0">
 
-                    <List
+                    {/* <List
                         sortedProjects={sortedProjects}
                         classname={"fixed hidden md:block"}
-                    />
+                    /> */}
 
 
                     <div
-                        className={"w-full flex items-end justify-end h-screen stop  bg-black "}
+                        className={"w-full flex items-end justify-end h-screen stop bg-milk "}
                     >
                         {/*<img src={'/Portfolio/Home.jpg'}*/}
                         {/*     width="1200" height="800"*/}
                         {/*     className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
-                        <ThreeScene /> {/* Render the ThreeScene component */}
-
+                        {/* <ThreeScene /> Render the ThreeScene component */}
+                            <h1>scroll</h1>
                     </div>
 
-                    <div className={"min-h-screen "}>
+                    <div className={"min-h-screen items-center"}>
                         {sortedProjects.map((project, index) => (
                             <div
                                 key={index}
@@ -59,21 +59,31 @@ export default function Home() {
                                     images={project.images}
                                     color={project.color}
                                     category={"Project"}
+                                    className={""}
 
                                 >
                                     <div
-                                        className={"flex"}
+                                        className={""}
                                     >
-                                        {(project.logo !== '') ?
+                                        {/* {(project.logo !== '') ?
                                             <img
                                                 src={project.logo}
                                                 alt={`${project.title}'s Logo `}
                                                 className={"w-40 z-50  object-cover object-center"}
                                                 width="400" height="400"
                                             />
-                                         :
-                                            <p>{project.title}</p>
-                                        }
+                                         : */}
+                                         <div
+                                            className="w-full p-10 place-self-start items-start grid grid-cols-1 text-left h-fit justify-items-start  self-start align-baseline place-items-baseline justify-self-start"
+                                         >
+
+                                         <h1 className="text-3xl font-medium uppercase ">{project.title}</h1>
+                                        <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{project.subheading}</h1>
+                                        <p className="text-gray-500 text-sm">{new Date(project.date).getFullYear()}</p>
+                                        <h1 className="opacity-80 text-sm pb-1 font-light lowercase ">{project.description}</h1>
+                                        </div>
+
+                                        {/* } */}
                                     </div>
                                 </PortfolioSection>
                             </div>
@@ -81,7 +91,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer className={"pb-10 md:pb-0 relative md:fixed"}/>
+            <Footer className={"pb-10 md:pb-0 relative "}/>
         </Layout>
     );
 }

@@ -10,7 +10,7 @@ const Resume = () => {
     return (
             <div
                 id={"resume"}
-                className={"pt-6 px-8 md:px-14 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 scroll-smooth"}
+                className={"article  grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 scroll-smooth"}
             >
 
 

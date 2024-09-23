@@ -32,12 +32,13 @@ export default function Layout({ children }) {
     // }, [router]);
 
     return  (
-        <div className={" min-h-screen "} >
+        <div className={" min-h-screen"} >
             {/*{loading && <LoadingVisual />}*/}
 
             <Nav/>
             <div
             >
+                className={""}
                 {children}
                 <SpeedInsights/>
                 <Analytics/>

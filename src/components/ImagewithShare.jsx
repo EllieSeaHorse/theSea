@@ -15,7 +15,7 @@ const ImageWithShare = ({ imageSrc, imageAlt, imageAltEnglish, imageAltFarsi, im
                 data-pin-lang="en"
                 width={imageWidth ? imageWidth : "1700"}
                 height={imageHeight ? imageHeight : "1100"}
-                className="md:pt-14 pb-1 pt-1 md:pb-3 md:pr-2 h-auto md:h-screen object-contain"
+                className="h-auto object-contain"
             >
                 {/*<ShareButtons imageUrl={fullImageUrl} />*/}
             </img>

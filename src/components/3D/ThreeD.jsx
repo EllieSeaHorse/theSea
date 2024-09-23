@@ -15,10 +15,10 @@ const ThreeScene = () => {
         renderer.setPixelRatio(window.devicePixelRatio); // Adjust pixel ratio
 
         // Create torus and add it to the scene with metallic material
-        const torusGeometry = new THREE.TorusGeometry(2, 0.4, 64, 100); // Increase segments for smoother geometry
+        const torusGeometry = new THREE.TorusGeometry(1.3, 0.1, 64, 100); // Increase segments for smoother geometry
         const torusMaterial = new THREE.MeshStandardMaterial({
-            color: 0xffffff,
-            metalness: 1, // Adjust metalness
+            color: 0x000000,
+            metalness: 0.5, // Adjust metalness
             roughness: 0.2, // Adjust roughness
         });
 
@@ -30,7 +30,7 @@ const ThreeScene = () => {
         camera.position.z = 5;
 
         // Create a light source
-        light = new THREE.PointLight(0xffffff, 1);
+        light = new THREE.PointLight(0xffffff, 10);
         // light = new THREE.PointLight(0xffffff, 1, 60);
         // light.position.set(0, 0, 0);
         scene.add(light);

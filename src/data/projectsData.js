@@ -492,28 +492,28 @@ export const projectsData = [
 
         color: '#BA9C8C'
     },
-    // {
-    //     id: 'studies',
-    //     title: 'Studies',
-    //     subheading: 'Photo Series',
-    //     year: 2022,
-    //     date: 'December 15, 2021',
-    //
-    //     services: ['Photography'],
-    //     description: '',
-    //     statement: '',
-    //     coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
-    //     KeyWords: '',
-    //     images: [
-    //         { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
-    //
-    //     ],
-    //     logo: '',
-    //     color: '#edd4b9'
-    // },
+    {
+        id: 'studies',
+        title: 'Studies',
+        subheading: 'Photo Series',
+        year: 2022,
+        date: 'December 15, 2021',
+    
+        services: ['Photography'],
+        description: '',
+        statement: '',
+        coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
+        KeyWords: '',
+        images: [
+            { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
+    
+        ],
+        logo: '',
+        color: '#edd4b9'
+    },
     {
         id: 'pacific',
         title: 'Pacific',
@@ -540,32 +540,32 @@ export const projectsData = [
         logo: '',
         color: '#dee2d3'
     },
-    // {
-    //     id: 'joyce',
-    //     title: 'Ulysses',
-    //     subheading: 'Art Book',
-    //     year: 2022,
-    //     date: 'December 15, 2022',
-    //
-    //     services: ['Art Book'],
-    //     description: '',
-    //     statement: '',
-    //     coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
-    //     KeyWords: '',
-    //     images: [
-    //         { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
-    //
-    //     ],
-    //     logo: '',
-    //     color: '#A1B28B'
-    // },
+    {
+        id: 'joyce',
+        title: 'Ulysses',
+        subheading: 'Art Book',
+        year: 2022,
+        date: 'December 15, 2022',
+    
+        services: ['Art Book'],
+        description: '',
+        statement: '',
+        coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
+        KeyWords: '',
+        images: [
+            { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
+    
+        ],
+        logo: '',
+        color: '#A1B28B'
+    },
 ];

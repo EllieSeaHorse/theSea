@@ -29,7 +29,7 @@ function LanguageItem({ language, proficiency, additionalInfo , link}) {
 function Competence({ title, items }) {
     return (
         <div>
-            <h2 className="text-gray-400 mb-2">{title}</h2>
+            <h2 className="text-gray-700 mb-2">{title}</h2>
             {items.map((item, index) => (
                 <div key={index} className="mb-2">
                     <p className="w-1/3 text-xs">{item.name}</p>
@@ -44,14 +44,14 @@ function Competence({ title, items }) {
 function SubBox({year, title, description, list , children}) {
     return (
         <div className={"flex py-1 transition w-full"}>
-            <h1 className={"text-gray-400 text-xs w-1/6"}>{year}</h1>
+            <h1 className={"text-gray-700 text-xs w-1/6"}>{year}</h1>
             <div className={"pl-3 pb-2.5 w-5/6"}>
                 <h1 className={"pb-1 text-sm font-semibold font-['Montserrat']"}>{title}</h1>
                 <h1 className={"pb-2.5  text-accent text-xs font-normal font-['Montserrat']  italic" }>{description}</h1>
                 <h1 className={"pb-2.5 text-xs " }>{children}</h1>
 
                 {list != null && list.map((item, index) => (
-                    <h1 key={index} className={"pb-1 text-neutral-300 text-xs font-normal font-['Montserrat'] "}>
+                    <h1 key={index} className={"pb-1 text-neutral-700 text-xs font-normal font-['Montserrat'] "}>
                         - {item}
                     </h1>
                 ))}

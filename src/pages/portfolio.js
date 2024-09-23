@@ -47,15 +47,15 @@ export default function Portfolio() {
                     stiffness: 200,
                     damping: 50,
                 }}
-                className={"px-6 pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
+                className={"article px-6 pt-6 md:pt-10 grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-6 text-sm"}
             >
                 <Bigbox className={"col-span-3 md:py-14 row-span-1 md:col-span-3 md:row-span-2 lg:col-span-5 lg:row-span-2 text-xs md:text-sm h-full flex flex-col animated slide-up"}>
-                    <h1 className={"text-4xl mt-4 text-white uppercase lg:text-7xl"}>About Me</h1>
+                    <h1 className={"text-4xl mt-4 uppercase font-medium lg:text-7xl"}>About Me</h1>
                     <h1 className={" uppercase py-2"}>+ Portfolio / CV</h1>
                     <h1 className={"text-xs text-accent uppercase align-bottom justify-self-end text-right pt-6"}>Sama Moayeri</h1>
                     <h1 className={"text-xs text-accent uppercase text-right pb-16"}>1999</h1>
 
-                    <p className={"p-4 leading-5 my-4 border"}>
+                    <p className={"p-4 leading-5 text-sm my-4 border"}>
                         Experienced senior graphic designer with a passion
                         for UI/UX and web development. Proven track record in
                         teaching, translating, and creative arts. Recognized
@@ -93,7 +93,7 @@ export default function Portfolio() {
 
                 <Bigbox
                     heading={""}
-                    className={"col-span-3 p-4 md:p-12  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
+                    className={"col-span-3  row-span-1 md:col-span-3 md:row-span-2 lg:col-span-4 lg:row-span-2 border-0 animated slide-up"}
                 >
                     <div className={"w-full h-fit bg-gradient-to-b from-accent to-white "}>
                         <img src="/Portfolio/Sama Moayeri © Tonatiuh Ambrosetti-01.jpg"
@@ -127,7 +127,7 @@ export default function Portfolio() {
             {/*></div>*/}
             <Link
                 href={'#resume'}
-                className={" bg-neutral-950 border border-neutral-800 mx-auto rounded-sm hover:border-neutral-400 w-3/12 p-2 text-xs mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
+                className={"bg-milk-darker hover:shadow-md mx-auto rounded-sm w-3/12 p-2 text-xs mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}
                 onClick={scrollToNextDiv}
             >
                 {viewingResume ? 'Hide Resume' : 'View Resume'}
