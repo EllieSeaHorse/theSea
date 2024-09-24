@@ -1,6 +1,107 @@
 // Remove the "export default" and add a named export
 export const projectsData = [
 
+
+    {
+        id: 'Trepidation',
+        title: 'Trepidation',
+        subheading: 'A Photography Series',
+        year: 2019,
+        date: 'December 15, 2019',
+
+        services: ['Photography' , 'Visual Storytelling'],
+        description: 'In the stillness of shadows and the quiet tremors of the unseen',
+        statement: '',
+        coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
+        keywords: {
+            english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
+            farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
+        },
+        images: [
+            { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
+        ],
+        logo: '',
+
+        color: '#4F6D6C'
+    },
+
+    // {
+    //     id: 'Objective',
+    //     title: 'Objective',
+    //     subheading: 'A Photography Series',
+    //     year: 2019,
+    //     date: 'December 15, 2019',
+
+    //     services: ['Photography' , 'Visual Storytelling'],
+    //     description: 'In the stillness of shadows and the quiet tremors of the unseen',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
+    //     keywords: {
+    //         english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
+    //         farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
+    //     },
+    //     images: [
+    //         { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
+    //     ],
+    //     logo: '',
+
+    //     color: '#4F6D6C'
+    // },
+    // {
+    //     id: 'Singles',
+    //     title: 'Singles',
+    //     subheading: 'A Photography Series',
+    //     year: 2019,
+    //     date: 'December 15, 2019',
+
+    //     services: ['Photography' , 'Visual Storytelling'],
+    //     description: 'In the stillness of shadows and the quiet tremors of the unseen',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
+    //     keywords: {
+    //         english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
+    //         farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
+    //     },
+    //     images: [
+    //         { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
+    //     ],
+    //     logo: '',
+
+    //     color: '#4F6D6C'
+    // },
+    // {
+    //     id: 'Eclipse',
+    //     title: 'Eclipse',
+    //     subheading: 'A Photography Series',
+    //     year: 2019,
+    //     date: 'December 15, 2019',
+
+    //     services: ['Photography' , 'Visual Storytelling'],
+    //     description: 'In the stillness of shadows and the quiet tremors of the unseen',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
+    //     keywords: {
+    //         english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
+    //         farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
+    //     },
+    //     images: [
+    //         { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
+    //     ],
+    //     logo: '',
+
+    //     color: '#4F6D6C'
+    // },
+
+
+
     {
         id: 'redstories',
         title: 'Red Stories',
@@ -164,10 +265,12 @@ export const projectsData = [
         color: '#c69b8d'
 
     },
+    
+    
     {
         id: 'verite',
         title: 'Verite',
-        subheading: 'Perfume',
+        subheading: 'Perfume Packaging Design',
         date: 'Jan 15, 2024',
         services: ['Packaging Design', '3D Modelling'],
         description: 'Crafting an exquisite packaging design for the Verite perfume, a project that transcends the boundaries of sensory experience.',
@@ -191,9 +294,41 @@ export const projectsData = [
         ],
         logo: '/Portfolio/Verite/Verite.svg',
         color: '#AF9EBD'
-    }
+    },
     
-    ,
+
+    {
+        id: 'muchi',
+        title: 'Some Muchies',
+        subheading: 'Sweets Packaging Design',
+        date: 'April 15, 2024',
+        services: ['Packaging Design', '3D Modelling'],
+        description: 'Crafting a packaging design for Some Muchies.',
+        statement: 'The design for SOME MUCHIES integrates playful graphics and vibrant colors to create an engaging and appetizing packaging. The use of cheerful illustrations and bold fonts ensures that the product stands out on shelves, appealing to both children and adults. The 3D modeling adds a realistic touch, making the packaging not only attractive but also functional. This combination of visual appeal and practicality enhances the overall consumer experience and brand perception.' ,
+        coverImageUrl: '/Portfolio/Muchies/mu3.png',
+        keywords: {
+            english: 'Some Muchies, Packaging Design, 3D Modelling, Sweets Packaging,',
+            farsi: '  طراحی بسته‌بندی، مدل‌سازی ۳D، بسته‌بندی شیرینی، شعر بصری '
+        },
+        images: [
+            { src: '/Portfolio/Muchies/mu0.png', alt: { english: 'Packaging Art -  Muchi Packaging', farsi: 'هنر بسته بندی - بسته‌بندی موچی، شیرینی ' },  width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu1.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu2.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu3.png', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu8.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu9.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+
+            { src: '/Portfolio/Muchies/mu10.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu11.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu13.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+            { src: '/Portfolio/Muchies/mu14.jpg', alt: { english: ' Muchi Packaging Design', farsi: 'طراحی بسته‌بندی موچی ' }, width: "1200" ,  height: "1200" , },
+
+          
+        ],
+        logo: '/Portfolio/Verite/Verite.svg',
+        color: '#AF9EBD'
+    },
+
     {
         id: "parla",
         title: "Parla",
@@ -295,28 +430,30 @@ export const projectsData = [
         ],
         logo: '/Portfolio/Sunlit/Sunlit.svg',
         color: '#8DD4B5'
-    },  {
-        id: 'buscafe',
-        title: 'Bus Cafe',
-        subheading: 'Jewelry',
-        date: 'February 15, 2023',
-        services: ['Brand Identity', 'Logo', 'Restaurant Items'],
-        description: 'Rebranding Project for Bus Cafe.',
-        statement: '',
-        coverImageUrl: '/Portfolio/Bus Cafe/bus2.png',
-        KeyWords: 'Rebranding Project for Bus Cafe.',
-        images: [
-            // { src: '/Portfolio/Sunlit/sunlit1.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
-            { src: '/Portfolio/Bus Cafe/bus1.png', alt: 'Rebranding Project for Bus Cafe' },
-            { src: '/Portfolio/Bus Cafe/bus2.png', alt: 'Rebranding Project for Bus Cafe' },
-            { src: '/Portfolio/Bus Cafe/bus3.png', alt: 'Rebranding Project for Bus Cafe' },
-            { src: '/Portfolio/Bus Cafe/bus4.png', alt: 'Rebranding Project for Bus Cafe' },
+    }, 
+    
+    // {
+    //     id: 'buscafe',
+    //     title: 'Bus Cafe',
+    //     subheading: 'Jewelry',
+    //     date: 'February 15, 2023',
+    //     services: ['Brand Identity', 'Logo', 'Restaurant Items'],
+    //     description: 'Rebranding Project for Bus Cafe.',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Bus Cafe/bus2.png',
+    //     KeyWords: 'Rebranding Project for Bus Cafe.',
+    //     images: [
+    //         // { src: '/Portfolio/Sunlit/sunlit1.jpg', alt: 'Brand Identity and Strategy for SUNLIT Jewelry' },
+    //         { src: '/Portfolio/Bus Cafe/bus1.png', alt: 'Rebranding Project for Bus Cafe' },
+    //         { src: '/Portfolio/Bus Cafe/bus2.png', alt: 'Rebranding Project for Bus Cafe' },
+    //         { src: '/Portfolio/Bus Cafe/bus3.png', alt: 'Rebranding Project for Bus Cafe' },
+    //         { src: '/Portfolio/Bus Cafe/bus4.png', alt: 'Rebranding Project for Bus Cafe' },
 
 
-        ],
-        logo: '/Portfolio/Bus Cafe/busLogo.svg',
-        color: '#D5BB99'
-    },
+    //     ],
+    //     logo: '/Portfolio/Bus Cafe/busLogo.svg',
+    //     color: '#D5BB99'
+    // },
     {
         id: 'film',
         title: 'Film Posters',
@@ -332,7 +469,7 @@ export const projectsData = [
             '\n' +
             'This project is an exploration of the synergy between art and film, where the visual language of experimental design meets the rich narratives of these cinematic masterpieces. Each poster is a deliberate attempt to evoke curiosity and engage the audience in a dialogue with the essence of the films.',
 
-        coverImageUrl: '/Portfolio/Film Posters/FilmCover.jpg',
+        coverImageUrl: '/Portfolio/Film Posters/Naked1.jpg',
         keywords: {
             english: 'Experimental Film Posters, Poster Design, Experimental Art, Cinematic Expression, Blow Up, Wild Strawberries, Neon Demon, Naked',
             farsi: 'پوسترهای فیلم تجربی، طراحی پوستر، هنر تجربی، بیان سینمایی، Blow Up، Wild Strawberries، Neon Demon، Naked'
@@ -372,8 +509,8 @@ export const projectsData = [
         id: 'whitenights',
         title: 'White Nights',
         subheading: 'Photo Series',
-        year: 2021,
-        date: 'December 15, 2021',
+        year: 2024,
+        date: 'December 15, 2024',
     
         services: ['Photography'],
         description: 'Series of Self-Portraits',
@@ -472,7 +609,7 @@ export const projectsData = [
         services: ['Photography'],
         description: 'Intimate Scenes and Dancing',
         statement: 'In the ethereal dance of light and shadow,  the essence of two worlds colliding, merging, becoming one. Film scenes intertwine with the tapestry of my home, weaving stories untold, mysteries unsolved. In this realm of double exposed dreams, truth eludes definition, and meaning is found in the spaces between.',
-        coverImageUrl: '/Portfolio/Wider/Wider-02.jpg',
+        coverImageUrl: '/Portfolio/Wider/Wider-08.jpg',
         KeyWords: '',
         images: [
             { src: '/Portfolio/Wider/Wider-01.jpg', alt: 'Photography Trepidation Fear' },
@@ -524,7 +661,7 @@ export const projectsData = [
         services: ['Photography'],
         description: '',
         statement: '',
-        coverImageUrl: '/Portfolio/Pacific/Pacific-01.jpg',
+        coverImageUrl: '/Portfolio/Pacific/Pacific-03.jpg',
         KeyWords: '',
         images: [
             { src: '/Portfolio/Pacific/Pacific-01.jpg', alt: 'Photography Trepidation Fear' },

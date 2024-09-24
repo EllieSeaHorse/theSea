@@ -15,7 +15,7 @@ const ImageWithShare = ({ imageSrc, imageAlt, imageAltEnglish, imageAltFarsi, im
                 data-pin-lang="en"
                 width={imageWidth ? imageWidth : "1700"}
                 height={imageHeight ? imageHeight : "1100"}
-                className="h-auto object-contain"
+                className="h-auto py-2 object-contain"
             >
                 {/*<ShareButtons imageUrl={fullImageUrl} />*/}
             </img>

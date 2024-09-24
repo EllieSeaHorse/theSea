@@ -119,7 +119,7 @@ const id = ({ project }) => {
         <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
-    <div className="h-auto md:h-screen article">
+    <div className="h-auto md:h-screen mt-12 article">
         <motion.div
             initial={{ x: 200 }}
             animate={{ x: 0 }}
@@ -135,7 +135,7 @@ const id = ({ project }) => {
         >
                 <div className="text-justify bg-milk-darker text-sm leading-4">
                     <div className="p-6 text-xs leading-4">
-                        <div className="pt-14 md:flex flex-col justify-between col-span-4 md:col-span-1">
+                        <div className="pt-2 md:flex flex-col justify-between col-span-4 md:col-span-1">
                             <div className="">
                                 <h1 className="text-3xl font-medium uppercase">{title}</h1>
                                 <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
@@ -225,11 +225,15 @@ const id = ({ project }) => {
                         <div className="flex justify-between py-4 text-xs">
                                 <a className="cursor-pointer opacity-75 hover:opacity-100" onClick={() => handleNavigation(getPreviousProjectId())}>
                                 {sortedProjects.find((project) => project.id === getPreviousProjectId())?.title}
-                                    <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square">pre</i>
+                                    <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square">
+                                         <span className='px-2'>&#8592;</span>
+                                         </i>
                                 </a>
                                 <a className="cursor-pointer opacity-75 hover:opacity-100" onClick={() => handleNavigation(getNextProjectId())}>
                                     {sortedProjects.find((project) => project.id === getNextProjectId())?.title}
-                                    <i className="p-2 bi bi-arrow-right-square">next</i>
+                                    <i className="p-2 bi bi-arrow-right-square">
+                                    <span className='px-2'>&#8594;</span>
+                                    </i>
                                 </a>
                             </div>
 

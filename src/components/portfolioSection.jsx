@@ -28,7 +28,7 @@ const PortfolioSection = ({
     };
 
     return (
-        <div className={`${className} overflow-x-hidden grid grid-cols-1 text-left items-center h-fit`}
+        <div className={`${className} overflow-x-hidden grid grid-cols-1 text-left items-center `}
         >
 
             <div className="

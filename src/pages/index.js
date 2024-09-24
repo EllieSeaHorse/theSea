@@ -51,7 +51,7 @@ export default function Home() {
                         {/* <ThreeScene /> Render the ThreeScene component */}
                     </div>
 
-                    <div id="items" className={"min-h-screen items-center "}>
+                    <div id="items" className={" items-center "}>
                         {sortedProjects.map((project, index) => (
                             <div
                                 key={index}
