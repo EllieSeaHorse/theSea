@@ -31,7 +31,7 @@ export default function Home() {
                     <div
                         className={"w-full h-screen flex flex-col items-center align-middle self-center justify-center bg-milk "}
                     >
-                        <img className={" w-1/2 items-center align-middle self-center justify-center"} 
+                        <img className={" w-3/4 md:w-1/2 items-center align-middle self-center justify-center"} 
                         src={'/Portfolio/Home.jpg'}></img>
 {/* 
                         <img className={"absolute w-full items-center align-middle self-center justify-center"} 

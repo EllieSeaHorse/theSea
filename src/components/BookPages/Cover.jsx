@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Cover({title, subheading, year, services, image, description, color, children}) {
     return (
-        <div className=" flex flex-col md:h-screen sepia-0 justify-center items-center ">
+        <div className=" flex flex-col sepia-0 justify-center items-center ">
             <div className="md:w-5/12  w-10/12 h-full ">
                 <div className=" flex  flex-col justify-between"
 >
