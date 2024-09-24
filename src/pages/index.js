@@ -33,6 +33,10 @@ export default function Home() {
                     >
                         <img className={" w-1/2 items-center align-middle self-center justify-center"} 
                         src={'/Portfolio/Home.jpg'}></img>
+{/* 
+                        <img className={"absolute w-full items-center align-middle self-center justify-center"} 
+                        src={'/Portfolio/Untitled_Artwork2.gif'}></img> */}
+
                         <svg xmlns="http://www.w3.org/2000/svg" 
                         width="20" height="20" fill="currentColor" 
                         class="bi bi-chevron-double-down" 
@@ -54,6 +58,11 @@ export default function Home() {
                                 id={project.title.toLowerCase().replace(/\s/g, '-')}
                                 className="stop"
                             >
+                                {/* <img className={"absolute w-full items-center align-middle self-center justify-center"} 
+                                    src={'/Portfolio/Untitled_Artwork 2.png'}>
+
+                                </img> */}
+
 
                                 <PortfolioSection
                                     id={project.id}
@@ -71,6 +80,7 @@ export default function Home() {
                                     className={""}
 
                                 >
+                                    
                                     <div
                                         className={""}
                                     >
