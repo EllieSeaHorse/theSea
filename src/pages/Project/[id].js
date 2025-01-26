@@ -12,6 +12,7 @@ import Footer from "@/components/footer";
 import ImageWithShare from "@/components/ImagewithShare";
 import ShareButtons from "@/components/Share";
 import ImageSlider from '@/components/ImageSlider';
+import Book from '@/components/Book';
 const id = ({ project }) => {
     const router = useRouter();
     const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -57,6 +58,8 @@ const id = ({ project }) => {
 
     const [loading, setLoading] = useState(true);
 
+    const isBookProject = project.id.toLowerCase().includes("book"); // Check if ID contains "book"
+
     useEffect(() => {
         const handleRouteChange = () => {
             setLoading(true);
@@ -87,6 +90,7 @@ const id = ({ project }) => {
             router.events.off('routeChangeStart', handleRouteChange);
         };
     }, [router.events, images]);
+
 
 
     const handleNavigation = (id) => {
@@ -165,9 +169,14 @@ const id = ({ project }) => {
                         </div>
                     </div>
                 </div>
-                <ImageSlider images={images}>
+                {isBookProject ? (
+                    <Book 
+                    images={images}
+                             />
+                ) : (
+                    <ImageSlider images={images} />
+                )}
 
-</ImageSlider>
             
 
                 {/* {images.map((image, index) => (

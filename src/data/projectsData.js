@@ -506,11 +506,11 @@ export const projectsData = [
     // },
 
     {
-        id: 'whitenights',
+        id: 'whitenightsbook',
         title: 'White Nights',
         subheading: 'Photo Series',
-        year: 2024,
-        date: 'December 15, 2024',
+        year: 2020,
+        date: 'December 15, 2020',
     
         services: ['Photography'],
         description: 'Series of Self-Portraits',
@@ -518,7 +518,7 @@ export const projectsData = [
         coverImageUrl: '/Portfolio/White Nights/WhiteNights-05.jpg',
         KeyWords: 'Series of Self-Portraits',
         images: [
-            { src: '/Portfolio/White Nights/WhiteNights-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights-01.jpg', alt: 'Photography White Nights Art' , width: '1700', height: '1100'},
             { src: '/Portfolio/White Nights/WhiteNights-02.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights-03.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights-04.jpg', alt: 'Photography White Nights Art' },
@@ -536,7 +536,8 @@ export const projectsData = [
             { src: '/Portfolio/White Nights/WhiteNights2-06.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights2-07.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights2-08.jpg', alt: 'Photography White Nights Art' },
-            { src: '/Portfolio/White Nights/WhiteNights2-09.jpg', alt: 'Photography White Nights Art' },            { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
+            { src: '/Portfolio/White Nights/WhiteNights2-09.jpg', alt: 'Photography White Nights Art' },           
+             { src: '/Portfolio/White Nights/WhiteNights2-01.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights3-01.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights3-02.jpg', alt: 'Photography White Nights Art' },
             { src: '/Portfolio/White Nights/WhiteNights3-04.jpg', alt: 'Photography White Nights Art' },
@@ -652,7 +653,7 @@ export const projectsData = [
         color: '#edd4b9'
     },
     {
-        id: 'pacific',
+        id: 'pacificbook',
         title: 'Pacific',
         subheading: 'Photo Series',
         year: 2017,
@@ -678,7 +679,7 @@ export const projectsData = [
         color: '#dee2d3'
     },
     {
-        id: 'joyce',
+        id: 'joycebook',
         title: 'Ulysses',
         subheading: 'Art Book',
         year: 2022,
@@ -690,7 +691,7 @@ export const projectsData = [
         coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
         KeyWords: '',
         images: [
-            { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' },
+            { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' , width: '2000', height: '2000' },
             { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
             { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
             { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
