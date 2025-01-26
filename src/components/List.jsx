@@ -40,7 +40,7 @@ export default function List({ sortedProjects , children, classname }) {
             damping: 50,
         }}
         // ... your motion.div props ...
-        className={` ${classname} pl-8 pr-1 opacity-75 pt-24 overflow-y-scroll min-h-screen text-xs scale-75 text-left self-start z-20`}
+        className={` ${classname}  pl-10 pr-1 opacity-75 pt-24 overflow-y-scroll min-h-screen text-xs scale-75 text-left self-start z-20`}
     >
         {sortedProjects.map((project, index) => (
             <ScrollLink
@@ -51,12 +51,19 @@ export default function List({ sortedProjects , children, classname }) {
                 offset={-70} // Adjust offset as needed
                 duration={500}
             >
-                <p
-                    className={`block py-1 leading-3 hover:text-accent cursor-pointer ${currentProjectIndex === index+1 ? 'font-semibold' : ''}`}
-                    style={{color: `${currentProjectIndex === index + 1 ? project.color : 'white'}`}}
+                <div
+                    className="pt-1"
                 >
-                    <span className={"font-thin text-[8px]"}>0{index + 1}</span> <br /> {project.title}
+
+                <p
+                    className={`block leading-3 hover:text-accent cursor-pointer ${currentProjectIndex === index+1 ? 'font-semibold' : ''}`}
+                    style={{color: `${currentProjectIndex === index + 1 ? project.color : '#000000'}`}}
+                >
+                    {project.title}
                 </p>
+                <p className="text-gray-500 text-[8px]">{new Date(project.date).getFullYear()}</p>
+                </div>
+
             </ScrollLink>
         ))}
     </motion.div>

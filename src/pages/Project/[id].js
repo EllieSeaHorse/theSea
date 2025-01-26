@@ -1,5 +1,4 @@
 
-
 import React, { useRef, useEffect, useState } from 'react';
 import { projectsData } from '@/data/projectsData';
 import Layout from '@/pages/layout';
@@ -12,7 +11,7 @@ import { useRouter } from 'next/router';
 import Footer from "@/components/footer";
 import ImageWithShare from "@/components/ImagewithShare";
 import ShareButtons from "@/components/Share";
-
+import ImageSlider from '@/components/ImageSlider'; 
 
 const id = ({ project }) => {
     const router = useRouter();
@@ -120,6 +119,11 @@ const id = ({ project }) => {
     </Head>
 
     <div className="h-auto md:h-screen mt-12 article">
+        
+        <ImageSlider images={images}>
+
+        </ImageSlider>
+        
         <motion.div
             initial={{ x: 200 }}
             animate={{ x: 0 }}
@@ -165,6 +169,9 @@ const id = ({ project }) => {
                         </div>
                     </div>
                 </div>
+                <ImageSlider images={images}>
+
+</ImageSlider>
             
 
                 {images.map((image, index) => (
@@ -222,12 +229,13 @@ const id = ({ project }) => {
 ))}
 
 
-                        <div className="flex justify-between py-4 text-xs">
+            <div className="flex justify-between py-4 text-xs">
                                 <a className="cursor-pointer opacity-75 hover:opacity-100" onClick={() => handleNavigation(getPreviousProjectId())}>
-                                {sortedProjects.find((project) => project.id === getPreviousProjectId())?.title}
-                                    <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square">
+                                <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square">
                                          <span className='px-2'>&#8592;</span>
                                          </i>
+                                {sortedProjects.find((project) => project.id === getPreviousProjectId())?.title}
+
                                 </a>
                                 <a className="cursor-pointer opacity-75 hover:opacity-100" onClick={() => handleNavigation(getNextProjectId())}>
                                     {sortedProjects.find((project) => project.id === getNextProjectId())?.title}
@@ -235,7 +243,7 @@ const id = ({ project }) => {
                                     <span className='px-2'>&#8594;</span>
                                     </i>
                                 </a>
-                            </div>
+            </div>
 
             <Footer className="block" />
         </motion.div>

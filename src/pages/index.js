@@ -22,22 +22,22 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 self-center  bottom-0">
 
-                    {/* <List
+                    <List
                         sortedProjects={sortedProjects}
-                        classname={"fixed hidden md:block"}
-                    /> */}
+                        classname={"relative md:mx-10"}
+                    />
 
 
-                    <div
-                        className={"w-full h-screen flex flex-col items-center align-middle self-center justify-center bg-milk "}
+                    {/* <div
+                        className={"w-1/2 h-screen flex flex-col items-center align-middle self-center justify-center bg-milk "}
                     >
-                        <img className={" w-3/4 md:w-1/2 items-center align-middle self-center justify-center"} 
+                        <img className={"items-center w-full h-screen object-cover align-middle self-center justify-center"} 
                         src={'/Portfolio/Home.jpg'}></img>
 {/* 
                         <img className={"absolute w-full items-center align-middle self-center justify-center"} 
                         src={'/Portfolio/Untitled_Artwork2.gif'}></img> */}
 
-                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" 
                         width="20" height="20" fill="currentColor" 
                         class="bi bi-chevron-double-down" 
                
@@ -45,13 +45,13 @@ export default function Home() {
                         className="align-baseline bottom-0 justify-self-end hover:translate-y-1 transition-all duration-75 m-8 " viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                                 <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                                </svg>
+                                </svg> */}
                         {/*     width="1200" height="800"*/}
                         {/*     className={"mix-blend-difference absolute w-full h-screen  md:object-cover object-cover object-center "}/>*/}
                         {/* <ThreeScene /> Render the ThreeScene component */}
-                    </div>
+                    {/* </div> */} 
 
-                    <div id="items" className={" items-center "}>
+                    <div id="items" className={"flex flex-col items-center  place-items-center "}>
                         {sortedProjects.map((project, index) => (
                             <div
                                 key={index}
@@ -82,7 +82,7 @@ export default function Home() {
                                 >
                                     
                                     <div
-                                        className={""}
+                                        className={" flex h-full "}
                                     >
                                         {/* {(project.logo !== '') ?
                                             <img
@@ -93,13 +93,13 @@ export default function Home() {
                                             />
                                          : */}
                                          <div
-                                            className="w-full p-10 place-self-start items-start grid grid-cols-1 text-left h-fit justify-items-start  self-start align-baseline place-items-baseline justify-self-start"
+                                            className=" place-self-end align-baseline self-end w-full pl-0 py-2 md:py-2 md:pl-10 "
                                          >
 
-                                         <h1 className="text-3xl font-medium uppercase ">{project.title}</h1>
-                                        <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{project.subheading}</h1>
-                                        <p className="text-gray-500 text-sm">{new Date(project.date).getFullYear()}</p>
-                                        <h1 className="opacity-80 text-sm pb-1 font-light lowercase ">{project.description}</h1>
+                                         <h1 className="text-xl font-normal capitalize  ">{project.title}</h1>
+                                        {/* <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{project.subheading}</h1> */}
+                                        <p className="text-gray-500 text-xs">{new Date(project.date).getFullYear()}</p>
+                                        {/* <h1 className="opacity-80 text-sm pb-1 font-light lowercase ">{project.description}</h1> */}
                                         </div>
 
                                         {/* } */}

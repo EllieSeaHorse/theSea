@@ -28,14 +28,14 @@ const PortfolioSection = ({
     };
 
     return (
-        <div className={`${className} overflow-x-hidden grid grid-cols-1 text-left items-center `}
+        <div className={`${className} border-t  border-gray-200 py-10 overflow-x-hidden grid grid-cols-1 text-left items-center `}
         >
 
             <div className="
             col-span-1 
             p-6
             
-              items-center justify-center align-middle  self-center ">
+              items-center justify-center align-middle self-center ">
                 <Link  href={`/${category}/${id}`} >
                     {/* <div className=" grid grid-cols-1 items-center md:grid-cols-1 p-6 md:p-10 md:pl-14  w-2/3 rounded-2xl "> */}
                     {/* <div className={"pl-6 mb-5 border-l items-end"}>

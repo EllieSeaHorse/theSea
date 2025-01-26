@@ -37,8 +37,8 @@ export default function Layout({ children }) {
 
             <Nav/>
             <div
+          
             >
-                className={""}
                 {children}
                 <SpeedInsights/>
                 <Analytics/>
