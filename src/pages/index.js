@@ -20,7 +20,7 @@ export default function Home() {
             </Head>
             <div className="text-center">
 
-                <div className="grid grid-cols-1 self-center  bottom-0">
+                <div className="grid grid-cols-1 self-center bottom-0">
 
                     <List
                         sortedProjects={sortedProjects}
@@ -93,7 +93,7 @@ export default function Home() {
                                             />
                                          : */}
                                          <div
-                                            className=" place-self-end align-baseline self-end w-full pl-0 py-2 md:py-2 md:pl-10 "
+                                            className=" place-self-end align-baseline self-end w-full pl-0 py-6 md:py-0 md:pl-10 "
                                          >
 
                                          <h1 className="text-xl font-normal capitalize  ">{project.title}</h1>

@@ -40,7 +40,7 @@ export default function List({ sortedProjects , children, classname }) {
             damping: 50,
         }}
         // ... your motion.div props ...
-        className={` ${classname}  pl-10 pr-1 opacity-75 pt-24 overflow-y-scroll min-h-screen text-xs scale-75 text-left self-start z-20`}
+        className={` ${classname}  pl-6 pr-1 opacity-75 py-32 overflow-y-scroll min-h-screen text-xs scale-75 text-left self-start z-20`}
     >
         {sortedProjects.map((project, index) => (
             <ScrollLink

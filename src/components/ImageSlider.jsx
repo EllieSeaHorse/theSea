@@ -31,19 +31,20 @@ const ImageSlider = ({ images }) => {
   return (
     <div>
       {/* Thumbnail Grid */}
-      <div className="grid grid-cols-3 gap-4 p-4">
+      <div className= "p-4 transition-all duration-500 grid grid-cols-3 md:grid-cols-4 gap-1">
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative cursor-pointer"
+            className="relative w-full aspect-auto cursor-pointer"
             onClick={() => openFullScreen(index)}
           >
             <Image
               src={image.src}
               alt={image.alt || `Thumbnail ${index + 1}`}
-              width={150}
-              height={100}
-              className="rounded-lg object-cover"
+              width={350}
+              height={350}
+              objectFit="fill"
+              className="w-full h-full object-cover"
             />
           </div>
         ))}
@@ -51,9 +52,9 @@ const ImageSlider = ({ images }) => {
 
       {/* Full-Screen Slider */}
       {isFullScreen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50">
+        <div className="transition-all duration-500 fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50">
           <button
-            className="absolute top-4 right-4 text-white bg-gray-800 p-2 rounded-full"
+            className="transition-all duration-500 absolute top-4 right-4 text-white bg-neutral-800 p-2 rounded-full"
             onClick={closeFullScreen}
           >
             <X size={24} />
@@ -68,13 +69,13 @@ const ImageSlider = ({ images }) => {
               className="rounded-xl"
             />
             <button
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-neutral-800 p-2 rounded-full"
               onClick={prevSlide}
             >
               <ChevronLeft size={32} />
             </button>
             <button
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-neutral-800 p-2 rounded-full"
               onClick={nextSlide}
             >
               <ChevronRight size={32} />
@@ -85,9 +86,9 @@ const ImageSlider = ({ images }) => {
             {images.map((_, index) => (
               <div
                 key={index}
-                className={`h-2 w-10 mx-1 ${
+                className={`h-1 w-1 mx-1 ${
                   index === currentIndex
-                    ? "bg-[#beff46] rounded-xl"
+                    ? "bg-accent rounded-xl"
                     : "bg-gray-500 rounded-xl"
                 } transition-all duration-500`}
               ></div>

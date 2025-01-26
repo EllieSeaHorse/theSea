@@ -11,8 +11,7 @@ import { useRouter } from 'next/router';
 import Footer from "@/components/footer";
 import ImageWithShare from "@/components/ImagewithShare";
 import ShareButtons from "@/components/Share";
-import ImageSlider from '@/components/ImageSlider'; 
-
+import ImageSlider from '@/components/ImageSlider';
 const id = ({ project }) => {
     const router = useRouter();
     const sortedProjects = projectsData.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -118,12 +117,9 @@ const id = ({ project }) => {
         <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
-    <div className="h-auto md:h-screen mt-12 article">
+    <div className="h-auto md:h-screen mt-20 article">
         
-        <ImageSlider images={images}>
 
-        </ImageSlider>
-        
         <motion.div
             initial={{ x: 200 }}
             animate={{ x: 0 }}
@@ -135,9 +131,9 @@ const id = ({ project }) => {
             }}
             ref={containerRef}
             style={{ overflowX: 'auto' }}
-            className="block"
+            className="mt-4 block"
         >
-                <div className="text-justify bg-milk-darker text-sm leading-4">
+                <div className="text-justify rounded-md bg-milk-darker text-sm leading-4">
                     <div className="p-6 text-xs leading-4">
                         <div className="pt-2 md:flex flex-col justify-between col-span-4 md:col-span-1">
                             <div className="">
@@ -174,12 +170,10 @@ const id = ({ project }) => {
 </ImageSlider>
             
 
-                {images.map((image, index) => (
+                {/* {images.map((image, index) => (
   <React.Fragment key={index}>
-  {/* Check if index is 2 & 3 or 6 & 7 to render two-column layout */}
   {(index === 2 || index === 6) && (
       <div className="grid grid-cols-2 gap-2 py-4">
-          {/* Render the current image (index 2 or 6) */}
           <div>
               <ImageWithShare
                   imageSrc={images[index].src}
@@ -191,7 +185,6 @@ const id = ({ project }) => {
               />
           </div>
 
-          {/* Render the next image (index 3 or 7) */}
           {images[index + 1] && (
               <div>
                   <ImageWithShare
@@ -207,7 +200,6 @@ const id = ({ project }) => {
       </div>
   )}
 
-  {/* For other images (non-paired or outside of the range of 3rd-4th and 7th-8th) */}
   {(index !== 2 && index !== 3 && index !== 6 && index !== 7) && (
       <ImageWithShare
           imageSrc={image.src}
@@ -219,14 +211,13 @@ const id = ({ project }) => {
       />
   )}
 
-  {/* Render the statement after the second image */}
   {index === 1 && statement !== '' && (
       <div className="px-4 md:px-10 py-6 text-justify bg-milk-darker text-sm leading-4">
           <p className="text-sm">{statement}</p>
       </div>
   )}
 </React.Fragment>
-))}
+))} */}
 
 
             <div className="flex justify-between py-4 text-xs">
