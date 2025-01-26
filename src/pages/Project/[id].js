@@ -121,7 +121,7 @@ const id = ({ project }) => {
         <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
-    <div className="h-auto md:h-screen mt-20 article">
+    <div className="h-auto md:h-screen mt-20 ">
         
 
         <motion.div
@@ -137,8 +137,8 @@ const id = ({ project }) => {
             style={{ overflowX: 'auto' }}
             className="mt-4 block"
         >
-                <div className="text-justify rounded-md bg-milk-darker text-sm leading-4">
-                    <div className="p-6 text-xs leading-4">
+                <div className="text-justify article rounded-md bg-milk-darker text-sm leading-4">
+                    <div className="p-6  text-xs leading-4">
                         <div className="pt-2 md:flex flex-col justify-between col-span-4 md:col-span-1">
                             <div className="">
                                 <h1 className="text-3xl font-medium uppercase">{title}</h1>
@@ -229,7 +229,7 @@ const id = ({ project }) => {
 ))} */}
 
 
-            <div className="flex justify-between py-4 text-xs">
+            <div className="flex article justify-between py-4 text-xs">
                                 <a className="cursor-pointer opacity-75 hover:opacity-100" onClick={() => handleNavigation(getPreviousProjectId())}>
                                 <i className="cursor-pointer opacity-75 hover:opacity-100 bi bi-arrow-left-square">
                                          <span className='px-2'>&#8592;</span>

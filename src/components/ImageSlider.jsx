@@ -31,7 +31,7 @@ const ImageSlider = ({ images }) => {
   return (
     <div>
       {/* Thumbnail Grid */}
-      <div className= "p-4 transition-all duration-500 grid grid-cols-3 md:grid-cols-4 gap-1">
+      <div className= "p-4 article transition-all duration-500 grid grid-cols-3 md:grid-cols-4 gap-1">
         {images.map((image, index) => (
           <div
             key={index}

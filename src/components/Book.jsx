@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Book({ images }) {
     return (
-        <div className="flex z-50 items-center justify-center py-1 my-16 overflow-visible rounded-2xl">
+        <div className="flex z-50 items-center mx-4 justify-center py-1 my-16 overflow-visible rounded-2xl">
             <HTMLFlipBook
                 width={images[0].width}
                 height={images[0].height}
