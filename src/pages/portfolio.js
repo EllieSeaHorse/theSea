@@ -7,12 +7,16 @@ import Resume from "@/components/PortfolioBoxes/Resume";
 import Footer from "@/components/footer";
 import {motion} from "framer-motion";
 import Head from "next/head";
+import Book from "@/components/Book";
+import { Portfolioboo } from "@/data/portfolioboo";
 
 
 
 export default function Portfolio() {
 
     let project = projectsData
+    let portfolio = Portfolioboo
+
     let currentDiv = 0;
     // Function to scroll to the next div
     const scrollToNextDiv = () => {
@@ -65,26 +69,6 @@ export default function Portfolio() {
                     enhancing her versatility and enriching her creative vision.
                     </p>
 
-                    {/* <div className="md:flex-grow  "></div> {/* Add this div to push content to the top */
-                    // <div className="flex flex-col space-y-2 cursor-pointer text-xs">
-                        {/* <h1 className="flex items-center">
-                            <span className="text-accent pr-4">Phone</span>
-                            <Link href="tel:+989397075750">+98 939 707 57 50</Link>
-                        </h1> */}
-                    //     <h1 className="flex items-center">
-                    //         <span className="text-accent pr-4">Mail</span>
-                    //         <Link href="mailto:Sama.Moayeri.Bu@Gmail.com">Sama.Moayeri.Bu@Gmail.com</Link>
-                    //     </h1>
-
-                    //     <h1 className="flex items-center">
-                    //         <span className="text-accent pr-4">LinkedIn</span>
-                    //         <Link href="https://linkedin.com/in/sama-moayeri" passHref>
-                    //             <p target="_blank">/SamaMoayeri</p>
-                    //         </Link>
-                    //     </h1>
-                    </div> */}
-
-
                 </Bigbox>
 
                 <Bigbox
@@ -116,6 +100,7 @@ export default function Portfolio() {
                 {/*    </p>*/}
 
                 {/*</Bigbox>*/}
+
             </motion.div>
             {/*<div*/}
             {/*    className={" bg-gray-800 mx-auto rounded-2xl hover:bg-accent w-full p-4 mb-4 text-center scroll-smooth flex justify-center items-center duration-500 transition-all"}*/}
@@ -142,7 +127,11 @@ export default function Portfolio() {
             {/*        />*/}
             {/*    ))}*/}
             {/*</div>*/}
+                <Book
+                    images={Portfolioboo.images}
+                >
 
+                </Book>
             <Footer className={"relative bottom-0"}/>
 
         </Layout>

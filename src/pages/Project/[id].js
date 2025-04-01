@@ -2,11 +2,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { projectsData } from '@/data/projectsData';
 import Layout from '@/pages/layout';
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from 'next/head';
-import useLoadingState from '@/components/Hooks/useLoadingState';
-import LoadingVisual from "@/components/Transition/LoadingVisual";
 import { useRouter } from 'next/router';
 import Footer from "@/components/footer";
 import ImageWithShare from "@/components/ImagewithShare";
@@ -142,7 +139,7 @@ const id = ({ project }) => {
                         <div className="pt-2 md:flex flex-col justify-between col-span-4 md:col-span-1">
                             <div className="">
                                 <h1 className="text-3xl font-medium uppercase">{title}</h1>
-                                <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1>
+                                {/* <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{subheading}</h1> */}
                                 <p className="text-gray-500 text-sm pb-4">{new Date(date).getFullYear()}</p>
                             </div>
 
@@ -154,14 +151,14 @@ const id = ({ project }) => {
                                         className="pt-8 pb-4 w-20 z-50 object-cover object-center"
                                     />
                                 )}
-                                <p className="text-sm py-2">{description}</p>
-                                <div className="text-xs py-2" style={{ color }}>
+                    <p className="text-sm py-2">{statement || description}</p>
+{/* <div className="text-xs py-2" style={{ color }}>
                                     {services.map((service, index) => (
                                         <span key={index}>
                                             {index > 0 && " / "}{service}
                                         </span>
                                     ))}
-                                </div>
+                                </div> */}
                         
                             </div>
 

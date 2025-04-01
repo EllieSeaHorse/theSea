@@ -32,8 +32,8 @@ module.exports = {
         // 'accent' : '#93A6D9',
         'dark-teal': '#001112',
         'paper': '#D8D1C9',
-        'milk': '#FEFFF9',
-        'milk-darker': '#FAFBF4'
+        'milk': '#FFFFFC',
+        'milk-darker': '#FCFBF7'
 
 
       },

@@ -22,6 +22,7 @@ export default function Nav({ children, classname }) {
                         </Link>
                     </h1> */}
                     <Link href={'/portfolio'} className={"hover:text-accent transition-all duration-500"}>ABOUT</Link>
+                    <Link href={'/words'} className={"hover:text-accent transition-all duration-500"}>WORDS</Link>
 
 
                     <h1 className="flex items-center group hover:text-accent transition-all">
@@ -36,6 +37,9 @@ export default function Nav({ children, classname }) {
                         {/*</div>*/}
 
                     </h1>
+
+
+
 
                     <h1 className="flex items-center group hover:text-accent transition-all">
 

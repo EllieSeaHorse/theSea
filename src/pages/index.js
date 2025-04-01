@@ -20,12 +20,16 @@ export default function Home() {
             </Head>
             <div className="text-center">
 
-                <div className="grid grid-cols-1 self-center bottom-0">
+                <div className="grid grid-cols-1 self-center bottom-0 p-4 md:p-12">
 
+                    <div className="grid max-h-screen grid-cols-3 grid-rows-3">
                     <List
                         sortedProjects={sortedProjects}
-                        classname={"relative md:mx-10"}
+                        classname={"col-start-1 col-span-1 row-start-1 row-span-3 items-center  object-cover align-middle self-center justify-center"}
                     />
+                        <img className={"col-start-2 col-span-2 row-start-2 row-span-1 items-center  object-cover align-middle self-center justify-center p-2 md:p-10"} 
+                        src={'/Portfolio/Home.jpg'}></img>
+                    </div>
 
 
                     {/* <div
@@ -95,12 +99,14 @@ export default function Home() {
                                          <div
                                             className=" place-self-end align-baseline self-end w-full pl-0 py-6 md:py-0 md:pl-10 "
                                          >
-
-                                         <h1 className="text-xl font-normal capitalize  ">{project.title}</h1>
-                                        {/* <h1 className="opacity-80 text-sm pb-1 font-medium uppercase">{project.subheading}</h1> */}
-                                        <p className="text-gray-500 text-xs">{new Date(project.date).getFullYear()}</p>
-                                        {/* <h1 className="opacity-80 text-sm pb-1 font-light lowercase ">{project.description}</h1> */}
-                                        </div>
+                                            <h1 className="text-xl font-normal capitalize  ">{project.title}</h1>
+                                            <p className="text-gray-500 text-xs">{new Date(project.date).getFullYear()}</p>
+                                            <p className="text-gray-600 text-xs pt-1 lowercase ">
+                                                {project.statement
+                                                    ? project.statement.split(' ').slice(0, 22).join(' ') + '...'
+                                                    : ''}
+                                                </p>                                       
+                                                 </div>
 
                                         {/* } */}
                                     </div>
