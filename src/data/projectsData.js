@@ -515,7 +515,7 @@ export const projectsData = [
         services: ['Photography'],
         description: 'Series of Self-Portraits',
         statement: 'Nocturnal events, when a heavy and coercive silence blurs the boundary between reality and imagination. The night\'s light and color transform the meaning of objects, while darkness renders everything alike. The slightest movements break the potential silence and take on a performative quality. Absence opens the mind to wander, yet the closed mind doesn\'t transcend the walls of the room. Everything existing is constantly repeated; colors blend together, sounds reverberate, and yet nothing happens. Nothing, the slightest tremor, becomes the center of attention; everyone watches every move, sometimes encouraging, sometimes reprimanding, and other times, sadly listening to the cries. The intensity of every feeling becomes so overwhelming that it becomes meaningless, striking but painless, worrying about numbness, yet still seeing nothing. He recalls fragments, unsure if he owns them; the fragments flee at the same speed they arrived, so intense that their existence is denied, and they lead him to contemplate death.',
-        coverImageUrl: '/Portfolio/White Nights/WhiteNights-05.jpg',
+        coverImageUrl: '/Portfolio/White Nights/0.jpg',
         KeyWords: 'Series of Self-Portraits',
         images: [
             { src: '/Portfolio/White Nights/0.jpg', alt: 'Photography White Nights Art' , width: '1700', height: '1100'},

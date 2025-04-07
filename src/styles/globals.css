@@ -26,7 +26,7 @@
 
 body {
 
-  font-family: "Belleza", Times, serif;
+  font-family: "Montserrat", Times, serif;
   color: rgb(var(--foreground-rgb));
 
   @apply text-neutral-950 bg-milk

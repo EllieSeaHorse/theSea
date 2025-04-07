@@ -93,7 +93,7 @@ const WordPage = ({ project }) => {
                             </div>
 
                             <div className="text-xs">
-                                 <p className="text-container md:p-16 p-8 text-[14px] text-justify leading-1 py-2">{text}</p>
+                                 <p className="text-container md:p-16 p-8 text-[12px] leading-[20px] text-justify py-2">{text}</p>
                             </div>
 
 
