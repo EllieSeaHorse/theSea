@@ -2,84 +2,11 @@
 export const projectsData = [
 
 
-    {
-        id: 'Trepidation',
-        title: 'Trepidation',
-        subheading: 'A Photography Series',
-        year: 2022,
-        date: 'December 15, 2019',
-
-        services: ['Photography' , 'Visual Storytelling'],
-        description: 'In the stillness of shadows and the quiet tremors of the unseen',
-        statement: '',
-        coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
-        keywords: {
-            english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
-            farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
-        },
-        images: [
-            { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
-        ],
-        logo: '',
-
-        color: '#4F6D6C'
-    },
-
     // {
-    //     id: 'Objective',
-    //     title: 'Objective',
+    //     id: 'Trepidation',
+    //     title: 'Trepidation',
     //     subheading: 'A Photography Series',
-    //     year: 2019,
-    //     date: 'December 15, 2019',
-
-    //     services: ['Photography' , 'Visual Storytelling'],
-    //     description: 'In the stillness of shadows and the quiet tremors of the unseen',
-    //     statement: '',
-    //     coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
-    //     keywords: {
-    //         english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
-    //         farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
-    //     },
-    //     images: [
-    //         { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
-    //     ],
-    //     logo: '',
-
-    //     color: '#4F6D6C'
-    // },
-    // {
-    //     id: 'Singles',
-    //     title: 'Singles',
-    //     subheading: 'A Photography Series',
-    //     year: 2019,
-    //     date: 'December 15, 2019',
-
-    //     services: ['Photography' , 'Visual Storytelling'],
-    //     description: 'In the stillness of shadows and the quiet tremors of the unseen',
-    //     statement: '',
-    //     coverImageUrl: '/Portfolio/Trepidation/Trep1.jpg',
-    //     keywords: {
-    //         english: 'Fear and Trepidation, Photography Series, Visual Exploration, Anticipation, Delicate Balance, Impending Events, Silent Corridors, Untold Stories, Haunting Beauty, Quiet Unease',
-    //         farsi: 'ترس و نااطمینانی، مجموعه عکاسی، اکتشاف تصویری، پیش‌بینی، تعادل ظریف، رویدادهای ناگوار، کریدورهای ساکت، داستان‌های نگفته، زیبایی وحشت‌انگیز، ناراحتی ساکت'
-    //     },
-    //     images: [
-    //         { src: '/Portfolio/Trepidation/Trep1.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Trepidation/Trep2.jpg', alt: 'Photography Trepidation Fear' },
-    //         { src: '/Portfolio/Trepidation/Trep3.jpg', alt: 'Photography Trepidation Fear' },
-    //     ],
-    //     logo: '',
-
-    //     color: '#4F6D6C'
-    // },
-    // {
-    //     id: 'Eclipse',
-    //     title: 'Eclipse',
-    //     subheading: 'A Photography Series',
-    //     year: 2019,
+    //     year: 2022,
     //     date: 'December 15, 2019',
 
     //     services: ['Photography' , 'Visual Storytelling'],
@@ -100,6 +27,7 @@ export const projectsData = [
     //     color: '#4F6D6C'
     // },
 
+   
 
 
     // {
@@ -608,15 +536,15 @@ export const projectsData = [
     //     color: '#523D57'
     // },
     {
-        id: 'Wired',
-        title: 'The Days',
+        id: 'overcoat',
+        title: 'The Overcoat',
         subheading: 'Photo Series',
         year: 2022,
         date: 'December 15, 2020',
 
         services: ['Photography'],
         description: 'Intimate Scenes and Dancing',
-        statement: 'In the ethereal dance of light and shadow,  the essence of two worlds colliding, merging, becoming one. Film scenes intertwine with the tapestry of my home, weaving stories untold, mysteries unsolved. In this realm of double exposed dreams, truth eludes definition, and meaning is found in the spaces between.',
+        statement: '',
         coverImageUrl: '/Portfolio/Wider/Wider-08.jpg',
         KeyWords: '',
         images: [
@@ -637,80 +565,80 @@ export const projectsData = [
 
         color: '#BA9C8C'
     },
-    {
-        id: 'studies',
-        title: 'Studies',
-        subheading: 'Photo Series',
-        year: 2019,
-        date: 'December 15, 2021',
+    // {
+    //     id: 'studies',
+    //     title: 'Studies',
+    //     subheading: 'Photo Series',
+    //     year: 2019,
+    //     date: 'December 15, 2021',
     
-        services: ['Photography'],
-        description: '',
-        statement: '',
-        coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
-        KeyWords: '',
-        images: [
-            { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
+    //     services: ['Photography'],
+    //     description: '',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Fractures/Studies-01.jpg',
+    //     KeyWords: '',
+    //     images: [
+    //         { src: '/Portfolio/Fractures/Studies-01.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-02.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-03.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Fractures/Studies-04.jpg', alt: 'Photography Trepidation Fear' },
     
-        ],
-        logo: '',
-        color: '#edd4b9'
-    },
-    {
-        id: 'pacificbook',
-        title: 'Pacific',
-        subheading: 'Photo Series',
-        year: 2017,
-        date: 'December 15, 2017',
+    //     ],
+    //     logo: '',
+    //     color: '#edd4b9'
+    // },
+    // {
+    //     id: 'pacificbook',
+    //     title: 'Pacific',
+    //     subheading: 'Photo Series',
+    //     year: 2017,
+    //     date: 'December 15, 2017',
 
-        services: ['Photography'],
-        description: '',
-        statement: '',
-        coverImageUrl: '/Portfolio/Pacific/Pacific-03.jpg',
-        KeyWords: '',
-        images: [
-            { src: '/Portfolio/Pacific/Pacific-01.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-04.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-05.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-06.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-07.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Pacific/Pacific-08.jpg', alt: 'Photography Trepidation Fear' },
+    //     services: ['Photography'],
+    //     description: '',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Pacific/Pacific-03.jpg',
+    //     KeyWords: '',
+    //     images: [
+    //         { src: '/Portfolio/Pacific/Pacific-01.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-02.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-03.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-04.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-05.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-06.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-07.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Pacific/Pacific-08.jpg', alt: 'Photography Trepidation Fear' },
 
-        ],
-        logo: '',
-        color: '#dee2d3'
-    },
-    {
-        id: 'joycebook',
-        title: 'Ulysses',
-        subheading: 'Art Book',
-        year: 2022,
-        date: 'December 15, 2022',
+    //     ],
+    //     logo: '',
+    //     color: '#dee2d3'
+    // },
+    // {
+    //     id: 'joycebook',
+    //     title: 'Ulysses',
+    //     subheading: 'Art Book',
+    //     year: 2022,
+    //     date: 'December 15, 2022',
     
-        services: ['Art Book'],
-        description: '',
-        statement: '',
-        coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
-        KeyWords: '',
-        images: [
-            { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' , width: '2000', height: '2000' },
-            { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
-            { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
+    //     services: ['Art Book'],
+    //     description: '',
+    //     statement: '',
+    //     coverImageUrl: '/Portfolio/Ulysses/Joyce-01.jpg',
+    //     KeyWords: '',
+    //     images: [
+    //         { src: '/Portfolio/Ulysses/Joyce-01.jpg', alt: 'Photography Trepidation Fear' , width: '2000', height: '2000' },
+    //         { src: '/Portfolio/Ulysses/Joyce-02.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-03.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-04.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-05.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-06.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-07.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-08.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-09.jpg', alt: 'Photography Trepidation Fear' },
+    //         { src: '/Portfolio/Ulysses/Joyce-10.jpg', alt: 'Photography Trepidation Fear' },
     
-        ],
-        logo: '',
-        color: '#A1B28B'
-    },
+    //     ],
+    //     logo: '',
+    //     color: '#A1B28B'
+    // },
 ];
