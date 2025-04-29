@@ -14,7 +14,7 @@ export default function Book({ images }) {
             height={images?.[0]?.height || defaultHeight} // Fallback if images[0] or height is missing                height={images[0].height}
                 startPage={0}
                 showCover={true}
-                maxShadowOpacity={0.3}
+                maxShadowOpacity={0.5}
                 drawShadow={true}
                 size="stretch"
                 maxHeight={700}
@@ -28,7 +28,7 @@ export default function Book({ images }) {
                 {/* <div className="bg-paper items-center shadow-black shadow-lg"></div> */}
 
                 {images.map((page, index) => (
-                    <div key={index} className="bg-white items-center  aspect-auto">
+                    <div key={index} className="shadow-lg bg-white items-center  aspect-auto">
                         <img
                             src={page.src}
                             className="cursor-pointer mx-auto object-cover w-full"

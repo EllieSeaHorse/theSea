@@ -535,6 +535,65 @@ export const projectsData = [
     //
     //     color: '#523D57'
     // },
+    
+    {
+        id: 'breadandbloodbook',
+        title: 'Bread and Blood',
+        subheading: 'Photo Series',
+        year: 2025,
+        date: 'April 15, 2025',
+
+        services: ['Photography'],
+        description: '',
+        statement: '',
+        coverImageUrl: '/Portfolio/Bread and Blood/Bread And Blood Page 17.jpg',
+        KeyWords: '',
+        images: [
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Cover 0.jpg', alt: 'Georgia Protest Tbilisi Street Photography', width: '2887', height: '2475'},
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 0.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 1.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 2.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 3.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 4.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 5.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 6.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 7.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 8.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 9.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 10.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 11.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 12.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 13.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 14.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 15.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 16.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 17.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 18.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 19.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 22.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 23.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 24.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 25.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 26.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 27.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 28.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 29.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 30.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+            { src: '/Portfolio/Bread and Blood/Bread And Blood Page 31.jpg', alt: 'Georgia Protest Tbilisi Street Photography' },
+
+
+        ],
+        logo: '',
+
+        color: '#BA9C8C'
+    },
+    
+    
+    
+    
+    
+    
+    
     {
         id: 'overcoat',
         title: 'The Overcoat',
